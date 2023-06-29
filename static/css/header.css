@@ -1,0 +1,277 @@
+header {
+    font-size: 1.125rem;
+    letter-spacing: 0.05rem;
+    position: static;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    top: 100%;
+    left: 0;
+    margin-top: 1px;
+    border: none;
+    border-radius: 0%;
+}
+
+.navbar {
+    height: 5.5rem;
+    background: rgba(11, 11, 12, 0.40);
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #212121;
+    z-index: 2;
+    /*box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);*/
+}
+
+.navbar-brand {
+    height: 3rem;
+    width: 14rem;
+    background-image: url(/static/img/logo-rosso-bianco.png);
+    background-size: cover;
+ }
+
+.nav-link {
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav-link.active{
+    color: #BFBFBF;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #E73C14;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+}
+
+.nav-content svg {
+    margin-left: 0.5rem;
+}
+
+.nav-content .item-icon path {
+   fill: #fff;
+}
+
+.nav-link:hover .nav-content .item-icon path, .nav-link:focus .nav-content .item-icon path, .nav-link.active:hover .nav-content .item-icon path {
+    fill: #E73C14;
+}
+
+.nav-link.active .nav-content .item-icon path {
+    fill: #BFBFBF;
+}
+
+
+label {
+    position: relative;
+    display: inline-block;
+    padding: 5px 12px;
+    -webkit-transition: all 10.5s ease;
+    transition: all 0.2s ease;
+    border-radius: 0;
+}
+label::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 80%;
+    background-color: #E73C14;
+    -webkit-transition: all 1s ease 0.2s;
+    transition: all 0.2s ease 0.2s;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-toggler {
+    border: none;
+    background-color: transparent;
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+label input {
+    -webkit-transition: width 0.2s ease, opacity 0.2s ease 0.2s;
+    transition: width 0.2s ease, opacity 0.5s ease 0.2s;
+    opacity: 1;
+    width: 12rem;
+    height: 1,8rem;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    color: #000;
+}
+
+label i {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    color: #fff;
+    cursor: pointer;
+}
+
+label[data-state="close"] {
+    border-radius: 30px;
+    padding: 5px 5px;
+    -webkit-transition: all 1s ease;
+    transition: all 0.3s ease;
+}
+
+label[data-state="close"]::after {
+    width: 0%;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+label[data-state="close"] i {
+    pointer-events: none;
+}
+
+label[data-state="close"] input {
+    width: 28px;
+    height: 25px;
+    opacity: 0;
+    cursor: pointer;
+    -webkit-transition: opacity 0.5s ease, width 1s ease;
+    transition: opacity 0.5s ease, width 1s ease;
+}
+
+label[data-state="open"] {
+    border-radius: 30px;
+    padding: 5px 5px;
+    -webkit-transition: all 1s ease;
+    transition: all 0.3s ease;
+  }
+
+.language .dropdown-toggle {
+    color: white; 
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 1.125rem;
+    letter-spacing: 0.05rem;
+}
+.language .dropdown-menu {
+    border: none;
+}
+
+.language .dropdown-toggle::after {
+    display: none;
+}
+
+
+/*Dropdown*/
+
+.dropdown-icon path {
+    fill: #646363;
+  }
+
+  .dropdown-icon:hover path {
+    fill: #000;
+  }
+
+  .dropdown-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  .dropdown-menu li {
+    color: #646363;
+    margin-bottom: 1rem;
+  }
+
+  .dropdown-menu a:hover  .title {
+    color: #000;
+    cursor: pointer;
+  }
+
+  .dropdown-menu ul  {
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+  }
+
+  .dropdown-menu .features  {
+    margin-left: 3rem;
+  }
+
+  .dropdown-menu .title {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    margin-bottom: 3rem;
+  }
+
+  .recommendations p {
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+  .recommendations h3, .link {
+    color: #000;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .dropdown-menu .recommendations a span{
+    color: #6AA237;
+    margin-left: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+
+  .dropdown-menu .recommendations a{
+    text-decoration: none;
+  }
+
+  .dropdown-menu .recommendations a:hover span{
+    color: #BFBFBF;
+  }
+  .dropdown-menu .recommendations a:hover .arrow-right path{
+    fill: #BFBFBF;
+  }
+
+  .vertical-hr {
+    border-left: 1px solid #BFBFBF; 
+    height: 100%;
+    margin: 0 1.5rem; 
+  }
+
+  .navbar.navbar-focused {
+    background: white;
+  }
+
+  .navbar.navbar-focused .nav-link {
+    color: #212121;
+  }
+
+  .navbar.navbar-focused .nav-link .nav-content .item-icon path{
+    fill: #212121;
+  }
+
+  .navbar.navbar-focused .nav-link:hover {
+    color: #E73C14;
+  }
+  .navbar.navbar-focused .nav-link:hover .nav-content .item-icon path {
+    fill: #E73C14;
+  }
+
+  .navbar.navbar-focused .navbar-brand {
+    background-image: url(/static/img/logo-rosso-nero.png);
+  }
+
+
+  @media all and (max-width: 768px) {
+    .language.dropdown, #app {
+      display: none!important;
+    }
+  }
