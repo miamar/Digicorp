@@ -1,26 +1,30 @@
-var swiper = new Swiper(".gallerySwiper", {
+new Swiper("#swiper-2", {
     slidesPerView: 1,
-    spaceBetween: 10,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
+    centeredSlides: true,
+    spaceBetween: 24,
     autoplay: {
         delay: 4000,
         disableOnInteraction: false,
       },
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
       },
-      768: {
-        slidesPerView: 4,
-        spaceBetween: 40,
-      },
-      1024: {
-        slidesPerView: 5,
-        spaceBetween: 50,
-      },
+    lazyLoading: true,
+    loop: true,
+    keyboard: {
+        enabled: true,
     },
-  });
+    navigation: {
+        nextEl: "#nav-right",
+        prevEl: "#nav-left"
+    },
+    breakpoints: {
+        800: {
+            slidesPerView: 1.5
+        },
+        1400: {
+            slidesPerView: 3
+        }
+    }
+});
