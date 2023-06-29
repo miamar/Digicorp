@@ -1,7 +1,4 @@
-var app = new Vue({
-    el: '#app',
-    data: { state: 'close' } 
-  });
+
 
   var app = new Vue({
     el: 'header',
@@ -71,4 +68,4 @@ $(document).ready(function() {
     $(".navbar").removeClass("navbar-focused");
   });
 });
-  
+
