@@ -359,7 +359,7 @@
         <div class="container d-flex flex-column align-items-center custom-container">
           <h2 class="text-center">Lorem ipsum dolorsit <span class="color-text">amet</span> consectetur vero dolorsit</h2>
           <p class="small my-4 text-center">Lorem ipsum dolor sit amet consectetur. Non magna est feugiat lacinia id enim et id molestie. </p>
-          <div class="row d-flex align-items-stretch mt-5">
+          <div class="row flex-column flex-lg-row align-items-lg-stretch mt-5">
             <div class="col-12 col-lg-6">
               <div class="card h-100 justify-content-between">
                 <div class="card-body">
@@ -379,7 +379,7 @@
               </div>
             </div>
           </div>
-          <div class="row d-flex align-items-stretch mt-4">
+          <div class="row flex-column flex-lg-row align-items-lg-stretch mt-4">
             <div class="col-12 col-lg-6">
               <div class="card h-100 justify-content-between">
                 <div class="card-body">
@@ -510,6 +510,18 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="/static/js/header.js"></script>
+    <script>
+      // Get the reference to the image element
+var image = document.getElementById('your-image');
+
+// Check if the image is horizontal or vertical
+if (image.naturalWidth > image.naturalHeight) {
+  image.classList.add('horizontal');
+} else {
+  image.classList.add('vertical');
+}
+
+    </script>
     <!-- 
     <script>
       const rows = document.querySelectorAll('.servizi-home .row');

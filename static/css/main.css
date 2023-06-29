@@ -38,11 +38,14 @@ a.link-arrow:hover {
   color: #646363;
 }
 
-.img-sm-text img {
+.img-sm-text.horizontal img {
   width: 100%;
+  object-fit: cover;
+}
+
+.img-sm-text.vertical img {
   height: 100%;
   object-fit: cover;
-  padding-right: 3rem;
 }
 
 
