@@ -1,7 +1,8 @@
 body {
-    font-family: 'Roboto Condensed';
+    font-family: 'Roboto Condensed'!important;
     font-weight: 500;
 }
+
 
 a {
   text-decoration: none;
@@ -44,6 +45,80 @@ a.link-arrow:hover {
   object-fit: cover;
 } 
 
+.yt h3, .yt p {
+  color: #F9F9F9;
+}
+
+.yt {
+  background-image: url(/static/img/bg-covers/yt-cover.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-left {
+  background-image: url(/static/img/bg-covers/contact-light-cover.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-red .contact-right {
+  background-image: url(/static/img/bg-covers/contact-red-cover.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-red .row{
+  margin-right: 0;
+}
+
+.contact-red .col-lg-6, .contact-red .col-12 {
+  padding: 7rem 10rem;
+}
+
+form label {
+  color: white;
+  font-size: 0.9rem;
+  font-style: normal;
+  line-height: 1.125rem;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+}
+
+.form-control {
+  color: white;
+  background-color: transparent;
+  border-radius: 0.625rem;
+  border: 1px solid white;
+  height: 3.75rem;
+  padding: 1rem;
+}
+
+.form-control:focus {
+  background-color: transparent; 
+  box-shadow: none; 
+  border: 2px solid white;
+}
+
+.text-muted {
+  color: white!important;
+}
+
+.form-group {
+  margin-top: 1rem;
+}
+
+textarea.form-control {
+  height: 100%
+}
+
+.form-control::placeholder {
+  color: white;
+  font-size: 1.2rem;
+}
+
+label::after {
+  display: none!important;
+}
 
 /*TESTO*/
 h1{
@@ -88,27 +163,7 @@ h4 {
   line-height: 1.5rem;
 }
 
-.yt h3, .yt p {
-  color: #F9F9F9;
-}
 
-.yt {
-  background-image: url(/static/img/bg-covers/yt-cover.png);
-  background-size: cover;
-  background-position: center;
-}
-
-.contact-left {
-  background-image: url(/static/img/bg-covers/contact-light-cover.png);
-  background-size: cover;
-  background-position: center;
-}
-
-.contact-red .contact-right {
-  background-image: url(/static/img/bg-covers/contact-red-cover.png);
-  background-size: cover;
-  background-position: center;
-}
 
 /*HOME*/
 /*Hero*/
@@ -263,11 +318,21 @@ h4 {
     padding-right: 0;
     padding-bottom: 3rem;
   }
+
+  .contact-red .col-lg-6, .contact-red .col-12 {
+    padding: 6rem;
+  }
 }
 
 @media all and (max-width: 992px) {
   .servizi-home h2, .servizi-home .small, .softwares-home h2, .softwares-home p {
     width: 100%;
+  }
+}
+
+@media all and (max-width: 992px) and (min-width: 768px){
+  .contact-red form {
+    width: 70%!important;
   }
 }
 
@@ -292,10 +357,10 @@ h4 {
     text-transform: uppercase;
     text-align: center;
     font-size: 1.2rem;
-    font-family: Roboto Condensed;
     font-weight: 500;
     line-height: 1.75813rem;
     letter-spacing: 0.1rem;
+    border: 2px solid transparent;
   }
   
   .primary-button::before {
@@ -311,4 +376,34 @@ h4 {
     opacity: 0.2;
   }
 
+  .primary-button:hover {
+    background: white;
+    border: 2px solid;
+    border-color: linear-gradient(269deg, #E73C14 0%, #9A0B09 100%);
+    color: #B71111;
+  }
+
+  .primary-button:hover::before {
+    visibility: none;
+  }
+
+  .btn-white-red {
+    position: relative; 
+    padding: 10px 20px;
+    background: white;
+    color: #B71111;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.75813rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .btn-white-red:hover {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+  }
+  
 
