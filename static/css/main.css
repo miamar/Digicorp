@@ -95,7 +95,19 @@ h4 {
 .yt {
   background-image: url(/static/img/bg-covers/yt-cover.png);
   background-size: cover;
-    background-position: center;
+  background-position: center;
+}
+
+.contact-left {
+  background-image: url(/static/img/bg-covers/contact-light-cover.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-red .contact-right {
+  background-image: url(/static/img/bg-covers/contact-red-cover.png);
+  background-size: cover;
+  background-position: center;
 }
 
 /*HOME*/
