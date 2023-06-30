@@ -1,4 +1,9 @@
-
+var app = new Vue({
+  el: '#app',
+  data: {
+    state: 'close'
+  }
+});
 
 var headerApp = new Vue({
   el: 'header',
