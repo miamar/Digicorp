@@ -29,7 +29,7 @@
 
   </head>
   <body>
-    <header>
+    <header id="header-app">
 
       <nav class="navbar navbar-expand-xl">
           
@@ -191,7 +191,7 @@
         
               <div class="d-flex right-items">
                 <!-- Search bar -->
-                <form id="app" action="#">
+                <form id="search-app" action="#">
                   <label :data-state="state" for="search">
                     <input type="text" placeholder="Search" @click="state = 'opan'" @blur="state='close'" />
                     <i class="fa fa-search" @click="" aria-hidden="true"></i>
@@ -225,8 +225,42 @@
 
     
     <script src="/static/js/slideshow.js"></script>
-   
-    <script src="/static/js/header.js"></script>
+    
+    <script>
+     var app = new Vue({
+  el: '#search-app',
+  data: {
+    state: 'close'
+  }
+});
+
+var headerApp = new Vue({
+  el: '#header-app',
+  data: {
+    openDropdown: ''
+  },
+  methods: {
+    toggleDropdown(dropdown) {
+      this.openDropdown = this.openDropdown === dropdown ? '' : dropdown;
+      if (this.openDropdown) {
+        document.addEventListener('click', this.closeDropdown);
+      } else {
+        document.removeEventListener('click', this.closeDropdown);
+      }
+    },
+    isDropdownOpen(dropdown) {
+      return this.openDropdown === dropdown;
+    },
+    closeDropdown(event) {
+      if (!event.target.closest('#header-app')) {
+        this.openDropdown = '';
+        document.removeEventListener('click', this.closeDropdown);
+      }
+    }
+  }
+});
+
+    </script>
   
   </body>
 </html>

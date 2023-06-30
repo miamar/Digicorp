@@ -14,6 +14,7 @@ header {
     margin-top: 1px;
     border: none;
     border-radius: 0%;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
 }
 
 .navbar {
@@ -42,7 +43,7 @@ header {
     color: #BFBFBF;
 }
 
-.nav-link:hover, .nav-link:focus {
+.nav-link:hover, .nav-link:focus, .language .dropdown-toggle:hover {
     color: #E73C14;
 }
 
@@ -252,7 +253,12 @@ label[data-state="open"] {
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
   }
 
-  .navbar.navbar-focused .nav-link, .navbar.navbar-scrolled .nav-link {
+  .navbar.navbar-focused .nav-link,
+  .navbar.navbar-focused label i,
+  .navbar.navbar-focused .language .dropdown-toggle,
+  .navbar.navbar-scrolled .nav-link,
+  .navbar.navbar-scrolled label i,
+  .navbar.navbar-scrolled .language .dropdown-toggle {
     color: #212121;
   }
 
