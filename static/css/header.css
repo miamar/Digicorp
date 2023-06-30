@@ -56,7 +56,7 @@ header {
 }
 
 .nav-content .item-icon path {
-   fill: #fff;
+   fill: #ffffff;
 }
 
 .nav-link:hover .nav-content .item-icon path, .nav-link:focus .nav-content .item-icon path, .nav-link.active:hover .nav-content .item-icon path {
@@ -246,26 +246,28 @@ label[data-state="open"] {
     margin: 0 1.5rem; 
   }
 
-  .navbar.navbar-focused {
+  .navbar.navbar-focused, .navbar.navbar-scrolled {
     background: white;
+    border-bottom: none;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
   }
 
-  .navbar.navbar-focused .nav-link {
+  .navbar.navbar-focused .nav-link, .navbar.navbar-scrolled .nav-link {
     color: #212121;
   }
 
-  .navbar.navbar-focused .nav-link .nav-content .item-icon path{
+  .navbar.navbar-focused .nav-link .nav-content .item-icon path, .navbar.navbar-scrolled .nav-link .nav-content .item-icon path{
     fill: #212121;
   }
 
-  .navbar.navbar-focused .nav-link:hover {
+  .navbar.navbar-focused .nav-link:hover, .navbar.navbar-scrolled .nav-link:hover {
     color: #E73C14;
   }
-  .navbar.navbar-focused .nav-link:hover .nav-content .item-icon path {
+  .navbar.navbar-focused .nav-link:hover .nav-content .item-icon path, .navbar.navbar-scrolled .nav-link:hover .nav-content .item-icon path {
     fill: #E73C14;
   }
 
-  .navbar.navbar-focused .navbar-brand {
+  .navbar.navbar-focused .navbar-brand, .navbar.navbar-scrolled .navbar-brand{
     background-image: url(/static/img/loghi/logo-rosso-nero.png);
   }
 
