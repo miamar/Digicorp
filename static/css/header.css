@@ -29,7 +29,7 @@ header {
 .navbar-brand {
     height: 3rem;
     width: 14rem;
-    background-image: url(/static/img/logo-rosso-bianco.png);
+    background-image: url(/static/img/loghi/logo-rosso-bianco.png);
     background-size: cover;
  }
 
@@ -266,7 +266,7 @@ label[data-state="open"] {
   }
 
   .navbar.navbar-focused .navbar-brand {
-    background-image: url(/static/img/logo-rosso-nero.png);
+    background-image: url(/static/img/loghi/logo-rosso-nero.png);
   }
 
 
