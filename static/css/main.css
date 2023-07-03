@@ -317,14 +317,16 @@ h4 {
   opacity: 0.03;
 }
 
+@media all and (max-width: 1400px) {
+  .contact-red .col-lg-6, .contact-red .col-12 {
+    padding: 6rem;
+  }
+}
+
 @media all and (max-width: 1200px) {
   .image-sm-text img {
     padding-right: 0;
     padding-bottom: 3rem;
-  }
-
-  .contact-red .col-lg-6, .contact-red .col-12 {
-    padding: 6rem;
   }
 }
 
