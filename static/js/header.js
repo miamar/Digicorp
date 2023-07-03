@@ -31,6 +31,15 @@ var headerApp = new Vue({
   }
 });
 
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "container") {
+    x.className += " responsive";
+  } else {
+    x.className = "container";
+  }
+}
+
 
 $(document).ready(function() {
 $(".navbar .nav-link").focus(function() {
