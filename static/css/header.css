@@ -4,8 +4,12 @@ header {
     position: static;
 }
 
-.dropdown:hover > .dropdown-menu {
+.language.dropdown:hover > .dropdown-menu {
     display: block;
+}
+
+.language.dropdown a.dropdown-item:hover {
+  background-color: #6463633d;
 }
 
 .dropdown-menu {
