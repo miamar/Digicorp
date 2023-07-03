@@ -39,7 +39,7 @@ header {
     color: white;
 }
 
-.nav-link.active{
+.nav-link.active, .navbar:hover .nav-link.active {
     color: #BFBFBF;
 }
 
@@ -64,7 +64,7 @@ header {
     fill: #E73C14;
 }
 
-.nav-link.active .nav-content .item-icon path {
+.nav-link.active .nav-content .item-icon path, .navbar:hover .nav-link.active .nav-content .item-icon path {
     fill: #BFBFBF;
 }
 
@@ -247,12 +247,15 @@ label[data-state="open"] {
     margin: 0 1.5rem; 
   }
 
-  .navbar.navbar-focused, .navbar.navbar-scrolled {
+  .navbar:hover, .navbar.navbar-focused, .navbar.navbar-scrolled {
     background: white;
     border-bottom: none;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
   }
 
+  .navbar:hover .nav-link,
+  .navbar:hover label i,
+  .navbar:hover .language .dropdown-toggle,
   .navbar.navbar-focused .nav-link,
   .navbar.navbar-focused label i,
   .navbar.navbar-focused .language .dropdown-toggle,
@@ -262,18 +265,27 @@ label[data-state="open"] {
     color: #212121;
   }
 
-  .navbar.navbar-focused .nav-link .nav-content .item-icon path, .navbar.navbar-scrolled .nav-link .nav-content .item-icon path{
+  .navbar:hover .nav-link .nav-content .item-icon path, 
+  .navbar.navbar-focused .nav-link .nav-content .item-icon path, 
+  .navbar.navbar-scrolled .nav-link .nav-content .item-icon path{
     fill: #212121;
   }
 
-  .navbar.navbar-focused .nav-link:hover, .navbar.navbar-scrolled .nav-link:hover {
+  .navbar:hover .nav-link:hover, 
+  .navbar.navbar-focused .nav-link:hover, 
+  .navbar.navbar-scrolled .nav-link:hover {
     color: #E73C14;
   }
-  .navbar.navbar-focused .nav-link:hover .nav-content .item-icon path, .navbar.navbar-scrolled .nav-link:hover .nav-content .item-icon path {
+
+   .navbar:hover .nav-link:hover .nav-content .item-icon path, 
+   .navbar.navbar-focused .nav-link:hover .nav-content .item-icon path, 
+   .navbar.navbar-scrolled .nav-link:hover .nav-content .item-icon path {
     fill: #E73C14;
   }
 
-  .navbar.navbar-focused .navbar-brand, .navbar.navbar-scrolled .navbar-brand{
+  .navbar:hover .navbar-brand, 
+  .navbar.navbar-focused .navbar-brand, 
+  .navbar.navbar-scrolled .navbar-brand{
     background-image: url(/static/img/loghi/logo-rosso-nero.png);
   }
 
