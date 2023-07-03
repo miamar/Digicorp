@@ -26,4 +26,22 @@ jQuery('img.svg').each(function(){
     }, 'xml');
     
     });
-    
+
+
+gsap.registerPlugin(ScrollTrigger);
+const elements = document.querySelectorAll(".hr-animation-js");
+
+elements.forEach(element => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      start: "top 90%",
+      end: "bottom 90%",
+      toggleClass: "active", 
+    },
+    scaleX: 0,
+    duration: 0.4,
+    transformOrigin: "left center",
+    ease: "none",
+  });
+});

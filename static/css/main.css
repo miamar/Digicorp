@@ -432,12 +432,12 @@ h4 {
     animation: drop-in 1s ease 200ms backwards;
   }
 
-  .hr-animation {
-    animation: drop-in 1200ms ease 300ms backwards;
+  .hr-animation-hero {
+    animation: drop-in 1s ease 1200ms backwards;
   }
 
   .drop-in2 {
-    animation: drop-in 1500ms ease-out 500ms backwards;
+    animation: drop-in 1400ms ease-out 700ms backwards;
   }
 
   @keyframes drop-in {
