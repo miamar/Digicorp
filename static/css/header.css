@@ -12,6 +12,10 @@ header {
   background-color: #6463633d;
 }
 
+.fa {
+  font-family: "Font Awesome 5 Free"!important;
+}
+
 .dropdown-menu {
     top: 100%;
     left: 0;
