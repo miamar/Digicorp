@@ -172,6 +172,7 @@ h4 {
     background-image: url(/static/img/bg-covers/hero-home-bg.png);
     background-size: cover;
     background-position: center;
+    width: 100%;
   }
 
   .hero-home .container {

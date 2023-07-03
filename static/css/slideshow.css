@@ -145,7 +145,7 @@
   border-radius: 5px;
 }
 
-.swiper.softwaresSwiper.swiper-slide {
+.swiper.softwaresSwiper .swiper-slide {
   height: 100%;
 }
 
