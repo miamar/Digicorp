@@ -9,7 +9,8 @@ header {
 }
 
 .language.dropdown a.dropdown-item:hover {
-  background-color: #6463633d;
+  color: #E73C14;
+  background-color: white;
 }
 
 .fa {
