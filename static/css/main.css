@@ -30,10 +30,6 @@ a.link-arrow:hover {
   opacity: 0.9;
 }
 
-.carousel-indicators {
-  position: relative;
-}
-
 .light-text {
   color: #646363;
 }
@@ -258,21 +254,6 @@ h4 {
 
 .softwares-home .link-arrow span, .servizi-home .link-arrow span{
   color: #E73C14;
-}
-
-.softwares-home .carousel .card .link-arrow img {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
-.softwares-home .carousel .card img {
-  width: 6.7rem;
-  height: 6.7rem;
-  margin-right: 0.5rem;
-}
-
-.softwares-home .carousel-item {
-  overflow: visible;
 }
 
 .softwares-home a.link-text {

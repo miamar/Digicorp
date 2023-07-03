@@ -28,3 +28,16 @@ new Swiper("#swiper-2", {
         }
     }
 });
+
+var swiper = new Swiper(".softwaresSwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 400000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    }
+  });
