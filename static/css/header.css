@@ -176,14 +176,13 @@ label[data-state="open"] {
     fill: #646363;
   }
 
-  .dropdown-icon:hover path {
+  .dropdown-link:hover .dropdown-icon path {
     fill: #000;
   }
 
   .dropdown-icon {
     width: 1.5rem;
     height: 1.5rem;
-    margin-right: 1rem;
   }
 
   .dropdown-menu li {
@@ -208,7 +207,8 @@ label[data-state="open"] {
   .dropdown-menu .title {
     font-size: 1.4rem;
     line-height: 1.7rem;
-    margin-bottom: 3rem;
+    margin-left: 1rem;
+    color: #646363;
   }
 
   .recommendations p {
