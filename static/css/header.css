@@ -238,6 +238,16 @@ label[data-state="open"] {
     margin-bottom: 0.5rem;
   }
 
+  .dropdown-menu .recommendations img {
+    width: 20rem;
+  }
+
+  .dropdown-menu .recommendations.prodotti img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+
   .dropdown-menu .recommendations a span{
     color: #6AA237;
     margin-left: 1rem;
