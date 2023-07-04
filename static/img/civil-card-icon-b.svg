@@ -1,0 +1,62 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="64" height="64" fill="#F5F5F5"/>
+<g id="CIVIL Design 3" clip-path="url(#clip0_1175_36449)">
+<rect width="1920" height="8725" transform="translate(-306 -1232)" fill="white"/>
+<g id="Container 1">
+<rect width="1920" height="7815" transform="translate(-306 -1232)" fill="white"/>
+<g id="Di CIVIL design">
+<path d="M-306 -286H1614V912C1614 1044.55 1506.55 1152 1374 1152H-306V-286Z" fill="#F9F9F9"/>
+<g id="Frame 24">
+<g id="Cards">
+<g id="Card 1" filter="url(#filter0_d_1175_36449)">
+<rect x="-64" y="-32" width="441.333" height="390" rx="24" fill="white"/>
+<g id="Frame 20">
+<g id="Frame 1712" clip-path="url(#clip1_1175_36449)">
+<rect width="64" height="64" fill="white"/>
+<g id="cad-pillar_BW2">
+<g id="Raggruppa_3">
+<path id="Tracciato_598" d="M78.0067 46.5247H-14.4072V40.4727H78.0067V46.5247Z" fill="white" fill-opacity="0.5"/>
+</g>
+</g>
+<path id="Tracciato_596" d="M-0.41409 20.0566C-2.00926 20.6487 -3.55004 21.3754 -5.01951 22.2288C-5.2589 22.364 -5.4889 22.5123 -5.72268 22.6544C-5.89875 22.7631 -6.07847 22.8702 -6.25453 22.979C-11.7851 26.512 -15.2053 31.4204 -17.4967 37.5178L-13.8505 47.3658C-12.1973 41.3139 -9.91084 32.7057 -3.47787 29.0548C7.15163 21.6829 21.7293 24.1764 29.083 34.6236C36.4367 45.0709 33.7807 59.5155 23.1512 66.8874C21.5111 68.0248 19.7337 68.9517 17.8589 69.6443L17.8254 69.6567L17.8337 69.6792L-2.76518 77.3059L-0.475055 83.4913L19.1887 76.2108L19.1911 76.2174L20.2375 75.83C20.3192 75.7997 20.3958 75.7639 20.4762 75.7341L20.6021 75.6875C36.1667 69.7535 44.0351 52.5048 38.1794 37.1626C32.3512 21.8942 15.1159 14.2556 -0.411773 20.0588" fill="white" fill-opacity="0.7"/>
+<path id="Tracciato_597" d="M70.1898 15.4086L48.0655 13.3528C57.9384 9.4286 65.5983 0.724365 72.3428 -7.76089L73.3967 -19.1028C61.4953 -5.9496 50.9891 9.15291 34.3517 11.6224L32.6604 11.9858L32.0663 19.1093L69.5281 22.5289L70.1898 15.4086Z" fill="white" fill-opacity="0.8"/>
+<path id="Color" d="M0 0H32C49.6731 0 64 14.3269 64 32V32C64 49.6731 49.6731 64 32 64V64C14.3269 64 0 49.6731 0 32V0Z" fill="#409BA3"/>
+<g id="cad-pillar_BW2_2">
+<g id="Raggruppa_3_2">
+<path id="Tracciato_598_2" d="M87.372 1.46611L22.0255 66.8126L17.7461 62.5332L83.0926 -2.81331L87.372 1.46611Z" fill="white" fill-opacity="0.5"/>
+</g>
+</g>
+<g id="cad-pillar_BW2_3">
+<g id="Raggruppa_3_3">
+<path id="Tracciato_598_3" d="M17.5887 -13.1354L80.9996 54.091L79.6279 55.3848L16.217 -11.8416L17.5887 -13.1354Z" fill="white" fill-opacity="0.8"/>
+</g>
+</g>
+<path id="Tracciato_596_2" d="M13.8027 31.6284C12.2075 32.2205 10.6668 32.9472 9.19729 33.8006C8.95789 33.9358 8.7279 34.084 8.49412 34.2262C8.31805 34.3349 8.13833 34.442 7.96227 34.5508C2.43171 38.0838 -0.988507 42.9922 -3.27989 49.0896L0.366311 58.9376C2.01949 52.8857 4.30596 44.2774 10.7389 40.6266C21.3684 33.2547 35.9461 35.7482 43.2998 46.1954C50.6535 56.6427 47.9975 71.0873 37.368 78.4592C35.7279 79.5966 33.9505 80.5235 32.0757 81.2161L32.0422 81.2285L32.0505 81.251L11.4516 88.8777L13.7417 95.0631L33.4055 87.7826L33.4079 87.7892L34.4543 87.4018C34.536 87.3715 34.6126 87.3356 34.693 87.3059L34.8189 87.2592C50.3835 81.3253 58.2519 64.0766 52.3962 48.7343C46.568 33.466 29.3327 25.8274 13.805 31.6305" fill="white" fill-opacity="0.7"/>
+<path id="Tracciato_597_2" d="M1.75388 -1.62258L18.4473 13.0417C8.15283 10.4152 -3.15986 12.957 -13.6032 15.8595L-21.1207 24.4174C-3.76175 20.7682 13.6137 14.7219 28.5268 22.5004L30.1088 23.2001L34.7755 17.7854L6.47331 -6.99506L1.75388 -1.62258Z" fill="white" fill-opacity="0.8"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_1175_36449" x="-90" y="-58" width="501.333" height="450" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="4" dy="4"/>
+<feGaussianBlur stdDeviation="15"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.391667 0 0 0 0 0.386771 0 0 0 0 0.386771 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1175_36449"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1175_36449" result="shape"/>
+</filter>
+<clipPath id="clip0_1175_36449">
+<rect width="1920" height="8725" fill="white" transform="translate(-306 -1232)"/>
+</clipPath>
+<clipPath id="clip1_1175_36449">
+<rect width="64" height="64" fill="white"/>
+</clipPath>
+</defs>
+</svg>

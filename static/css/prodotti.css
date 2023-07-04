@@ -23,6 +23,38 @@
     font-weight: 400;
 }
 
+.gradient-civil-text {
+    background-color: #67a237;
+    background-image: linear-gradient(90.14deg, #67A237 0.13%, #409BA3 99.86%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+
+.intro-title {
+    padding-top: 7.5rem;
+    background-color: #F9F9F9;
+}
+
+.primari-cards {
+    background-color: #F9F9F9;
+}
+
+.primari-cards .card {
+    border: none;
+    border-radius: 1.5rem;
+    background-color: white;
+    box-shadow: 4px 4px 30px 0px rgba(67, 67, 67, 0.15);
+    height: 100%;
+}
+
+.primari-card-icon {
+    height: 4rem;
+}
+
  /*BUTTONS*/
  .civil-button {
     position: relative; 

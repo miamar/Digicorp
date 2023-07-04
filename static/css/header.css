@@ -48,7 +48,10 @@ header {
     color: white;
 }
 
-.nav-link.active, .navbar:hover .nav-link.active {
+.nav-link.active, 
+.navbar:hover .nav-link.active, 
+.navbar.navbar-focused .nav-link.active,
+.navbar.navbar.navbar-scrolled .nav-link.active {
     color: #BFBFBF;
 }
 
@@ -75,6 +78,8 @@ header {
 
 .nav-link.active .nav-content .item-icon path, 
 .navbar:hover .nav-link.active .nav-content .item-icon path,
+.navbar.navbar-focused .nav-link.active .nav-content .item-icon path,
+.navbar.navbar.navbar-scrolled .nav-link.active .nav-content .item-icon path,
 .container.responsive .nav-link.active .nav-content .item-icon path {
     fill: #BFBFBF;
 }
