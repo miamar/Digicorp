@@ -27,7 +27,7 @@ header {
 }
 
 .navbar {
-    /*height: 5.5rem;*/
+    flex-wrap: unset;
     background: rgba(11, 11, 12, 0.40);
     position: fixed;
     width: 100%;
@@ -52,7 +52,7 @@ header {
     color: #BFBFBF;
 }
 
-.nav-link:hover, .nav-link:focus, .language .dropdown-toggle:hover {
+.nav-link:hover, .nav-link:focus, .language .dropdown-toggle:hover, .container.responsive .nav-link:focus {
     color: #E73C14;
 }
 
@@ -73,7 +73,9 @@ header {
     fill: #E73C14;
 }
 
-.nav-link.active .nav-content .item-icon path, .navbar:hover .nav-link.active .nav-content .item-icon path {
+.nav-link.active .nav-content .item-icon path, 
+.navbar:hover .nav-link.active .nav-content .item-icon path,
+.container.responsive .nav-link.active .nav-content .item-icon path {
     fill: #BFBFBF;
 }
 
@@ -96,18 +98,17 @@ label::after {
     transition: all 0.2s ease 0.2s;
 }
 
-.navbar-collapse {
-    display: flex;
-    justify-content: center;
-  }
+a.hamburger-icon {
+  color: white;
+}
 
-  .navbar-toggler {
-    border: none;
-    background-color: transparent;
-  }
+a.hamburger-icon:hover, .navbar:hover a.hamburger-icon {
+  color: black;
+}
 
-  .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+.hamburger-icon {
+  display: none;
 }
 
 label input {
@@ -270,13 +271,15 @@ label[data-state="open"] {
   .navbar.navbar-focused .language .dropdown-toggle,
   .navbar.navbar-scrolled .nav-link,
   .navbar.navbar-scrolled label i,
-  .navbar.navbar-scrolled .language .dropdown-toggle {
+  .navbar.navbar-scrolled .language .dropdown-toggle,
+  .container.responsive .nav-link {
     color: #212121;
   }
 
   .navbar:hover .nav-link .nav-content .item-icon path, 
   .navbar.navbar-focused .nav-link .nav-content .item-icon path, 
-  .navbar.navbar-scrolled .nav-link .nav-content .item-icon path{
+  .navbar.navbar-scrolled .nav-link .nav-content .item-icon path,
+  .container.responsive .item-icon path {
     fill: #212121;
   }
 
@@ -288,7 +291,8 @@ label[data-state="open"] {
 
    .navbar:hover .nav-link:hover .nav-content .item-icon path, 
    .navbar.navbar-focused .nav-link:hover .nav-content .item-icon path, 
-   .navbar.navbar-scrolled .nav-link:hover .nav-content .item-icon path {
+   .navbar.navbar-scrolled .nav-link:hover .nav-content .item-icon path,
+   .container.responsive .nav-link:hover .item-icon path {
     fill: #E73C14;
   }
 
@@ -297,6 +301,39 @@ label[data-state="open"] {
   .navbar.navbar-scrolled .navbar-brand{
     background-image: url(/static/img/loghi/logo-rosso-nero.png);
   }
+
+
+  @media all and (max-width: 1200px) {
+    .container {
+      height: auto;
+      
+    }
+    .container.responsive {position: relative;}
+    .hamburger-icon {
+    display: block;
+  }
+
+  .container.responsive #app, .container.responsive .language.dropdown{
+    display: none;
+  }
+
+  ul.nav {
+    display: none;
+  }
+
+  .container.responsive ul.nav {
+    position: absolute;
+    display: block;
+    text-align: left;
+    left: 0%;
+    top: 120%;
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    background-color: white;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+  }
+}
 
 
   @media all and (max-width: 768px) {

@@ -40,7 +40,6 @@ function myFunction() {
   }
 }
 
-
 $(document).ready(function() {
 $(".navbar .nav-link").focus(function() {
   $(".navbar").addClass("navbar-focused");

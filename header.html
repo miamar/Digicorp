@@ -71,8 +71,11 @@
     background-color: white;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
       }
-
+  
+  
   }
+
+
     </style>
    
 
@@ -91,7 +94,7 @@
                           <a class="nav-link active" href="#" id="dropdownCivilDesign" role="button" @click="toggleDropdown('dropdownCivilDesign')" @mouseleave="closeDropdown">
                             <div class="nav-content">CIVIL Design<img class="svg item-icon" src="/static/img/arrows/arrow-down.svg"></div>
                           </a>
-                          <div class="dropdown-menu w-100" :class="{ show: isDropdownOpen('dropdownCivilDesign') }" aria-labelledby="dropdownCivilDesign" @mouseleave="closeDropdown">
+                          <div class="dropdown-menu panel w-100" id="dropdown-accordion" :class="{ show: isDropdownOpen('dropdownCivilDesign') }" aria-labelledby="dropdownCivilDesign" @mouseleave="closeDropdown">
                             <div class="container">
                               <div class="row my-4">
                                 <div class="col-md-12 col-lg-3 mb-4 mb-lg-0">
@@ -272,6 +275,26 @@
         </nav>
         
     </header>
+    <main>
+      <div class="hero-home">
+        <div class="container d-flex flex-column align-items-start">
+          <h1 class="mb-3 drop-in">La tua e la nostra <span class="gradient-red-text">esperienza</span> per un risultato ottimale</h1>
+          <hr class="red-line hr-animation-hero">
+          <p class="my-3 drop-in2">DIGICORP Ingegneria S.r.l. produce e vende software tecnici per il mondo della progettazione e contabilizzazione di opere civili sul territorio.</p>
+          <button class="btn primary-button mt-3 mb-5">Scopri di più</button>
+          <div class="partners d-flex align-items-center">
+            <img class="mx-5" src="/static/img/partner1.svg">
+            <img class="mx-5" src="/static/img/partner2.svg">
+            <img class="mx-5" src="/static/img/partner1.svg">
+            <img class="mx-5" src="/static/img/partner2.svg">
+            <img class="mx-5" src="/static/img/partner1.svg">
+            <img class="mx-5" src="/static/img/partner2.svg">
+            <img class="mx-5" src="/static/img/partner1.svg">
+            <img class="mx-5" src="/static/img/partner1.svg">
+          </div>
+        </div>
+      </div>
+    </main>
 
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -281,7 +304,7 @@
     <script src="/static/js/header.js"></script>
     <script src="/static/js/main.js"></script>
     <script>
-     
+
 
     </script>
   
