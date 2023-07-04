@@ -151,6 +151,12 @@ h4 {
   line-height: 2.7rem;
 }
 
+.big {
+  color: #212121;
+  font-size: 2.2rem;
+  line-height: 2.7rem;
+}
+
 .small {
   color: #212121;
   font-size: 1.4rem;
@@ -173,7 +179,7 @@ h4 {
     background-size: cover;
     background-position: center;
     width: 100%;
-  }
+}
 
   .hero-home .container {
     padding-top: 15%;
