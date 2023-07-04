@@ -195,13 +195,18 @@ label[data-state="open"] {
     height: 1.5rem;
   }
 
-  .dropdown-menu li {
-    color: #646363;
+  .dropdown-icon-proddoti {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .dropdown-menu li, .dropdown-menu a {
+    color: #646363!important;
     margin-bottom: 1rem;
   }
 
-  .dropdown-menu a:hover  .title {
-    color: #000;
+  .dropdown-menu a:hover .title, .dropdown-menu a:hover {
+    color: #000!important;
     cursor: pointer;
   }
 
@@ -210,7 +215,7 @@ label[data-state="open"] {
     margin-top: 1rem;
   }
 
-  .dropdown-menu .features  {
+  .dropdown-menu .features, .dropdown-menu .softwares  {
     margin-left: 3rem;
   }
 
