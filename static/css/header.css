@@ -240,6 +240,18 @@ label[data-state="open"] {
     line-height: 1.7rem;
   }
 
+  .dropdown-menu .recommendations .cp a span{
+    color: #CC141F;
+  }
+
+  .dropdown-menu .recommendations .cp {
+    color: #CC141F;
+  }
+
+  .dropdown-menu .recommendations .cp .arrow-right path{
+    fill: #CC141F;
+  }
+
   .dropdown-menu .recommendations a{
     text-decoration: none;
   }
