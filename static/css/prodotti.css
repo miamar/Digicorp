@@ -55,6 +55,19 @@
     height: 4rem;
 }
 
+.release {
+  background-color: #F9F9F9;
+}
+
+.release .container {
+  padding-bottom: 7.5rem;
+}
+
+.release iframe{
+  padding-right: 3rem;
+}
+
+
  /*BUTTONS*/
  .civil-button {
     position: relative; 
@@ -94,9 +107,24 @@
     visibility: none;
   }
 
+  @media all and (max-width: 1200px) {
+    .release iframe {
+      padding-right: 1rem;
+    }
+  }
+
+  @media all and (max-width: 992px) {
+    .release iframe{
+      padding-right: unset;
+    }
+  }
+
   @media all and (max-width: 768px) {
     .hero-primari .container {
       padding-right: 0;
+    }
+    .release .container {
+      padding-bottom: 4.5rem;
     }
   }
   

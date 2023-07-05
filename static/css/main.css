@@ -120,7 +120,7 @@ label::after {
   display: none!important;
 }
 
-/*TESTO*/
+/* TESTO */
 h1{
   font-size: 4.3rem;
   font-weight: 700;
@@ -224,7 +224,7 @@ h4 {
     line-height: 2.1rem;
   }
 
-  .red-line, .light-line {
+  .red-line, .light-line,.purple-line  {
     width: 20%;
     height: 0.5rem;
     background: #E73C14;
@@ -234,7 +234,11 @@ h4 {
 
  .light-line {
     background: #F9F9F9;
-  }
+ }
+
+ .purple-line {
+  background: #962D79;
+}
 
 .partners {
   animation: logo-slide 15s linear infinite; 
