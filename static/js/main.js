@@ -45,3 +45,28 @@ elements.forEach(element => {
     ease: "none",
   });
 });
+
+// Get all the columns within the .soluzioni container
+const columns = document.querySelectorAll('.soluzioni .col-12, .soluzioni .col-lg-6');
+    
+// Function to calculate the height of the tallest column
+const setEqualHeight = () => {
+  let maxHeight = 0;
+
+  // Loop through each column and find the tallest one
+  columns.forEach((column) => {
+    const columnHeight = column.offsetHeight;
+    if (columnHeight > maxHeight) {
+      maxHeight = columnHeight;
+    }
+  });
+
+  // Set the height of all columns to the height of the tallest column
+  columns.forEach((column) => {
+    column.style.height = `${maxHeight}px`;
+  });
+};
+
+// Call the setEqualHeight function initially and on window resize
+window.addEventListener('load', setEqualHeight);
+window.addEventListener('resize', setEqualHeight);

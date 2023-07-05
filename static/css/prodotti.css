@@ -149,6 +149,24 @@
   background-color: #bfbfbf74;
 }
 
+ /* Modal soluzioni */
+.soluzioni .modal {
+  --bs-modal-width: 75%;
+  padding: 0;
+}
+
+.soluzioni .modal-header {
+  background-image: url(/static/img/bg-covers/hero-modal.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.soluzioni .modal-header h2, .soluzioni .modal-header p {
+  color: #F9F9F9;
+}
+
+
  /*BUTTONS*/
  .civil-button {
     position: relative; 
