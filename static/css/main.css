@@ -169,10 +169,25 @@ h4 {
   line-height: 1.5rem;
 }
 
+/* Breadcrumbs */
+.breadcrumb-item a {
+  color: #BFBFBF;
+}
 
+.breadcrumb-item.active a {
+  color: #212121;
+}
 
-/*HOME*/
-/*Hero*/
+.breadcrumb-item+.breadcrumb-item::before {
+  color: #BFBFBF;
+}
+
+.breadcrumb-item:hover a {
+  color: #E73C14;
+}
+
+/* HOME */
+/* Hero */
 .hero-home {
     height: 100%;
     background-image: url(/static/img/bg-covers/hero-home-bg.png);
@@ -235,7 +250,7 @@ h4 {
     }
   }
 
-/*Softwares showwcase*/
+/* Softwares showwcase */
 .softwares-home {
   height: 100%;
  }
@@ -363,7 +378,7 @@ h4 {
   }
 }
 
-  /*BUTTONS*/
+  /* BUTTONS */
   .primary-button {
     position: relative; 
     padding: 10px 20px;
@@ -421,7 +436,7 @@ h4 {
     border: 1px solid white;
   }
 
-  /*ANIMATION*/
+  /* ANIMATIONS */
   .drop-in {
     animation: drop-in 1s ease 200ms backwards;
   }
