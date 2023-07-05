@@ -34,6 +34,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     
     <style>
+      
     </style>
 
   </head>
@@ -510,7 +511,8 @@
 
         <div class="soluzioni" >
           <div class="container custom-container" id="tabs">
-            <nav>
+            <div class="nav-container">
+            <nav class="nav-scrollable">
               <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
                 <a class="nav-item nav-link active d-flex flex-column align-items-center" id="nav-strade-tab" data-toggle="tab" href="#nav-strade" role="tab" aria-controls="nav-strade" aria-selected="true">
                   <img class="svg soluzioni-icon mb-3" src="/static/img/strade-icon.svg"> 
@@ -537,6 +539,7 @@
                   <p class="xsmall">Altro</p>
                 </a>
               </div>
+            </div>
             </nav>
 
             <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
