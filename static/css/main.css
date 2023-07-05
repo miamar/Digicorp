@@ -54,6 +54,10 @@ a.link-arrow:hover {
   background-position: center;
 }
 
+.yt iframe {
+  padding-left: 3rem;
+}
+
 .contact-left {
   background-image: url(/static/img/bg-covers/contact-light-cover.png);
   background-size: cover;
@@ -350,12 +354,21 @@ h4 {
     padding-right: 0;
     padding-bottom: 3rem;
   }
+
+  .yt iframe {
+    padding-left: 1rem;
+  }
+  
 }
 
 @media all and (max-width: 992px) {
   .servizi-home h2, .servizi-home .small, .softwares-home h2, .softwares-home p {
     width: 100%;
   }
+  .yt iframe {
+    padding-left: unset;
+  }
+  
 }
 
 @media all and (max-width: 992px) and (min-width: 768px){
