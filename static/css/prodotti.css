@@ -113,6 +113,11 @@
   background-color: #F2F2F2;
 }
 
+.soluzioni .arrow-right {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
 .soluzioni .arrow-right path {
   fill: #962D79;
 }
@@ -159,13 +164,32 @@
   background-image: url(/static/img/bg-covers/hero-modal.png);
   background-size: cover;
   background-position: center;
-  height: 100%;
+  width: 100%;
 }
 
 .soluzioni .modal-header h2, .soluzioni .modal-header p {
   color: #F9F9F9;
 }
 
+.soluzioni .modal-paragraph h5 {
+  color: #67A237;
+}
+
+.soluzioni .modal-paragraph .bullet-circle-icon {
+  width: 1.5rem;
+  margin-right: 1rem;
+}
+
+.soluzioni .modal-link {
+  background-color: #F9F9F9;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.soluzioni .modal-link .arrow-right {
+  width: 1.5rem;
+  height: 1.5rem;
+}
 
  /*BUTTONS*/
  .civil-button {
@@ -243,6 +267,10 @@
     }
     .release .container {
       padding-bottom: 4.5rem;
+    }
+
+    .soluzioni .modal-link {
+      margin-left: unset;
     }
 
   }
