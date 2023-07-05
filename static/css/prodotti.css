@@ -48,7 +48,6 @@
     border-radius: 1.5rem;
     background-color: white;
     box-shadow: 4px 4px 30px 0px rgba(67, 67, 67, 0.15);
-    height: 100%;
 }
 
 .primari-card-icon {
@@ -67,6 +66,43 @@
   padding-right: 3rem;
 }
 
+ /* Soluzionni CIVIL Design */
+.soluzioni .nav-tabs .nav-item.show .nav-link, .soluzioni .nav-tabs .nav-link.active {
+  color: #962D79;
+  background-color: transparent;
+  border-color: transparent transparent #f3f3f3;
+  border-bottom: 4px solid !important;
+  font-weight: 600;
+}
+
+.soluzioni .nav-tabs .nav-item.show .nav-link .xsmall, .soluzioni .nav-tabs .nav-link.active .xsmall {
+  color: #962D79;
+  font-weight: 600;
+}
+
+.soluzioni .nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+  color: #BFBFBF;
+}
+
+.soluzioni .nav-tabs .nav-link .xsmall {
+  color: #BFBFBF;
+}
+.soluzioni .nav-item .soluzioni-icon {
+  height: 2.5rem;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
+.soluzioni .nav-tabs .nav-link .soluzioni-icon path {
+  fill: #BFBFBF;
+}
+
+.soluzioni .nav-tabs .nav-item.show .nav-link .soluzioni-icon path, .soluzioni .nav-tabs .nav-link.active .soluzioni-icon path {
+  fill: #962D79;
+}
 
  /*BUTTONS*/
  .civil-button {
@@ -111,6 +147,14 @@
     .release iframe {
       padding-right: 1rem;
     }
+
+    .soluzioni .nav-tabs .nav-link .soluzioni-icon {
+      display: none;
+    }
+
+    .soluzioni .nav {
+      flex-wrap: nowrap;
+    }
   }
 
   @media all and (max-width: 992px) {
@@ -126,6 +170,11 @@
     .release .container {
       padding-bottom: 4.5rem;
     }
+
+    .soluzioni .nav {
+      flex-wrap: wrap;
+    }
+
   }
   
   @media all and (max-width: 576px) {

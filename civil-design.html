@@ -13,21 +13,27 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
+    <!-- styles CSS -->
     <link rel="stylesheet" href="/static/css/fonts.css"/>
     <link rel="stylesheet" href="/static/css/main.css"/>
     <link rel="stylesheet" href="/static/css/prodotti.css"/>
     <link rel="stylesheet" href="/static/css/header.css"/>
     <link rel="stylesheet" href="/static/css/footer.css"/>
 
-    
+    <!-- Bootstrap's JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Vue JS -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <!--gsap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     
     <style>
-      
     </style>
 
   </head>
@@ -465,19 +471,19 @@
             <div class="container custom-container">
                 <div class="row d-flex align-items-stretch">
                     <div class="col-12 col-lg-4 mt-4 mt-lg-0">
-                        <div class="card d-flex flex-column align-items-start p-4">
+                        <div class="card d-flex flex-column align-items-start p-4 h-100">
                             <img class="primari-card-icon mb-4" src="/static/img/civil-card-icon-b.svg">
                             <p class="small">DIGICORP CIVIL Design è un applicativo di Autodesk AutoCAD e Bricsys BricsCAD per la progettazione e contabilizzazione di opere civili sul territorio: indispensabile per i tecnici.</p>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 mt-4 mt-lg-0">
-                        <div class="card d-flex flex-column align-items-start p-4">
+                        <div class="card d-flex flex-column align-items-start p-4 h-100">
                             <img class="primari-card-icon mb-4" src="/static/img/civil-card-icon-p.svg">
                             <p class="small">Le tipologie di interventi sul territorio sono molteplici: CIVIL Design offre diverse configurazioni, chiamate "soluzioni", tagliate su misura per affrontare diversi temi di progettazione.</p>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 mt-4 mt-lg-0">
-                        <div class="card d-flex flex-column align-items-start p-4">
+                        <div class="card d-flex flex-column align-items-start p-4 h-100">
                             <img class="primari-card-icon mb-4" src="/static/img/civil-card-icon-g.svg">
                             <p class="small">Puoi avere a disposizione le funzioni di CIVIL Design grazie al software CAD&Pillar che ha già integrato il motore OEM compatibile con AutoCAD 2020.</p>
                         </div>
@@ -502,9 +508,57 @@
           </div>
         </div>
 
-        <div class="soluzioni">
-          <div class="container">
-            
+        <div class="soluzioni" >
+          <div class="container custom-container" id="tabs">
+            <nav>
+              <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active d-flex flex-column align-items-center" id="nav-strade-tab" data-toggle="tab" href="#nav-strade" role="tab" aria-controls="nav-strade" aria-selected="true">
+                  <img class="svg soluzioni-icon mb-3" src="/static/img/strade-icon.svg"> 
+                  <p class="xsmall">Strade e ferrovie</p>
+                </a>
+                <a class="nav-item nav-link d-flex flex-column align-items-center" id="nav-topografia-tab" data-toggle="tab" href="#nav-topografia" role="tab" aria-controls="nav-topografia" aria-selected="false">
+                  <img class="svg soluzioni-icon mb-3" src="/static/img/strade-icon.svg"> 
+                  <p class="xsmall">Topografia e catasto</p>
+                </a>
+                <a class="nav-item nav-link d-flex flex-column align-items-center" id="nav-idrauliche-tab" data-toggle="tab" href="#nav-idrauliche" role="tab" aria-controls="nav-idrauliche" aria-selected="false">
+                  <img class="svg soluzioni-icon mb-3" src="/static/img/strade-icon.svg"> 
+                  <p class="xsmall"> Opere idrauliche</p>
+                </a>
+                <a class="nav-item nav-link d-flex flex-column align-items-center" id="nav-cave-tab" data-toggle="tab" href="#nav-cave" role="tab" aria-controls="nav-cave" aria-selected="false">
+                  <img class="svg soluzioni-icon mb-3" src="/static/img/strade-icon.svg"> 
+                  <p class="xsmall">TCave e Discariche</p>
+                </a>
+                <a class="nav-item nav-link d-flex flex-column align-items-center" id="nav-raster-tab" data-toggle="tab" href="#nav-raster" role="tab" aria-controls="nav-raster" aria-selected="false">
+                  <img class="svg soluzioni-icon mb-3" src="/static/img/strade-icon.svg"> 
+                  <p class="xsmall">Cartografia e Raster</p>
+                </a>
+                <a class="nav-item nav-link d-flex flex-column align-items-center justify-content-center" id="nav-altro-tab" data-toggle="tab" href="#nav-altro" role="tab" aria-controls="nav-altro" aria-selected="false">
+                  <img class="svg soluzioni-icon mb-3" src="/static/img/strade-icon.svg"> 
+                  <p class="xsmall">Altro</p>
+                </a>
+              </div>
+            </nav>
+
+            <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-strade" role="tabpanel" aria-labelledby="nav-strade-tab">
+                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+              </div>
+              <div class="tab-pane fade" id="nav-topografia" role="tabpanel" aria-labelledby="nav-topografia-tab">
+                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+              </div>
+              <div class="tab-pane fade" id="nav-idrauliche" role="tabpanel" aria-labelledby="nav-idrauliche-tab">
+                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+              </div>
+              <div class="tab-pane fade" id="nav-cave" role="tabpanel" aria-labelledby="nav-cave-tab">
+                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+              </div>
+              <div class="tab-pane fade" id="nav-raster" role="tabpanel" aria-labelledby="nav-raster-tab">
+                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+              </div>
+              <div class="tab-pane fade" id="nav-altro" role="tabpanel" aria-labelledby="nav-altro-tab">
+                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+              </div>
+            </div>
           </div>
         </div>
 
@@ -627,6 +681,10 @@
   
     <script src="/static/js/header.js"></script>
     <script src="/static/js/main.js"></script>
+
+    <script>
+      
+    </script>
     
   </body>
 </html>
