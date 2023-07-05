@@ -105,7 +105,23 @@
   fill: #962D79;
 }
 
+.soluzioni .soluzione {
+  background-color: #F9F9F9;
+}
+
+.soluzioni .soluzione-2 {
+  background-color: #F2F2F2;
+}
+
+.soluzioni .arrow-right path {
+  fill: #962D79;
+}
+
 /* For WebKit-based browsers (e.g., Chrome, Safari) */
+.nav-container::-webkit-scrollbar { 
+  border: none;
+}
+
 .nav-container::-webkit-scrollbar-thumb { 
   border-radius: 20px;
 }
@@ -130,7 +146,7 @@
 }
 
 .nav-container::-webkit-scrollbar-thumb:hover {
-  background-color: #bfbfbfbc;
+  background-color: #bfbfbf74;
 }
 
  /*BUTTONS*/
