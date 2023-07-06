@@ -213,6 +213,33 @@
   border: none;
 }
 
+ /* Requesti di sistema - prodotti primari */
+ .requesti-primari .nav-tabs .nav-item.show .nav-link, .requesti-primari .nav-tabs .nav-link.active {
+  color: white;
+  background-color: transparent;
+  border-color: transparent transparent white;
+  border-bottom: 4px solid !important;
+  font-weight: 600;
+}
+
+.requesti-primari.nav-tabs .nav-item.show .nav-link h4, .requesti-primari .nav-tabs .nav-link.active h4 {
+  color: white;
+  font-weight: 600;
+}
+
+.requesti-primari .nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+  color: #FFFFFF80;
+}
+
+.requesti-primari .nav-tabs .nav-link h4 {
+  color: #FFFFFF80;
+  font-weight: 600;
+}
+
+
  /*BUTTONS*/
  .civil-button {
     position: relative; 
