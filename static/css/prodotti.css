@@ -242,10 +242,30 @@
   font-weight: 600;
 }
 
+.requesti-primari .xsmall {
+  color: white;
+}
+
 .requesti-primari .nav-tabs {
   --bs-nav-tabs-border-color: #FFFFFF80;
 }
 
+.requesti-primari .tab-content ul li {
+  list-style-type: circle;
+}
+
+/*
+.requesti-primari .tab-content ul li::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+*/
 
  /*BUTTONS*/
  .civil-button {

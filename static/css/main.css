@@ -64,11 +64,20 @@ a.link-arrow:hover {
   background-position: center;
 }
 
-.contact-red .row{
+.contact-azzuro .contact-right {
+  background-image: url(/static/img/bg-covers/contact-azzuro-cover.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-red .row, .contact-azzuro .row {
   margin-right: 0;
 }
 
-.contact-red .col-lg-6, .contact-red .col-12 {
+.contact-red .col-lg-6, 
+.contact-red .col-12, 
+.contact-azzuro .col-lg-6, 
+.contact-azzuro .col-12 {
   padding: 7rem 10rem;
 }
 
@@ -356,7 +365,10 @@ h6 {
 }
 
 @media all and (max-width: 1400px) {
-  .contact-red .col-lg-6, .contact-red .col-12 {
+  .contact-red .col-lg-6, 
+  .contact-red .col-12,
+  .contact-azzuro .col-lg-6, 
+  .contact-azzuro .col-12 {
     padding: 6rem;
   }
 }
@@ -380,7 +392,7 @@ h6 {
 }
 
 @media all and (max-width: 992px) and (min-width: 768px){
-  .contact-red form {
+  .contact-red form, .contact-azzuro form {
     width: 70%!important;
   }
 }
@@ -442,7 +454,7 @@ h6 {
     visibility: none;
   }
 
-  .btn-white-red {
+  .btn-white-red, .btn-white-azzuro {
     position: relative; 
     padding: 10px 20px;
     background: white;
@@ -454,8 +466,12 @@ h6 {
     line-height: 1.75813rem;
     letter-spacing: 0.1rem;
   }
+  
+  .btn-white-azzuro {
+    color: #409BA3;
+  }
 
-  .btn-white-red:hover {
+  .btn-white-red:hover, .btn-white-azzuro:hover {
     background: transparent;
     color: white;
     border: 1px solid white;
