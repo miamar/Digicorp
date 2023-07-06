@@ -125,10 +125,16 @@
 /* For WebKit-based browsers (e.g., Chrome, Safari) */
 .nav-container::-webkit-scrollbar { 
   border: none;
+
 }
 
-.nav-container::-webkit-scrollbar-thumb { 
-  border-radius: 20px;
+.nav-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Set the background color */
+}
+
+.nav-container::-webkit-scrollbar-thumb {
+  background: #888; /* Set the thumb color */
+  border-radius: 20px; /* Set the thumb border radius */
 }
 
 .nav-container::-webkit-scrollbar-thumb:hover {
