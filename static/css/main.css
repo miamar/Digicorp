@@ -52,6 +52,7 @@ a.link-arrow:hover {
   padding-left: 3rem;
 }
 
+/* Contact section */
 .contact-left {
   background-image: url(/static/img/bg-covers/contact-light-cover.png);
   background-size: cover;
@@ -79,6 +80,39 @@ a.link-arrow:hover {
 .contact-azzuro .col-lg-6, 
 .contact-azzuro .col-12 {
   padding: 7rem 10rem;
+}
+
+.contact-red .contatto .contatto-icon path {
+  fill: #E73C14;
+}
+
+.contact-red .orario .orario-icon path {
+  stroke: #E73C14;
+}
+
+.contact-red .contatto .color {
+  color: #E73C14;
+}
+
+.contact-azzuro .orario .orario-icon path {
+  stroke: #409BA3;
+}
+
+.contact-azzuro .contatto .color {
+  color: #409BA3;
+}
+
+.contact-azzuro .contatto .contatto-icon path {
+  fill: #409BA3;
+}
+
+.orario .small, .contatto .small {
+  color: #646363;
+}
+
+.orario .small.font-weight-bold, 
+.contatto .small.font-weight-bold {
+  font-weight: 600;
 }
 
 form label {
