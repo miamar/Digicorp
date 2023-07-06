@@ -97,6 +97,10 @@
   color: #BFBFBF;
 }
 
+.soluzioni .nav-tabs {
+  --bs-nav-tabs-border-color: #BFBFBF;
+}
+
 .soluzioni .nav-tabs .nav-link .xsmall {
   color: #BFBFBF;
   font-weight: 600;
@@ -231,12 +235,15 @@
   border: 1px solid transparent;
   border-top-left-radius: .25rem;
   border-top-right-radius: .25rem;
-  color: #FFFFFF80;
 }
 
 .requesti-primari .nav-tabs .nav-link h4 {
   color: #FFFFFF80;
   font-weight: 600;
+}
+
+.requesti-primari .nav-tabs {
+  --bs-nav-tabs-border-color: #FFFFFF80;
 }
 
 
@@ -334,6 +341,13 @@
     }
     .nav-tabs .nav-item {
       flex-basis: 50%; /* Adjust this value as needed */
+    }
+    
+  }
+
+  @media all and (max-width: 430px) {
+    .requesti-primari .nav-tabs {
+      --bs-nav-tabs-border-color: #ffffff00;
     }
   }
 
