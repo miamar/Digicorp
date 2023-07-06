@@ -32,12 +32,6 @@ a.link-arrow:hover {
 
 .light-text {
   color: #646363;
-}
-
-.img-sm-text img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
 } 
 
 .yt h3, .yt p {
@@ -127,6 +121,12 @@ label::after {
 .img-full {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+.img-full-width {
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -362,9 +362,9 @@ h6 {
 }
 
 @media all and (max-width: 1200px) {
-  .image-sm-text img {
+  .img-sm-text img, .img-md-text img {
     padding-right: 0;
-    padding-bottom: 3rem;
+    padding-top: 3rem;
   }
 
   .yt iframe {

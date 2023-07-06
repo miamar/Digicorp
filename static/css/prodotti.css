@@ -146,7 +146,7 @@
   border-radius: 20px; 
 }
 
-.nav-container::-webkit-scrollbar-thumb:hover {
+.nav-container::-webkit-scrollbar-thumb:hover, .nav-container::-webkit-scrollbar-thumb:focus  {
   background-color: #bfbfbf74;
 }
 
@@ -185,6 +185,22 @@
 .soluzioni .modal-link .arrow-right {
   width: 1.5rem;
   height: 1.5rem;
+}
+
+.soluzioni .modal .close {
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
 }
 
  /*BUTTONS*/
