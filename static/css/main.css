@@ -362,10 +362,6 @@ h6 {
 }
 
 @media all and (max-width: 1200px) {
-  .img-sm-text img, .img-md-text img {
-    padding-right: 0;
-    padding-top: 3rem;
-  }
 
   .yt iframe {
     padding-left: 1rem;
