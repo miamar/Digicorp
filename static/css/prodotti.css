@@ -218,20 +218,21 @@
 }
 
  /* Requesti di sistema - prodotti primari */
- .requesti-primari .nav-tabs .nav-item.show .nav-link, .requesti-primari .nav-tabs .nav-link.active {
-  color: white;
+ .requesti-primari .nav-tabs .nav-item.show .nav-link, 
+ .requesti-primari .nav-tabs .nav-link.active {
   background-color: transparent;
   border-color: transparent transparent white;
-  border-bottom: 4px solid !important;
-  font-weight: 600;
+  border-bottom: 4px solid white!important;
 }
 
-.requesti-primari.nav-tabs .nav-item.show .nav-link h4, .requesti-primari .nav-tabs .nav-link.active h4 {
+.requesti-primari.nav-tabs .nav-item.show .nav-link h4, 
+.requesti-primari .nav-tabs .nav-link.active h4 {
   color: white;
   font-weight: 600;
 }
 
-.requesti-primari .nav-tabs .nav-link {
+.requesti-primari .nav-tabs .nav-link,
+.faq .nav-tabs .nav-link {
   border: 1px solid transparent;
   border-top-left-radius: .25rem;
   border-top-right-radius: .25rem;
@@ -266,6 +267,30 @@
   vertical-align: middle;
 }
 */
+
+ /* FAQ - prodotti primari */
+ .faq .nav-tabs .nav-item.show .nav-link, .faq .nav-tabs .nav-link.active {
+  background-color: transparent;
+  border-color: transparent transparent transparent;
+  border-bottom: 8px solid #409BA3!important;
+  font-weight: 600;
+}
+
+.faq .nav-tabs .nav-item.show.nav-link h4, 
+.faq .nav-tabs .nav-link.active h4, 
+.faq .nav-tabs .nav-link h4 {
+  color: #212121;
+  font-weight: 600;
+}
+
+.faq .nav-tabs .nav-link {
+  margin-top: 1rem;
+}
+
+.faq .nav-tabs {
+  --bs-nav-tabs-border-color: #ffffff00;
+}
+
 
  /*BUTTONS*/
  .civil-button {
