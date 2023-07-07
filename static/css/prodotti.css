@@ -162,6 +162,10 @@
   fill: #962D79;
 }
 
+.soluzioni .tab-content h3 {
+  font-weight: 500;
+}
+
 /* For WebKit-based browsers (e.g., Chrome, Safari) */
 .nav-container::-webkit-scrollbar { 
   border: none;
