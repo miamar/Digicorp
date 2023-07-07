@@ -288,15 +288,15 @@
   --bs-nav-tabs-border-color: transparent;
 }
 
-.moduli .specifiche .nav.nav-tabs {
+.moduli .specifiche .nav.nav-tabs .nav-item {
   border: 1px solid #F2F2F2;
   border-radius: 1rem 0rem 0rem 1rem;
+  width: 100%;
 }
 
-.moduli .specifiche .nav-tabs .nav-item.nav-link,
-.moduli .specifiche .nav-tabs .nav-link.active {
-  border-bottom: 1px solid #F2F2F2;
-  width: 100%;
+.moduli .specifiche .nav-tabs .nav-item .nav-link.active {
+  border: 1px solid #F2F2F2;
+  border-radius: 1rem 0rem 0rem 1rem;
 }
 
 .moduli .specifiche .bullet-circle-icon path  {
