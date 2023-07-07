@@ -486,7 +486,6 @@ h6 {
   .primary-button:hover {
     background: white;
     border: 2px solid;
-    border-color: linear-gradient(269deg, #E73C14 0%, #9A0B09 100%);
     color: #B71111;
   }
 

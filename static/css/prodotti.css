@@ -1,6 +1,5 @@
 .hero-primari {
     height: 100%;
-    background-image: url(/static/img/bg-covers/hero-CIVIL.png);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -313,7 +312,7 @@
 
 
  /*BUTTONS*/
- .civil-button {
+ .civil-button, .cad-button {
     position: relative; 
     padding: 10px 20px;
     background: linear-gradient(90.14deg, #67A237 0.13%, #409BA3 99.86%);
@@ -326,8 +325,12 @@
     letter-spacing: 0.1rem;
     border: 2px solid transparent;
   }
+
+  .cad-button {
+    background: linear-gradient(74.59deg, #CD2127 0%, #FEC13B 100%);
+  }
   
-  .civil-button::before {
+  .civil-button::before, .cad-button::before {
     content: "";
     position: absolute;
     left: 0;
@@ -340,14 +343,17 @@
     opacity: 0.2;
   }
 
-  .civil-button:hover {
+  .civil-button:hover, .cad-button:hover {
     background: white;
     border: 2px solid;
-    border-color: linear-gradient(90.14deg, #67A237 0.13%, #409BA3 99.86%);
     color: #67a237;
   }
 
-  .civil-button:hover::before {
+  .cad-button:hover {
+    color: #CD2127;
+  }
+
+  .civil-button:hover::before, .cad-button:hover::before {
     visibility: none;
   }
 

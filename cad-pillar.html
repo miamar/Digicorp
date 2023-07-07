@@ -22,9 +22,8 @@
 
     <!-- Bootstrap's JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
     <!-- Vue JS -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -446,11 +445,11 @@
 
     <main>
 
-        <div class="hero-primari">
+        <div class="hero-primari" style="background-image: url(/static/img/bg-covers/hero-CAD.png);">
             <div class="container d-flex flex-column align-items-start">
-                <img class="drop-in mb-3" src="/static/img/loghi/CD-full-color2.png">
-                <p class="big my-3 drop-in2">DIGICORP Ingegneria S.r.l. produce e vende software tecnici per il mondo della progettazione e contabilizzazione di opere civili sul territorio.</p>
-                <button class="btn civil-button mt-3 mb-5">Prova subito</button>
+                <img class="drop-in mb-3" src="/static/img/loghi/CP-full-color2.png">
+                <p class="big my-3 drop-in2">Software dedicato al rilievo topografico, alla progettazione e computi di qualsiasi intervento sul territorio. </p>
+                <button class="btn cad-button mt-3 mb-5">Prova subito</button>
             </div>
         </div>
 
@@ -460,7 +459,7 @@
             <ol class="breadcrumb my-4">
               <li class="breadcrumb-item small"><a href="#">Home</a></li>
               <li class="breadcrumb-item small"><a href="#">Prodotti</a></li>
-              <li class="breadcrumb-item active small" aria-current="page">CIVIL Design</li>
+              <li class="breadcrumb-item active small" aria-current="page">CAD&Pillar</li>
             </ol>
           </nav>
         </div>
@@ -509,19 +508,167 @@
           </div>
         </div>
 
+        <div class="soluzioni">
+          <div class="container custom-container">
+            <div class="nav-container">
+            <nav class="nav-scrollable">
+              <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active d-flex flex-column align-items-center" id="nav-strade-tab" data-bs-toggle="tab" href="#nav-strade" role="tab" aria-controls="nav-strade" aria-selected="true">
+                  <img class="svg soluzioni-icon mb-3" src="/static/svg/strade-icon.svg"> 
+                  <p class="xsmall">Strade e ferrovie</p>
+                </a>
+                <a class="nav-item nav-link d-flex flex-column align-items-center" id="nav-topografia-tab" data-bs-toggle="tab" href="#nav-topografia" role="tab" aria-controls="nav-topografia" aria-selected="false">
+                  <img class="svg soluzioni-icon mb-3" src="/static/svg/topografia-icon.svg"> 
+                  <p class="xsmall">Topografia e catasto</p>
+                </a>
+                <a class="nav-item nav-link d-flex flex-column align-items-center" id="nav-idrauliche-tab" data-bs-toggle="tab" href="#nav-idrauliche" role="tab" aria-controls="nav-idrauliche" aria-selected="false">
+                  <img class="svg soluzioni-icon mb-3" src="/static/svg/idrauliche-icon.svg"> 
+                  <p class="xsmall"> Opere idrauliche</p>
+                </a>
+                <a class="nav-item nav-link d-flex flex-column align-items-center" id="nav-cave-tab" data-bs-toggle="tab" href="#nav-cave" role="tab" aria-controls="nav-cave" aria-selected="false">
+                  <img class="svg soluzioni-icon mb-3" src="/static/svg/cave-icon.svg"> 
+                  <p class="xsmall">Cave e Discariche</p>
+                </a>
+                <a class="nav-item nav-link d-flex flex-column align-items-center" id="nav-raster-tab" data-bs-toggle="tab" href="#nav-raster" role="tab" aria-controls="nav-raster" aria-selected="false">
+                  <img class="svg soluzioni-icon mb-3" src="/static/svg/raster-icon.svg"> 
+                  <p class="xsmall">Cartografia e Raster</p>
+                </a>
+                <a class="nav-item nav-link d-flex flex-column align-items-center justify-content-center" id="nav-altro-tab" data-bs-togglee="tab" href="#nav-altro" role="tab" aria-controls="nav-altro" aria-selected="false">
+                  <img class="svg soluzioni-icon mb-3" src="/static/svg/altro-icon.svg"> 
+                  <p class="xsmall">Altro</p>
+                </a>
+              </div>
+            </nav>
+            </div>
+
+            <div class="tab-content px-3 px-sm-0" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-strade" role="tabpanel" aria-labelledby="nav-strade-tab">
+                <div class="row mx-1">
+                  
+                  <!-- Colonna con Modal - esempio -->
+                  <div class="col-12 col-lg-6 p-5 d-flex flex-column justify-content-start soluzione">
+                    <h3>QUICK Strade Modal</h3>
+                    <p class="xsmall mt-3 mb-auto">E' la soluzione per gestire rilievi topografici qualsiasi, generare il modello digitale 3D del terreno e progettare l'opera lineare con le stesse funzionalita' della soluzione Strade e Ferrovie ma con alcune limitazioni.</p>
+                    <button type="button" class="btn d-flex justify-content-start p-0 mt-4" data-toggle="modal" data-target="#exampleModal"><img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/></button>
+                  </div>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header align-items-start">
+                          <div class="container p-5">
+                          <h2>Strade e Ferrovie</h2>
+                          <p class="xsmall w-100 w-md-75 w-lg-50 my-3">E' la soluzione più venduta e consente di progettare strade, ferrovie ed opere lineari in genere rispettando le normative di riferimento.</p>
+                          <button class="btn civil-button">Prova subito</button>
+                        </div>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container p-5 pt-0">
+                            <div class="modal-paragraph my-5">
+                              <div class="d-flex align-items-center">
+                                <img class="svg bullet-circle-icon" src="/static/svg/bullet-circle-icon.svg">
+                                <h5>Modella</h5>
+                              </div>
+                              <p class="xsmall mt-3">I tempi e le operazioni legate alle modifiche apportate al progetto sono minimizzati perché i tracciati, profili e sezioni sono dinamici e vengono aggiornati ogni qualvota ci sia una modifica. La modifica di un tracciato o profilo di progetto è intuitiva potendo agire sia direttamente sui grip degli elementi sia imputando i valoti in tabelle che modificano in tempo reale la geometria del progetto. L'interfaccia rimane quella familiare di AutoCAD cui si aggiungono strumenti ad hoc che ne rispecchiano lo stile, rendendo così molto intuitivo l'approccio al software.</p>
+                            </div>
+                            <div class="modal-paragraph my-5">
+                              <div class="d-flex align-items-center">
+                                <img class="svg bullet-circle-icon" src="/static/svg/bullet-circle-icon.svg">
+                                <h5>Modella</h5>
+                              </div>
+                              <p class="xsmall mt-3">I tempi e le operazioni legate alle modifiche apportate al progetto sono minimizzati perché i tracciati, profili e sezioni sono dinamici e vengono aggiornati ogni qualvota ci sia una modifica. La modifica di un tracciato o profilo di progetto è intuitiva potendo agire sia direttamente sui grip degli elementi sia imputando i valoti in tabelle che modificano in tempo reale la geometria del progetto. L'interfaccia rimane quella familiare di AutoCAD cui si aggiungono strumenti ad hoc che ne rispecchiano lo stile, rendendo così molto intuitivo l'approccio al software.</p>
+                            </div>
+
+                            <div class="row d-flex align-items-center">
+                              <div class="col-12 col-md-5 d-none d-md-flex align-items-md-center h-100">
+                                <img class="w-100" src="/static/img/civil-modal-img.png">
+                              </div>
+                              <div class="col-12 col-md-5 mb-3 d-flex d-md-none h-100">
+                                <h6>Per approfondire...</h6>
+                              </div>
+                              <div class="col-12 col-md-7 d-flex flex-column justify-content-md-center h-100">
+                           
+                                  <a href="" class="modal-link mb-2 p-3 d-flex align-items-center justify-content-between w-100">
+                                    <p class="xsmall font-weight-bold">Creazione di sezioni di progetto parametriche</p>
+                                    <img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/>
+                                  </a>
+
+                                  <a href="" class="modal-link mb-2 p-3 d-flex align-items-center justify-content-between w-100">
+                                    <p class="xsmall font-weight-bold">Creazione di sezioni di progetto parametriche</p>
+                                    <img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/>
+                                  </a>
+
+                              </div>
+                            </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+
+                  <div class="col-12 col-lg-6 p-5 d-flex flex-column justify-content-start soluzione-2">
+                    <h3>QUICK Strade</h3>
+                    <p class="xsmall mt-3 mb-auto">E' la soluzione per gestire rilievi topografici qualsiasi, generare il modello digitale 3D del terreno.</p>
+                    <img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/>
+                  </div>
+                </div>
+                <div class="row mx-1">
+                  <div class="col-12 col-lg-6 p-0">
+                    <img class="img-full" src="/static/img/examples/gallery4.png">
+                  </div>
+                  <div class="col-12 col-lg-6 p-5 d-flex flex-column justify-content-start soluzione">
+                    <h3>QUICK Strade</h3>
+                    <p class="xsmall mt-3 mb-auto">E' la soluzione per gestire rilievi topografici qualsiasi, generare il modello digitale 3D del terreno e progettare l'opera lineare con le stesse funzionalita' della soluzione Strade e Ferrovie ma con alcune limitazioni.</p>
+                    <img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-topografia" role="tabpanel" aria-labelledby="nav-topografia-tab">
+                <div class="row">
+                  <div class="col-12 col-lg-6 p-5 d-flex flex-column justify-content-start soluzione">
+                    <h3>QUICK Strade</h3>
+                    <p class="xsmall mt-3 mb-auto">E' la soluzione per gestire rilievi topografici qualsiasi, generare il modello digitale 3D del terreno e progettare l'opera lineare con le stesse funzionalita' della soluzione Strade e Ferrovie ma con alcune limitazioni.</p>
+                    <img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/>
+                  </div>
+                  <div class="col-12 col-lg-6 p-0">
+                    <img class="img-full" src="/static/img/examples/gallery4.png">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-idrauliche" role="tabpanel" aria-labelledby="nav-idrauliche-tab">
+                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+              </div>
+              <div class="tab-pane fade" id="nav-cave" role="tabpanel" aria-labelledby="nav-cave-tab">
+                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+              </div>
+              <div class="tab-pane fade" id="nav-raster" role="tabpanel" aria-labelledby="nav-raster-tab">
+                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+              </div>
+              <div class="tab-pane fade" id="nav-altro" role="tabpanel" aria-labelledby="nav-altro-tab">
+                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="requesti-primari civil-gradient-background">
           <div class="container custom-container">
             <div class="row align-items-center">
-              <div class="col-12 col-lg-7 d-flex flex-column align-items-center">
+              <div class="col-12 col-lg-7">
                 <h1 class="text-center">Requesti di sistema</h1> 
                 <p class="big mt-3 text-center">I requisiti software e hardware sono gli stessi della versione full di Autodesk AutoCAD© o Bricsys BricsCAD per i sistemi operativi da essi supportati.</p>
                 <div class="nav-container mt-5">
                   <nav class="nav-scrollable">
                     <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                      <a class="nav-item nav-link active d-flex flex-column align-items-center" id="nav-first-tab" data-toggle="tab" href="#nav-first" role="tab" aria-controls="nav-first" aria-selected="true"> 
+                      <a class="nav-item nav-link active" id="nav-first-tab" data-bs-toggle="tab" href="#nav-first" role="tab" aria-controls="nav-first" aria-selected="true"> 
                         <h4 class="text-capitalize">Autodesk©</h4>
                       </a>
-                      <a class="nav-item nav-link d-flex flex-column align-items-center" id="nav-second-tab" data-toggle="tab" href="#nav-second" role="tab" aria-controls="nav-second" aria-selected="false">
+                      <a class="nav-item nav-link d-flex flex-column align-items-center" id="nav-second-tab" data-bs-toggle="tab" href="#nav-second" role="tab" aria-controls="nav-second" aria-selected="false">
                         <h4 class="text-capitalize">Bricsys BricsCAD©</h4>
                       </a>
                     </div>
@@ -546,6 +693,22 @@
           </div>
         </div>
 
+        <div class="img-md-text">
+          <div class="container custom-container">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-6 order-2 order-lg-1">
+                <img class="img-full-width pt-5 pt-lg-0" src="/static/img/cad-pacchetto.png">
+              </div>
+              <div class="col-12 col-lg-6 d-flex flex-column align-items-start mt-3 mt-lg-0 order-1 order-lg-2">
+                <h1><span class="gradient-civil-text">Non hai AutoCAD o BricsCAD?</span></h1> 
+                <hr class="purple-line hr-animation-js">
+                <p class="small mt-3">Puoi avere a disposizione le funzioni di CIVIL Design grazie al software <span class="gradient-civil-text">CAD&Pillar</span> che ha già integrato il motore OEM compatibile con AutoCAD 2020.</p>
+                <button class="btn civil-button mt-5">Scopri di più</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="yt">
             <div class="container custom-container">
               <div class="row align-items-center">
@@ -562,57 +725,70 @@
             </div>
         </div>
 
-        <div class="modeli">
+        <div class="faq">
           <div class="container custom-container">
-            <div class="nav-container">
-            <nav class="nav-scrollable">
-              <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active d-flex flex-column align-items-center" id="nav-strade-tab" data-toggle="tab" href="#nav-strade" role="tab" aria-controls="nav-strade" aria-selected="true">
-                  <img class="svg soluzioni-icon mb-3" src="/static/svg/strade-icon.svg"> 
-                  <p class="xsmall">Strade e ferrovie</p>
-                </a>
-                <a class="nav-item nav-link d-flex flex-column align-items-center" id="nav-topografia-tab" data-toggle="tab" href="#nav-topografia" role="tab" aria-controls="nav-topografia" aria-selected="false">
-                  <img class="svg soluzioni-icon mb-3" src="/static/svg/topografia-icon.svg"> 
-                  <p class="xsmall">Topografia e catasto</p>
-                </a>
-                <a class="nav-item nav-link d-flex flex-column align-items-center" id="nav-idrauliche-tab" data-toggle="tab" href="#nav-idrauliche" role="tab" aria-controls="nav-idrauliche" aria-selected="false">
-                  <img class="svg soluzioni-icon mb-3" src="/static/svg/idrauliche-icon.svg"> 
-                  <p class="xsmall"> Opere idrauliche</p>
-                </a>
-                <a class="nav-item nav-link d-flex flex-column align-items-center" id="nav-cave-tab" data-toggle="tab" href="#nav-cave" role="tab" aria-controls="nav-cave" aria-selected="false">
-                  <img class="svg soluzioni-icon mb-3" src="/static/svg/cave-icon.svg"> 
-                  <p class="xsmall">Cave e Discariche</p>
-                </a>
-                <a class="nav-item nav-link d-flex flex-column align-items-center" id="nav-raster-tab" data-toggle="tab" href="#nav-raster" role="tab" aria-controls="nav-raster" aria-selected="false">
-                  <img class="svg soluzioni-icon mb-3" src="/static/svg/raster-icon.svg"> 
-                  <p class="xsmall">Cartografia e Raster</p>
-                </a>
-                <a class="nav-item nav-link d-flex flex-column align-items-center justify-content-center" id="nav-altro-tab" data-toggle="tab" href="#nav-altro" role="tab" aria-controls="nav-altro" aria-selected="false">
-                  <img class="svg soluzioni-icon mb-3" src="/static/svg/altro-icon.svg"> 
-                  <p class="xsmall">Altro</p>
-                </a>
+            <div class="row">
+              <div class="col-12 col-md-3 d-flex flex-column">
+                <h1>FAQ</h1>
+                <div class="nav-container mt-5">
+                  <nav class="nav-scrollable">
+                    <div class="nav nav-tabs nav-fill d-flex flex-md-column align-items-start" id="nav-tab" role="tablist">
+                      <a class="nav-item nav-link active px-0" id="nav-generale-tab" data-bs-toggle="tab" href="#nav-generale" role="tab" aria-controls="nav-generale" aria-selected="true"> 
+                        <h4 class="text-capitalize">Generale</h4>
+                      </a>
+                      <a class="nav-item nav-link px-0" id="nav-tracciati-tab" data-bs-toggle="tab" href="#nav-tracciati" role="tab" aria-controls="nav-tracciati" aria-selected="false">
+                        <h4 class="text-capitalize">Tracciati</h4>
+                      </a>
+                    </div>
+                  </nav>
+                </div>
               </div>
-            </nav>
+              <div class="col-12 col-md-9 d-flex flex-column">
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-generale" role="tabpanel" aria-labelledby="nav-generale-tab">
+                    <h5 class="mb-4">Generale</h5>
+                    
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed small p-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Chi utilizza CIVIL Design?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body xsmall">Software è utilizzato quotidianamente da migliaia di tecnici che operano sul territorio: topografi, progettisti di infrastrutture, imprese di costruzione, società di progettazione. Il software è strutturato in modo da poter offrire una soluzione a tutti i livelli di progettazione.</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed small p-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Dove vengono memorizzati i dati di un progetto realizzato con CIVIL Design?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body xsmall">Software è utilizzato quotidianamente da migliaia di tecnici che operano sul territorio: topografi, progettisti di infrastrutture, imprese di costruzione, società di progettazione. Il software è strutturato in modo da poter offrire una soluzione a tutti i livelli di progettazione.</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed small p-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            I progetti realizzati con CIVIL Design possono essere visualizzati e modificati con AutoCAD?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body xsmall">Software è utilizzato quotidianamente da migliaia di tecnici che operano sul territorio: topografi, progettisti di infrastrutture, imprese di costruzione, società di progettazione. Il software è strutturato in modo da poter offrire una soluzione a tutti i livelli di progettazione.</div>
+                        </div>
+                      </div>
+                    </div>
+                      
+                  </div>
+                  <div class="tab-pane fade" id="nav-tracciati" role="tabpanel" aria-labelledby="nav-tracciati-tab">
+                    Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. 
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div class="tab-content px-3 px-sm-0" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="nav-strade" role="tabpanel" aria-labelledby="nav-strade-tab">
-              </div>
-              <div class="tab-pane fade" id="nav-topografia" role="tabpanel" aria-labelledby="nav-topografia-tab">
-              </div>
-              <div class="tab-pane fade" id="nav-idrauliche" role="tabpanel" aria-labelledby="nav-idrauliche-tab">
-                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
-              </div>
-              <div class="tab-pane fade" id="nav-cave" role="tabpanel" aria-labelledby="nav-cave-tab">
-                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
-              </div>
-              <div class="tab-pane fade" id="nav-raster" role="tabpanel" aria-labelledby="nav-raster-tab">
-                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
-              </div>
-              <div class="tab-pane fade" id="nav-altro" role="tabpanel" aria-labelledby="nav-altro-tab">
-                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
-              </div>
-            </div>
           </div>
       </div>
 
@@ -624,9 +800,9 @@
                 <hr class="purple-line hr-animation-js">
                 <p class="xsmall mt-3">Se hai domande riguardo al software, non esitare a contattarci. Vorremmo aiutarti senza esitazione.</p>
 
-                <div class="orario d-flex mt-5">
-                  <img class="svg orario-icon" src="/static/svg/orario-icon.svg">
-                  <div class="d-flex flex-column mx-3">
+                <div class="orario d-flex flex-sm-row flex-column mt-5">
+                  <img class="svg orario-icon mb-3 mb-sm-0" src="/static/svg/orario-icon.svg">
+                  <div class="d-flex flex-column mx-0 mx-sm-3">
                     <div class="d-flex flex-column mb-3">
                       <p class="small">Lunedì - Giovedì:</p>
                       <p class="small font-weight-bold">0:00-13:00 e 16:00-18:00</p>
@@ -638,14 +814,14 @@
                   </div>
                 </div>
 
-                <div class="contatto d-flex mt-5">
-                  <img class="svg contatto-icon" src="/static/svg/person-icon.svg">
-                  <div class="d-flex flex-column mx-3">
-                    <div class="d-flex mb-3">
+                <div class="contatto d-flex flex-sm-row flex-column mt-5">
+                  <img class="svg contatto-icon mb-3 mb-sm-0" src="/static/svg/person-icon.svg">
+                  <div class="d-flex flex-column mx-0 mx-sm-3">
+                    <div class="d-flex flex-sm-row flex-column mb-3">
                       <p class="small font-weight-bold">tel:</p>
                       <a class="small font-weight-bold color mx-1" href="tel:0432/511556">0432/511556</a>
                     </div>
-                    <div class="d-flex mb-3">
+                    <div class="d-flex flex-sm-row flex-column mb-3">
                       <p class="small font-weight-bold">mail:</p>
                       <a class="small font-weight-bold color mx-1" href="mailto:info@digicorpingegneria.com">info@digicorpingegneria.com</a>
                     </div>
