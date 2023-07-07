@@ -65,20 +65,20 @@ a.link-arrow:hover {
   background-position: center;
 }
 
-.contact-azzuro .contact-right {
+.contact-blue .contact-right {
   background-image: url(/static/img/bg-covers/contact-azzuro-cover.png);
   background-size: cover;
   background-position: center;
 }
 
-.contact-red .row, .contact-azzuro .row {
+.contact-red .row, .contact-blue .row {
   margin-right: 0;
 }
 
 .contact-red .col-lg-6, 
 .contact-red .col-12, 
-.contact-azzuro .col-lg-6, 
-.contact-azzuro .col-12 {
+.contact-blue .col-lg-6, 
+.contact-blue .col-12 {
   padding: 7rem 10rem;
 }
 
@@ -94,15 +94,15 @@ a.link-arrow:hover {
   color: #E73C14;
 }
 
-.contact-azzuro .orario .orario-icon path {
+.contact-blue .orario .orario-icon path {
   stroke: #409BA3;
 }
 
-.contact-azzuro .contatto .color {
+.contact-blue.contatto .color {
   color: #409BA3;
 }
 
-.contact-azzuro .contatto .contatto-icon path {
+.contact-blue .contatto .contatto-icon path {
   fill: #409BA3;
 }
 
@@ -405,8 +405,8 @@ h6 {
 @media all and (max-width: 1400px) {
   .contact-red .col-lg-6, 
   .contact-red .col-12,
-  .contact-azzuro .col-lg-6, 
-  .contact-azzuro .col-12 {
+  .contact-blue .col-lg-6, 
+  .contact-blue .col-12 {
     padding: 6rem;
   }
 }
@@ -430,7 +430,7 @@ h6 {
 }
 
 @media all and (max-width: 992px) and (min-width: 768px){
-  .contact-red form, .contact-azzuro form {
+  .contact-red form, .contact-blue form {
     width: 70%!important;
   }
 }
@@ -453,8 +453,8 @@ h6 {
   }
   .contact-red .col-lg-6, 
   .contact-red .col-12,
-  .contact-azzuro .col-lg-6, 
-  .contact-azzuro .col-12 {
+  .contact-blue .col-lg-6, 
+  .contact-blue .col-12 {
     padding: 3rem;
   }
 }
