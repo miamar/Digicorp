@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CAD&Pillar</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- styles CSS -->
+    <link rel="stylesheet" href="/static/css/fonts.css"/>
+    <link rel="stylesheet" href="/static/css/main.css"/>
+    <link rel="stylesheet" href="/static/css/prodotti.css"/>
+    <link rel="stylesheet" href="/static/css/header.css"/>
+    <link rel="stylesheet" href="/static/css/footer.css"/>
+
+    <!-- Bootstrap's JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Vue JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!--gsap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    
+    <style>
+      
+    </style>
+
+  </head>
+  <body>
+    <header>
+
+      <nav class="navbar navbar-expand-xl">
+          
+          <div class="container" id="myTopnav">
+            <a class="navbar-brand my-2" href="#"></a>
+        
+
+                  <ul class="nav">
+                      <li class="nav-item dropdown position-static">
+                          <a class="nav-link active" href="#" id="dropdownCivilDesign" role="button" @click="toggleDropdown('dropdownCivilDesign')" @mouseleave="closeDropdown">
+                            <div class="nav-content">CIVIL Design<img class="svg item-icon" src="/static/svg/arrows/arrow-down.svg"></div>
+                          </a>
+                          <div class="dropdown-menu w-100" :class="{ show: isDropdownOpen('dropdownCivilDesign') }" aria-labelledby="dropdownCivilDesign" @mouseleave="closeDropdown">
+                            <div class="container">
+                              <div class="row my-4">
+                                <div class="col-md-12 col-lg-3 mb-4 mb-lg-0">
+                                  <ul>
+                                    <li>
+                                      <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Strade e ferrovie</span></a>
+                                      <ul class="features">
+                                        <li>Strade e ferrovie</li>
+                                        <li>Strade e ferrovie</li>
+                                        <li>Strade e ferrovie</li>
+                                        <li>Strade e ferrovie</li>
+                                        <li>Strade e ferrovie</li>
+                                        <li>Strade e ferrovie</li>
+                                      </ul>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Cartografia e raster</span></a>
+                                      <ul class="features">
+                                        <li>Strade e ferrovie</li>
+                                      </ul>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Cave e discrariche</span></a>
+                                      <ul class="features">
+                                        <li>Strade e ferrovie</li>
+                                        <li>Strade e ferrovie</li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="col-md-12 col-lg-3 mb-4 mb-lg-0">
+                                  <ul>
+                                    <li>
+                                      <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Topografia e castato</span></a>
+                                      <ul class="features">
+                                        <li>Strade e ferrovie</li>
+                                        <li>Strade e ferrovie</li>
+                                        <li>Strade e ferrovie</li>
+                                      </ul>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Progettare opere ifrauliche</span></a>
+                                      <ul class="features">
+                                        <li>Strade e ferrovie</li>
+                                        <li>Strade e ferrovie</li>
+                                        <li>Strade e ferrovie</li>
+                                      </ul>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Altro</span></a>
+                                      <ul class="features">
+                                        <li>Strade e ferrovie</li>
+                                        <li>Strade e ferrovie</li>
+                                        <li>Strade e ferrovie</li>
+                                        <li>Strade e ferrovie</li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="col-md-12 col-lg-1 mb-4 mb-lg-0">
+                                  <div class="vertical-hr"></div>
+                                </div>
+                                <div class="col-md-12 col-lg-5 mb-4 mb-lg-0 recommendations">
+                                  <img src="/static/img/loghi/CD-full-color.png">
+                                  <div class="row mt-5">
+                                    <div class="col-md-12 col-lg-6"><p>Un applicativo di Autodesk AutoCAD e Bricsys BricsCAD per la progettazione e contabilizzazione di opere civili sul territorio: indispensabile per i tecnici.</p></div>
+                                    <div class="col-md-12 col-lg-6"><h3>La nuova release 14</h3><p>Progettare disegnando, ora anche BIM, oltre ogni ostacolo.</p></div>
+                                  </div>
+                                  <div class="row mt-3">
+                                    <div class="col-md-12 col-lg-6">
+                                      <a href="" class="d-flex align-items-center"><img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/><span>Download</span></a>
+                                    </div>
+                                    <div class="col-md-12 col-lg-6">
+                                      <a href="" class="d-flex align-items-center"><img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/><span>Prova subito</span></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      <li class="nav-item dropdown position-static">
+                        <a class="nav-link" href="#" id="dropdownCAD&Pillar" role="button" @click="toggleDropdown('dropdownCAD&Pillar')" aria-expanded="false">
+                          <div class="nav-content">CAD&Pillar<img class="svg item-icon" src="/static/svg/arrows/arrow-down.svg"></div>
+                        </a>
+                        <div class="dropdown-menu w-100" :class="{ show: isDropdownOpen('dropdownCAD&Pillar') }" aria-labelledby="dropdownCAD&Pillar">
+                          <div class="container">
+                            <div class="row my-4">
+                              <div class="col-md-12 col-lg-3 mb-4 mb-lg-0">
+                                <ul>
+                                  <li>
+                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Modulo S - Strade</span></a>
+                                    <ul class="description">
+                                      <li>E' il modulo per creare il modello digitale del terreno, a triangoli, a curve di livello oppure a maglia regolare, che è necessario per calcolare profili e sezioni, finalizzati ai computi di movimenti di materia.</li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Modulo S - Strade</span></a>
+                                    <ul class="description">
+                                      <li>E' il modulo per creare il modello digitale del terreno, a triangoli, a curve di livello oppure a maglia regolare, che è necessario per calcolare profili e sezioni, finalizzati ai computi di movimenti di materia.</li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Modulo S - Strade</span></a>
+                                    <ul class="description">
+                                      <li>E' il modulo per creare il modello digitale del terreno, a triangoli, a curve di livello oppure a maglia regolare, che è necessario per calcolare profili e sezioni, finalizzati ai computi di movimenti di materia.</li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-md-12 col-lg-3 mb-4 mb-lg-0">
+                                <ul>
+                                  <li>
+                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Modulo T - Topografia</span></a>
+                                    <ul class="description">
+                                      <li>E' il modulo per creare il modello digitale del terreno, a triangoli, a curve di livello oppure a maglia regolare, che è necessario per calcolare profili e sezioni, finalizzati ai computi di movimenti di materia.</li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Modulo S - Strade</span></a>
+                                    <ul class="description">
+                                      <li>E' il modulo per creare il modello digitale del terreno, a triangoli, a curve di livello oppure a maglia regolare, che è necessario per calcolare profili e sezioni, finalizzati ai computi di movimenti di materia.</li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-md-12 col-lg-1 mb-4 mb-lg-0">
+                                <div class="vertical-hr"></div>
+                              </div>
+                              <div class="col-md-12 col-lg-5 mb-4 mb-lg-0 recommendations">
+                                <img src="/static/img/loghi/CP-full-color.png">
+                                <div class="row mt-5">
+                                  <div class="col-md-12 col-lg-6"><p>Un applicativo di Autodesk AutoCAD e Bricsys BricsCAD per la progettazione e contabilizzazione di opere civili sul territorio: indispensabile per i tecnici.</p></div>
+                                  <div class="col-md-12 col-lg-6"><h3>La nuova release 14</h3><p>Progettare disegnando, ora anche BIM, oltre ogni ostacolo.</p></div>
+                                </div>
+                                <div class="row mt-3 cp">
+                                  <div class="col-md-12 col-lg-6">
+                                    <a href="" class="d-flex align-items-center"><img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/><span>Download</span></a>
+                                  </div>
+                                  <div class="col-md-12 col-lg-6">
+                                    <a href="" class="d-flex align-items-center"><img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/><span>Prova subito</span></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown position-static">
+                        <a class="nav-link" href="#" id="dropdownProdotti" role="button" @click="toggleDropdown('dropdownProdotti')" aria-expanded="false">
+                          <div class="nav-content">Prodotti<img class="svg item-icon" src="/static/svg/arrows/arrow-down.svg"></div>
+                        </a>
+                        <div class="dropdown-menu w-100" :class="{ show: isDropdownOpen('dropdownProdotti') }" aria-labelledby="dropdownProdotti">
+                          <div class="container">
+                            <div class="row my-4">
+                              <p class="small mb-1">Softwares:</p>
+                              <div class="col-md-12 col-lg-3 mb-4 mb-lg-0">
+                                <ul>
+                                  <li>
+                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon-proddoti" src="/static/img/topografia.png"/><span class="title">Topografia</span></a>
+                                    <ul class="softwares">
+                                      <li><a>Strade e ferrovie</a></li>
+                                      <li><a>Strade e ferrovie</a></li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon-proddoti" src="/static/img/topografia.png"/><span class="title">Topografia</span></a>
+                                    <ul class="softwares">
+                                      <li><a>Strade e ferrovie</a></li>
+                                      <li><a>Strade e ferrovie</a></li>
+                                      <li><a>Strade e ferrovie</a></li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon-proddoti" src="/static/img/topografia.png"/><span class="title">Topografia</span></a>
+                                    <ul class="softwares">
+                                      <li><a>Strade e ferrovie</a></li>
+                                      <li><a>Strade e ferrovie</a></li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                                <p class="small mb-3">Hardwares:</p>
+                                <a>Strade e ferrovie</a>
+                              </div>
+                              <div class="col-md-12 col-lg-3 mb-4 mb-lg-0">
+                                <ul>
+                                  <li>
+                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon-proddoti" src="/static/img/topografia.png"/><span class="title">Topografia</span></a>
+                                    <ul class="softwares">
+                                      <li><a>Strade e ferrovie</a></li>
+                                      <li><a>Strade e ferrovie</a></li>
+                                      <li><a>Strade e ferrovie</a></li>
+                                      <li><a>Strade e ferrovie</a></li>
+                                      <li><a>Strade e ferrovie</a></li>
+                                      <li><a>Strade e ferrovie</a></li>
+                                      <li><a>Strade e ferrovie</a></li>
+                                      <li><a>Strade e ferrovie</a></li>
+                                      <li><a>Strade e ferrovie</a></li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-md-12 col-lg-1 mb-4 mb-lg-0">
+                                <div class="vertical-hr"></div>
+                              </div>
+                              <div class="col-md-12 col-lg-5 mb-4 mb-lg-0 recommendations prodotti">
+                                <div class="row mt-5">
+                                  <div class="col-md-12 col-lg-6">
+                                    <img src="/static/img/loghi/CD-full-color.png">
+                                    <p>Un applicativo di Autodesk AutoCAD e Bricsys BricsCAD per la progettazione e contabilizzazione di opere civili sul territorio: indispensabile per i tecnici.</p></div>
+                                  <div class="col-md-12 col-lg-6">
+                                    <img src="/static/img/loghi/CP-full-color.png">
+                                    <p>Un applicativo di Autodesk AutoCAD e Bricsys BricsCAD per la progettazione e contabilizzazione di opere civili sul territorio: indispensabile per i tecnici.</p></div>
+                                </div>
+                                <div class="row mt-3">
+                                  <div class="col-md-12 col-lg-6">
+                                    <a href="" class="d-flex align-items-center"><img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/><span>Prova subito</span></a>
+                                  </div>
+                                  <div class="col-md-12 col-lg-6 cp">
+                                    <a href="" class="d-flex align-items-center"><img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/><span>Prova subito</span></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown position-static">
+                        <a class="nav-link" href="#" id="dropdownServizi" role="button" @click="toggleDropdown('dropdownServizi')" aria-expanded="false">
+                          <div class="nav-content">Servizi<img class="svg item-icon" src="/static/svg/arrows/arrow-down.svg"></div>
+                        </a>
+                        <div class="dropdown-menu w-100" :class="{ show: isDropdownOpen('dropdownServizi') }" aria-labelledby="dropdownServizi">
+                          <div class="container">
+                            <div class="row my-4">
+                              <div class="col-md-12 col-lg-3 mb-4 mb-lg-0">
+                                <ul>
+                                  <li>
+                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Education</span></a>
+                                    <ul class="description">
+                                      <li>E' il modulo per creare il modello digitale del terreno, a triangoli.</li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Education</span></a>
+                                    <ul class="description">
+                                      <li>E' il modulo per creare il modello digitale del terreno, a triangoli, a curve di livello oppure a maglia regolare, che è necessario per calcolare profili e sezioni, finalizzati ai computi di movimenti di materia.</li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-md-12 col-lg-3 mb-4 mb-lg-0">
+                                <ul>
+                                  <li>
+                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Education</span></a>
+                                    <ul class="description">
+                                      <li>E' il modulo per creare il modello digitale del terreno, a triangoli, a curve di livello oppure a maglia regolare, che è necessario per calcolare profili e sezioni.</li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Education</span></a>
+                                    <ul class="description">
+                                      <li>E' il modulo per creare il modello digitale del terreno, a triangoli.</li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-md-12 col-lg-1 mb-4 mb-lg-0">
+                                <div class="vertical-hr"></div>
+                              </div>
+                              <div class="col-md-12 col-lg-5 mb-4 mb-lg-0 recommendations prodotti">
+                                <div class="row mt-5">
+                                  <div class="col-md-12 col-lg-6">
+                                    <img src="/static/img/loghi/CD-full-color.png">
+                                    <p>Un applicativo di Autodesk AutoCAD e Bricsys BricsCAD per la progettazione e contabilizzazione di opere civili sul territorio: indispensabile per i tecnici.</p></div>
+                                  <div class="col-md-12 col-lg-6">
+                                    <img src="/static/img/loghi/CP-full-color.png">
+                                    <p>Un applicativo di Autodesk AutoCAD e Bricsys BricsCAD per la progettazione e contabilizzazione di opere civili sul territorio: indispensabile per i tecnici.</p></div>
+                                </div>
+                                <div class="row mt-3">
+                                  <div class="col-md-12 col-lg-6">
+                                    <a href="" class="d-flex align-items-center"><img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/><span>Prova subito</span></a>
+                                  </div>
+                                  <div class="col-md-12 col-lg-6 cp">
+                                    <a href="" class="d-flex align-items-center"><img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/><span>Prova subito</span></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown position-static">
+                        <a class="nav-link" href="#" id="dropdownAzienda" role="button" @click="toggleDropdown('dropdownAzienda')" aria-expanded="false">
+                          <div class="nav-content">Di azienda<img class="svg item-icon" src="/static/svg/arrows/arrow-down.svg"></div>
+                        </a>
+                        <div class="dropdown-menu w-100" :class="{ show: isDropdownOpen('dropdownAzienda') }" aria-labelledby="dropdownAzienda">
+                          <div class="container">
+                            <div class="row my-4">
+                              <div class="col-md-12 col-lg-3 mb-4 mb-lg-0">
+                                <ul>
+                                  <li>
+                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/img/Vector.svg"/><span class="title">Education</span></a>
+                                    <ul class="description">
+                                      <li>E' il modulo per creare il modello digitale del terreno, a triangoli.</li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Education</span></a>
+                                    <ul class="description">
+                                      <li>E' il modulo per creare il modello digitale del terreno, a triangoli, a curve di livello oppure a maglia regolare, che è necessario per calcolare profili e sezioni, finalizzati ai computi di movimenti di materia.</li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-md-12 col-lg-3 mb-4 mb-lg-0">
+                                <ul>
+                                  <li>
+                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Education</span></a>
+                                    <ul class="description">
+                                      <li>E' il modulo per creare il modello digitale del terreno, a triangoli, a curve di livello oppure a maglia regolare, che è necessario per calcolare profili e sezioni.</li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Education</span></a>
+                                    <ul class="description">
+                                      <li>E' il modulo per creare il modello digitale del terreno, a triangoli.</li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-md-12 col-lg-1 mb-4 mb-lg-0">
+                                <div class="vertical-hr"></div>
+                              </div>
+                              <div class="col-md-12 col-lg-5 mb-4 mb-lg-0 recommendations prodotti">
+                                <div class="row mt-5">
+                                  <div class="col-md-12 col-lg-6">
+                                    <img src="/static/img/loghi/CD-full-color.png">
+                                    <p>Un applicativo di Autodesk AutoCAD e Bricsys BricsCAD per la progettazione e contabilizzazione di opere civili sul territorio: indispensabile per i tecnici.</p></div>
+                                  <div class="col-md-12 col-lg-6">
+                                    <img src="/static/img/loghi/CP-full-color.png">
+                                    <p>Un applicativo di Autodesk AutoCAD e Bricsys BricsCAD per la progettazione e contabilizzazione di opere civili sul territorio: indispensabile per i tecnici.</p></div>
+                                </div>
+                                <div class="row mt-3">
+                                  <div class="col-md-12 col-lg-6">
+                                    <a href="" class="d-flex align-items-center"><img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/><span>Prova subito</span></a>
+                                  </div>
+                                  <div class="col-md-12 col-lg-6 cp">
+                                    <a href="" class="d-flex align-items-center"><img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/><span>Prova subito</span></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+
+              
+        
+              <div class="d-flex align-items-center right-items">
+                <!-- Search bar -->
+                <form id="app" action="#">
+                  <label :data-state="state" for="search">
+                    <input type="text" placeholder="Search" @click="state = 'opan'" @blur="state='close'" />
+                    <i class="fa fa-search" @click="" aria-hidden="true"></i>
+                    <i class=""></i>
+                  </label>
+                </form>
+        
+                <!-- Language dropdown -->
+                <div class="language dropdown">
+                  <button class="btn dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    EN
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                    <li><a class="dropdown-item" href="#">Language 1</a></li>
+                    <li><a class="dropdown-item" href="#">Language 2</a></li>
+                    <li><a class="dropdown-item" href="#">Language 3</a></li>
+                  </ul>
+                </div>
+                <!-- Hamburger menu button -->
+                <a href="javascript:void(0);" class="hamburger-icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+
+          </div>
+        </nav>
+        
+    </header>
+
+    <main>
+
+        <div class="hero-primari">
+            <div class="container d-flex flex-column align-items-start">
+                <img class="drop-in mb-3" src="/static/img/loghi/CD-full-color2.png">
+                <p class="big my-3 drop-in2">DIGICORP Ingegneria S.r.l. produce e vende software tecnici per il mondo della progettazione e contabilizzazione di opere civili sul territorio.</p>
+                <button class="btn civil-button mt-3 mb-5">Prova subito</button>
+            </div>
+        </div>
+
+        <div class="breadcrumbs">
+          <div class="container">
+          <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb my-4">
+              <li class="breadcrumb-item small"><a href="#">Home</a></li>
+              <li class="breadcrumb-item small"><a href="#">Prodotti</a></li>
+              <li class="breadcrumb-item active small" aria-current="page">CIVIL Design</li>
+            </ol>
+          </nav>
+        </div>
+        </div>
+
+        <h1 class="intro-title text-center px-3">Che cos'è <span class="gradient-civil-text">CIVIL Design</span>?</h1>
+
+        <div class="primari-cards">
+            <div class="container custom-container">
+                <div class="row d-flex align-items-stretch">
+                    <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+                        <div class="card d-flex flex-column align-items-start p-4 h-100">
+                            <img class="primari-card-icon mb-4" src="/static/svg/civil-card-icon-b.svg">
+                            <p class="small">DIGICORP CIVIL Design è un applicativo di Autodesk AutoCAD e Bricsys BricsCAD per la progettazione e contabilizzazione di opere civili sul territorio: indispensabile per i tecnici.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+                        <div class="card d-flex flex-column align-items-start p-4 h-100">
+                            <img class="primari-card-icon mb-4" src="/static/svg/civil-card-icon-p.svg">
+                            <p class="small">Le tipologie di interventi sul territorio sono molteplici: CIVIL Design offre diverse configurazioni, chiamate "soluzioni", tagliate su misura per affrontare diversi temi di progettazione.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+                        <div class="card d-flex flex-column align-items-start p-4 h-100">
+                            <img class="primari-card-icon mb-4" src="/static/svg/civil-card-icon-g.svg">
+                            <p class="small">Puoi avere a disposizione le funzioni di CIVIL Design grazie al software CAD&Pillar che ha già integrato il motore OEM compatibile con AutoCAD 2020.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="release">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-6 col-xl-7 pt-4 order-2 order-lg-1">
+                <iframe class="pr-5" width="100%" height="350px" src="https://www.youtube.com/embed/awFNWrNFoXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="col-12 col-lg-6 col-xl-5 d-flex flex-column align-items-start mb-4 mb-lg-0 order-1 order-lg-2">
+                <h1> <span class="gradient-civil-text">La nuova release 14 è ora disponibile!</span></h3>
+                <hr class="purple-line hr-animation-js">
+                <p class="big mt-3">Progettare disegnando, ora anche BIM, oltre ogni ostacolo.</p>
+                <button class="btn civil-button mt-5">Scopri di più</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="requesti-primari civil-gradient-background">
+          <div class="container custom-container">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-7 d-flex flex-column align-items-center">
+                <h1 class="text-center">Requesti di sistema</h1> 
+                <p class="big mt-3 text-center">I requisiti software e hardware sono gli stessi della versione full di Autodesk AutoCAD© o Bricsys BricsCAD per i sistemi operativi da essi supportati.</p>
+                <div class="nav-container mt-5">
+                  <nav class="nav-scrollable">
+                    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                      <a class="nav-item nav-link active d-flex flex-column align-items-center" id="nav-first-tab" data-toggle="tab" href="#nav-first" role="tab" aria-controls="nav-first" aria-selected="true"> 
+                        <h4 class="text-capitalize">Autodesk©</h4>
+                      </a>
+                      <a class="nav-item nav-link d-flex flex-column align-items-center" id="nav-second-tab" data-toggle="tab" href="#nav-second" role="tab" aria-controls="nav-second" aria-selected="false">
+                        <h4 class="text-capitalize">Bricsys BricsCAD©</h4>
+                      </a>
+                    </div>
+                  </nav>
+                </div>
+                <div class="tab-content px-3 px-sm-0" id="nav-tabContent">
+                  <div class="tab-pane fade show active mt-3" id="nav-first" role="tabpanel" aria-labelledby="nav-first-tab">
+                    <p class="xsmall mb-2">I requisiti software e hardware sono gli STESSI della versione Full di Autodesk AutoCAD© per i relativi sistemi operativi previsti.</p>
+                    <ul>
+                      <li class="xsmall mb-2">DIGICORP CIVIL Design 14© è un applicativo di Autodesk AutoCAD rel. 2023 a 64 Bit e relativi prodotti verticali (AutoCAD Civil 3D, AutoCAD Map 3D, AutoCAD Architecture, AutoCAD Mechanical).</li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade mt-3" id="nav-second" role="tabpanel" aria-labelledby="nav-second-tab">
+                    Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. 
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-5">
+                <img class="img-full-width d-none d-lg-block" src="/static/svg/requesti-sistema.svg">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="yt">
+            <div class="container custom-container">
+              <div class="row align-items-center">
+                <div class="col-12 col-lg-6 d-flex flex-column align-items-start mb-4 mb-lg-0">
+                  <h3>Digicorp Ingegneria S.r.l. <span class="color-text">You Tube</span> Channel</h3>
+                  <hr class="light-line hr-animation-js">
+                  <p class="xsmall mt-3">Siamo lieti di presentare il nostro canale YouTube aziendale specializzato nella produzione e vendita di software per la progettazione di infrastrutture e nei servizi di consulenza tecnica. Troverete tutorial, contenuti informativi e consigli professionali per la gestione delle vostre infrastrutture. Iscrivetevi per rimanere aggiornati sulle ultime novità e scoprire le soluzioni innovative che offriamo.</p>
+                  <button class="btn primary-button mt-5">Guarda</button>
+                </div>
+                <div class="col-12 col-lg-6 pt-4 pt-lg-0">
+                  <iframe width="100%" height="350px" src="https://www.youtube.com/embed/awFNWrNFoXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="modeli">
+          <div class="container custom-container">
+            <div class="nav-container">
+            <nav class="nav-scrollable">
+              <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active d-flex flex-column align-items-center" id="nav-strade-tab" data-toggle="tab" href="#nav-strade" role="tab" aria-controls="nav-strade" aria-selected="true">
+                  <img class="svg soluzioni-icon mb-3" src="/static/svg/strade-icon.svg"> 
+                  <p class="xsmall">Strade e ferrovie</p>
+                </a>
+                <a class="nav-item nav-link d-flex flex-column align-items-center" id="nav-topografia-tab" data-toggle="tab" href="#nav-topografia" role="tab" aria-controls="nav-topografia" aria-selected="false">
+                  <img class="svg soluzioni-icon mb-3" src="/static/svg/topografia-icon.svg"> 
+                  <p class="xsmall">Topografia e catasto</p>
+                </a>
+                <a class="nav-item nav-link d-flex flex-column align-items-center" id="nav-idrauliche-tab" data-toggle="tab" href="#nav-idrauliche" role="tab" aria-controls="nav-idrauliche" aria-selected="false">
+                  <img class="svg soluzioni-icon mb-3" src="/static/svg/idrauliche-icon.svg"> 
+                  <p class="xsmall"> Opere idrauliche</p>
+                </a>
+                <a class="nav-item nav-link d-flex flex-column align-items-center" id="nav-cave-tab" data-toggle="tab" href="#nav-cave" role="tab" aria-controls="nav-cave" aria-selected="false">
+                  <img class="svg soluzioni-icon mb-3" src="/static/svg/cave-icon.svg"> 
+                  <p class="xsmall">Cave e Discariche</p>
+                </a>
+                <a class="nav-item nav-link d-flex flex-column align-items-center" id="nav-raster-tab" data-toggle="tab" href="#nav-raster" role="tab" aria-controls="nav-raster" aria-selected="false">
+                  <img class="svg soluzioni-icon mb-3" src="/static/svg/raster-icon.svg"> 
+                  <p class="xsmall">Cartografia e Raster</p>
+                </a>
+                <a class="nav-item nav-link d-flex flex-column align-items-center justify-content-center" id="nav-altro-tab" data-toggle="tab" href="#nav-altro" role="tab" aria-controls="nav-altro" aria-selected="false">
+                  <img class="svg soluzioni-icon mb-3" src="/static/svg/altro-icon.svg"> 
+                  <p class="xsmall">Altro</p>
+                </a>
+              </div>
+            </nav>
+            </div>
+
+            <div class="tab-content px-3 px-sm-0" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-strade" role="tabpanel" aria-labelledby="nav-strade-tab">
+              </div>
+              <div class="tab-pane fade" id="nav-topografia" role="tabpanel" aria-labelledby="nav-topografia-tab">
+              </div>
+              <div class="tab-pane fade" id="nav-idrauliche" role="tabpanel" aria-labelledby="nav-idrauliche-tab">
+                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+              </div>
+              <div class="tab-pane fade" id="nav-cave" role="tabpanel" aria-labelledby="nav-cave-tab">
+                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+              </div>
+              <div class="tab-pane fade" id="nav-raster" role="tabpanel" aria-labelledby="nav-raster-tab">
+                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+              </div>
+              <div class="tab-pane fade" id="nav-altro" role="tabpanel" aria-labelledby="nav-altro-tab">
+                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+              </div>
+            </div>
+          </div>
+      </div>
+
+        <div class="contact-azzuro">
+          <div class="row">
+            <div class="col-12 col-lg-6 d-flex align-items-center contact-left" style="background-color: rgb(118, 118, 118);">
+              <div class="d-flex flex-column align-items-start">
+                <h2>Hai bisogno di aiuto?</h2>
+                <hr class="purple-line hr-animation-js">
+                <p class="xsmall mt-3">Se hai domande riguardo al software, non esitare a contattarci. Vorremmo aiutarti senza esitazione.</p>
+
+                <div class="orario d-flex mt-5">
+                  <img class="svg orario-icon" src="/static/svg/orario-icon.svg">
+                  <div class="d-flex flex-column mx-3">
+                    <div class="d-flex flex-column mb-3">
+                      <p class="small">Lunedì - Giovedì:</p>
+                      <p class="small font-weight-bold">0:00-13:00 e 16:00-18:00</p>
+                    </div>
+                    <div class="d-flex flex-column mb-3">
+                      <p class="small">Venerdì:</p>
+                      <p class="small font-weight-bold">10:00-13:00</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contatto d-flex mt-5">
+                  <img class="svg contatto-icon" src="/static/svg/person-icon.svg">
+                  <div class="d-flex flex-column mx-3">
+                    <div class="d-flex mb-3">
+                      <p class="small font-weight-bold">tel:</p>
+                      <a class="small font-weight-bold color mx-1" href="tel:0432/511556">0432/511556</a>
+                    </div>
+                    <div class="d-flex mb-3">
+                      <p class="small font-weight-bold">mail:</p>
+                      <a class="small font-weight-bold color mx-1" href="mailto:info@digicorpingegneria.com">info@digicorpingegneria.com</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center contact-right">
+              
+                <form class="w-100">
+                  <div class="form-group mt-0">
+                    <label for="exampleFormControlSelect1">Cosa vuoi?</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Chiedere di più</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputNome">Nome</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nome">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                  </div>
+                  <div class="form-group d-flex flex-column">
+                    <label for="exampleFormControlTextarea1">Testo</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    <small id="textHelp" class="form-text text-muted pt-2">We'll never share your email with anyone else.</small>
+                  </div>
+                  <button type="submit" class="btn btn-white-azzuro mt-3 mt-4 w-100">Invia</button>
+                </form>
+              
+            </div>
+          </div>
+  
+        </div>
+
+    </main>
+      
+    <footer>
+      <div class="container">
+        <div class="row pt-5 pb-1">
+          <div class="col-12 col-md-10">
+
+            <div class="row py-4">
+              <div class="col-12"><img src="/static/img/loghi/logo-rosso-bianco.png"></div>
+            </div>
+
+            <div class="row contact">
+              <div class="col-12 col-xl-3 col-md-6 p-3 p-xl-4 d-flex align-items-start">
+                <img src="/static/svg/location-icon.svg">
+                <div class="contact-info d-flex flex-column align-items-start">
+                    <p class="mb-3">Via Duino 1/1, 33100 Udine (UD) - Italy</p>
+                </div>
+              </div>
+              <div class="col-12 col-xl-3 col-md-6 p-3 p-xl-4 d-flex align-items-start">
+                <img src="/static/svg/tel-icon.svg">
+                <div class="contact-info d-flex flex-column align-items-start">
+                    <div class="d-flex flex-row align-items-center mb-2">
+                        <p>tel:</p>
+                        <a tef="tel:0432511556">0432 511556</a>
+                    </div>
+                    <div class="d-flex flex-row align-items-center mb-2">
+                        <p>fax:</p>
+                        <a tef="tel:0432511592">0432 511592</a>
+                    </div>
+                    <div class="d-flex flex-row align-items-center mb-2">
+                        <p>ttel:</p>
+                        <a tef="tel:3515684129">351 568 41296</a>
+                    </div> 
+                </div>
+              </div>
+              <div class="col-12 col-xl-4 p-3 p-xl-4 d-flex align-items-start">
+                <img src="/static/svg/email-icon.svg">
+                <div class="contact-info d-flex flex-column align-items-start">
+                    <div class="d-flex flex-row align-items-center mb-2">
+                    <p>email:</p>
+                    <a tef="mailto:info@digicorpingegneria.com ">info@digicorpingegneria.com </a>
+                    </div>
+                    <div class="d-flex flex-row align-items-center mb-2">
+                        <p>PEC:</p>
+                        <a tef="mailto:digicorpingegneria@pec.it">digicorpingegneria@pec.it</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row py-4">
+                <div class="policy">
+                        <a href="">Cookie policy</a>
+                </div>
+              </div>
+
+          </div>
+          <div class="col-12 col-md-2 d-flex flex-column align-items-start">
+            <div class="d-flex flex-column align-items-start pt-4">
+                <h5>Menu</h5>
+                <ul class="nav mt-3 flex-column list">
+                    <li class="nav nav-item mb-3 flex-row align-items-center"><a href="" class="nav-link">CIVIL Design</li></a>
+                    <li class="nav nav-item mb-3 flex-row align-items-center"><a href="" class="nav-link">CAD&Pillar</li></a>
+                    <li class="nav nav-item mb-3 flex-row align-items-center"><a href="" class="nav-link">Prodotti</li></a>
+                    <li class="nav nav-item mb-3 flex-row align-items-center"><a href="" class="nav-link">Servizi</li></a>
+                    <li class="nav nav-item mb-3 flex-row align-items-center"><a href="" class="nav-link">Di azienda</li></a>
+                </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom pt-4 pb-5 custom-border-top">
+          <div class="row mx-5">
+            <div class="col-12 col-lg-6 d-flex flex-column align-items-center text-center">
+              <p class="my-2">Capitale Sociale € 10.400,00 i.v.</p>
+              <p class="my-xl-0 my-2 mx-xl-1 mx-0">Iscrizione al Registro delle Imprese di Udine N. 01735590307</p>
+            </div>
+            <div class="col-12 col-lg-6 d-flex flex-column align-items-center text-center">
+              <p class="my-2">Codice Fiscale e Partita IVA: 01735590307</p>
+              <p class="my-xl-0 my-2 mx-xl-1 mx-0">Azienda certificata UNI EN ISO 9001:2015</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </footer>
+  
+    <script src="/static/js/header.js"></script>
+    <script src="/static/js/main.js"></script>
+
+    <script>
+      
+    </script>
+    
+  </body>
+</html>
