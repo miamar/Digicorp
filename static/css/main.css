@@ -447,6 +447,12 @@ h6 {
   .hero-home .container {
     padding-top: 25%;
   }
+  .contact-red .col-lg-6, 
+  .contact-red .col-12,
+  .contact-azzuro .col-lg-6, 
+  .contact-azzuro .col-12 {
+    padding: 3rem;
+  }
 }
 
   /* BUTTONS */
