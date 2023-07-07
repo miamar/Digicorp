@@ -283,7 +283,7 @@ h6 {
     line-height: 2.1rem;
   }
 
-  .red-line, .light-line,.purple-line  {
+  .red-line, .light-line,.purple-line, .blue-line  {
     width: 20%;
     height: 0.5rem;
     background: #E73C14;
@@ -297,6 +297,10 @@ h6 {
 
  .purple-line {
   background: #962D79;
+}
+
+.blue-line {
+  background: #409BA3;
 }
 
 .partners {

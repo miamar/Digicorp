@@ -53,12 +53,31 @@
     -moz-text-fill-color: transparent;
 }
 
+.gradient-cad-text {
+  background-color: #CD2127;
+  background-image: linear-gradient(74.59deg, #CD2127 0%, #FEC13B 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
 .civil-gradient-background {
   background: linear-gradient(90.14deg, #67A237 0.13%, #409BA3 99.86%);
   color: white;
 }
 
-.civil-gradient-background .big, .civil-gradient-background .small {
+.cad-gradient-background {
+  background: linear-gradient(74.59deg, #CD2127 0%, #FEC13B 100%);
+  color: white;
+}
+
+.civil-gradient-background .big, 
+.civil-gradient-background .small,
+.cad-gradient-background .big,
+.cad-gradient-background .small {
   color: white;
 }
 
