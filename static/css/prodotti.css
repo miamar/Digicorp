@@ -102,8 +102,11 @@
   padding-bottom: 7.5rem;
 }
 
- /* Soluzionni CIVIL Design */
-.soluzioni .nav-tabs .nav-item.show .nav-link, .soluzioni .nav-tabs .nav-link.active {
+ /* Soluzionni CIVIL Design e moduli CAD&Pillar (nav style) */
+.soluzioni .nav-tabs .nav-item.show .nav-link, 
+.soluzioni .nav-tabs .nav-link.active,
+.moduli .nav-tabs .nav-item.show .nav-link, 
+.moduli .nav-tabs .nav-link.active {
   color: #962D79;
   background-color: transparent;
   border-color: transparent transparent #f3f3f3;
@@ -111,37 +114,46 @@
   font-weight: 600;
 }
 
-.soluzioni .nav-tabs .nav-item.show .nav-link .xsmall, .soluzioni .nav-tabs .nav-link.active .xsmall {
+.soluzioni .nav-tabs .nav-item.show .nav-link .xsmall, 
+.soluzioni .nav-tabs .nav-link.active .xsmall,
+.moduli .nav-tabs .nav-item.show .nav-link .xsmall, 
+.moduli .nav-tabs .nav-link.active .xsmall {
   color: #962D79;
   font-weight: 600;
 }
 
-.soluzioni .nav-tabs .nav-link {
+.soluzioni .nav-tabs .nav-link,
+.moduli .nav-tabs .nav-link {
   border: 1px solid transparent;
   border-top-left-radius: .25rem;
   border-top-right-radius: .25rem;
   color: #BFBFBF;
 }
 
-.soluzioni .nav-tabs {
+.soluzioni .nav-tabs,
+.moduli .nav-tabs {
   --bs-nav-tabs-border-color: #BFBFBF;
 }
 
-.soluzioni .nav-tabs .nav-link .xsmall {
+.soluzioni .nav-tabs .nav-link .xsmall,
+.moduli .nav-tabs .nav-link .xsmall {
   color: #BFBFBF;
   font-weight: 600;
 }
-.soluzioni .nav-item .soluzioni-icon {
+
+.soluzioni-icon {
   height: 2.5rem;
   width: auto;
   margin-bottom: 1rem;
 }
 
-.soluzioni .nav-tabs .nav-link .soluzioni-icon path {
+.soluzioni .soluzioni-icon path,
+.moduli .soluzioni-icon path {
   fill: #BFBFBF;
 }
 
-.soluzioni .nav-tabs .nav-item.show .nav-link .soluzioni-icon path, .soluzioni .nav-tabs .nav-link.active .soluzioni-icon path {
+.soluzioni .nav-tabs .nav-item.show .soluzioni-icon path, 
+.soluzioni .nav-tabs .nav-link.active .soluzioni-icon path {
   fill: #962D79;
 }
 
@@ -246,6 +258,74 @@
   border-radius: 50%;
   border: none;
 }
+
+/* CAD&Pillar moduli */
+.moduli .nav-tabs .nav-item.show .nav-link, 
+.moduli .nav-tabs .nav-link.active {
+  color: #409BA3;
+}
+
+.moduli .nav-tabs .nav-item.show .nav-link .xsmall, 
+.moduli .nav-tabs .nav-link.active .xsmall {
+  color: #409BA3
+}
+
+.moduli .nav-tabs .nav-item.show .soluzioni-icon path, 
+.moduli .nav-tabs .nav-link.active .soluzioni-icon path {
+  fill: #409BA3;
+}
+
+.moduli .tab-content {
+  background-color: #f9f9f9;
+}
+
+.moduli .tab-content h4{
+  color: #409BA3;
+}
+
+/*Moduli - specifiche*/
+.moduli .specifiche .nav-tabs {
+  --bs-nav-tabs-border-color: transparent;
+}
+
+.moduli .specifiche .nav.nav-tabs {
+  border: 1px solid #F2F2F2;
+  border-radius: 1rem 0rem 0rem 1rem;
+}
+
+.moduli .specifiche .nav-tabs .nav-item.nav-link,
+.moduli .specifiche .nav-tabs .nav-link.active {
+  border-bottom: 1px solid #F2F2F2;
+  width: 100%;
+}
+
+.moduli .specifiche .bullet-circle-icon path  {
+  fill: #409BA3;
+}
+
+.moduli .specifiche .bullet-circle-icon {
+  display: none;
+}
+
+.moduli .specifiche .nav-tabs .nav-item.show .nav-link .bullet-circle-icon, 
+.moduli .specifiche .nav-tabs .nav-link.active .bullet-circle-icon {
+  display: block;
+  margin-left: 1rem;
+}
+
+
+.moduli .specifiche .nav-tabs .nav-item.show .nav-link, 
+.moduli .specifiche .nav-tabs .nav-link.active {
+  color: transparent;
+}
+
+.moduli .specifiche .nav-tabs .nav-item.show .nav-link h5,
+.moduli .specifiche .nav-tabs .nav-link.active h5,
+.moduli .specifiche .nav-tabs .nav-link h5  {
+  color: #409BA3;
+  padding: 1rem;
+}
+
 
  /* Requesti di sistema - prodotti primari */
  .requesti-primari .nav-tabs .nav-item.show .nav-link, 
