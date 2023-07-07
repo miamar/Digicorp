@@ -291,6 +291,26 @@
   --bs-nav-tabs-border-color: #ffffff00;
 }
 
+.faq .accordion {
+  --bs-accordion-border-color: #f9f9f9;
+  --bs-accordion-bg: #f9f9f9;
+  --bs-accordion-border-radius: 5rem;
+  --bs-accordion-active-color: #409BA3;
+  --bs-accordion-active-bg:#f9f9f9;
+  --bs-accordion-btn-focus-border-color: transparent;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.faq .accordion-item {
+  border-color: #f9f9f9;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.faq .accordion-body.xsmall {
+  color:#646363;
+}
+
+
 
  /*BUTTONS*/
  .civil-button {
