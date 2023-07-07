@@ -216,6 +216,12 @@ h6 {
   line-height: 2.7rem;
 }
 
+.basic {
+  color: #212121;
+  font-size: 1.7rem;
+  line-height: 2.7rem;
+}
+
 .small {
   color: #212121;
   font-size: 1.4rem;

@@ -94,6 +94,14 @@
   padding-right: 3rem;
 }
 
+.cad-benefits {
+  background-color: #F9F9F9;
+}
+
+.cad-benefits .container {
+  padding-bottom: 7.5rem;
+}
+
  /* Soluzionni CIVIL Design */
 .soluzioni .nav-tabs .nav-item.show .nav-link, .soluzioni .nav-tabs .nav-link.active {
   color: #962D79;
