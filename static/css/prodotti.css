@@ -354,11 +354,12 @@
     font-weight: 500;
     line-height: 1.75813rem;
     letter-spacing: 0.1rem;
-    border: 2px solid transparent;
+    border: 2px solid #409ba300;
   }
 
   .cad-button {
     background: linear-gradient(74.59deg, #CD2127 0%, #FEC13B 100%);
+    border: 2px solid #cd212700;
   }
   
   .civil-button::before, .cad-button::before {
@@ -385,7 +386,7 @@
   }
 
   .civil-button:hover::before, .cad-button:hover::before {
-    visibility: none;
+    display: none;
   }
 
   @media all and (max-width: 1200px) {
