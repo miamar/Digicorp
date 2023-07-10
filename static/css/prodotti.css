@@ -144,6 +144,10 @@
   width: auto;
 }
 
+.secondari-cards {
+  border-radius: 0rem 15rem;
+}
+
 .gradient-civil-text {
     background-color: #67a237;
     background-image: linear-gradient(90.14deg, #67A237 0.13%, #409BA3 99.86%);
@@ -525,6 +529,16 @@
 
 .faq .accordion-body.xsmall {
   color:#646363;
+}
+
+.secondari.img-md-text ul li,
+.secondari.text-md-img ul li{
+  list-style-type: circle;
+}
+
+.secondari.img-md-text ul li::marker,
+.secondari.text-md-img ul li::marker {
+  color: #E73C14;
 }
 
  /*BUTTONS*/
