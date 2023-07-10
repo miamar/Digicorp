@@ -1,3 +1,81 @@
+/* Icone */
+.topografia-gradient-drop-icon .first-stop,
+.idraulica-gradient-drop-icon .first-stop,
+.strade-gradient-drop-icon .first-stop,
+.altro-gradient-drop-icon .first-stop {
+  stop-color: #D34316; 
+}
+
+.topografia-gradient-drop-icon .second-stop {
+  stop-color: #6AA237; 
+}
+
+.idraulica-gradient-drop-icon .second-stop {
+  stop-color: #1B6BC9;
+}
+
+.strade-gradient-drop-icon .second-stop {
+  stop-color: #EA801E;
+}
+
+.altro-gradient-drop-icon .second-stop {
+  stop-color: #C81D98;
+}
+
+.topografia-drop-icon path {
+  fill: #6AA237;
+}
+
+.strade-drop-icon path {
+  fill: #EA801E;
+}
+
+.idraulica-drop-icon path {
+  fill: #1B6BC9;
+}
+
+.altro-drop-icon path {
+  fill: #C81D98;
+}
+
+.topografia-color-text {
+  color: #6AA237;
+}
+
+.strade-color-text {
+  color: #EA801E;
+}
+
+.idraulica-color-text {
+  color: #1B6BC9;
+}
+
+.altro-color-text {
+  color: #C81D98;
+}
+
+/* hr lines */
+
+.purple-line {
+  background: #962D79;
+}
+
+.topografia-line {
+  background: #6AA237;
+}
+
+.strade-line {
+  background: #EA801E;
+}
+
+.idraulica-line {
+  background: #1B6BC9;
+}
+
+.altro-line {
+  background: #C81D98;
+}
+
 .hero-primari,
 .hero-secondari  {
     height: 100%;
@@ -448,46 +526,6 @@
 .faq .accordion-body.xsmall {
   color:#646363;
 }
-
-.topografia-gradient-drop-icon .first-stop,
-.idraulica-gradient-drop-icon .first-stop,
-.strade-gradient-drop-icon .first-stop,
-.altro-gradient-drop-icon .first-stop {
-  stop-color: #D34316; 
-}
-
-.topografia-gradient-drop-icon .second-stop {
-  stop-color: #6AA237; 
-}
-
-.idraulica-gradient-drop-icon .second-stop {
-  stop-color: #1B6BC9;
-}
-
-.strade-gradient-drop-icon .second-stop {
-  stop-color: #EA801E 
-}
-
-.altro-gradient-drop-icon .second-stop {
-  stop-color: #C81D98;
-}
-
-.topografia-drop-icon path {
-  fill: #EA801E;
-}
-
-.strade-drop-icon path {
-  fill: #6AA237;
-}
-
-.idraulica-drop-icon path {
-  fill: #1B6BC9;
-}
-
-.altro-drop-icon path {
-  fill: #C81D98;
-}
-
 
  /*BUTTONS*/
  .civil-button, 

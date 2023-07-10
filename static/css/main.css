@@ -307,7 +307,14 @@ h6 {
     line-height: 2.1rem;
   }
 
-  .red-line, .light-line,.purple-line, .blue-line  {
+  .red-line, 
+  .light-line,
+  .purple-line, 
+  .blue-line,
+  .topografia-line,
+  .strade-line,
+  .idraulica-line,
+  .altro-line  {
     width: 20%;
     height: 0.5rem;
     background: #E73C14;
