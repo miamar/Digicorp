@@ -45,11 +45,13 @@
   background-color: #F9F9F9;
 }
 
-.primari-cards {
+.primari-cards,
+.secondari-cards {
   background-color: #F9F9F9;
 }
 
-.primari-cards .card {
+.primari-cards .card,
+.secondari-cards .card  {
   border: none;
   border-radius: 1.5rem;
   background-color: white;
@@ -58,6 +60,10 @@
 
 .primari-card-icon {
   height: 4rem;
+}
+
+.secondari-cards svg {
+  height: 3rem;
 }
 
 .gradient-civil-text {
@@ -443,6 +449,44 @@
   color:#646363;
 }
 
+.topografia-gradient-drop-icon .first-stop,
+.idraulica-gradient-drop-icon .first-stop,
+.strade-gradient-drop-icon .first-stop,
+.altro-gradient-drop-icon .first-stop {
+  stop-color: #D34316; 
+}
+
+.topografia-gradient-drop-icon .second-stop {
+  stop-color: #6AA237; 
+}
+
+.idraulica-gradient-drop-icon .second-stop {
+  stop-color: #1B6BC9;
+}
+
+.strade-gradient-drop-icon .second-stop {
+  stop-color: #EA801E 
+}
+
+.altro-gradient-drop-icon .second-stop {
+  stop-color: #C81D98;
+}
+
+.topografia-drop-icon path {
+  fill: #EA801E;
+}
+
+.strade-drop-icon path {
+  fill: #6AA237;
+}
+
+.idraulica-drop-icon path {
+  fill: #1B6BC9;
+}
+
+.altro-drop-icon path {
+  fill: #C81D98;
+}
 
 
  /*BUTTONS*/
@@ -539,6 +583,7 @@
   .altro-button:hover {
     color: #C81D98;
   }
+
 
   @media all and (max-width: 1200px) {
     .release iframe {

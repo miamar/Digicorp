@@ -173,6 +173,18 @@ label::after {
   object-fit: cover;
 }
 
+.default-gradient-drop-icon .first-stop {
+  stop-color: #B71111;
+}
+
+.default-gradient-drop-icon .second-stop {
+  stop-color: #E73C14;
+}
+
+.default-drop-icon path {
+  fill: #E73C14;
+}
+
 /* TESTO */
 h1{
   font-size: 4.3rem;
@@ -275,7 +287,7 @@ h6 {
     overflow: hidden;
   }
 
-  .color-text {
+  .default-color-text {
     color: #E73C14;
   }
 
