@@ -446,7 +446,12 @@
 
 
  /*BUTTONS*/
- .civil-button, .cad-button {
+ .civil-button, 
+ .cad-button, 
+ .topografia-button,
+ .strade-button,
+ .idraulica-button,
+ .altro-button {
     position: relative; 
     padding: 10px 20px;
     background: linear-gradient(90.14deg, #67A237 0.13%, #409BA3 99.86%);
@@ -459,13 +464,13 @@
     letter-spacing: 0.1rem;
     border: 2px solid #409ba300;
   }
-
-  .cad-button {
-    background: linear-gradient(74.59deg, #CD2127 0%, #FEC13B 100%);
-    border: 2px solid #cd212700;
-  }
   
-  .civil-button::before, .cad-button::before {
+  .civil-button::before, 
+  .cad-button::before,
+  .topografia-button::before,
+  .strade-button::before,
+  .idraulica-button::before,
+  .altro-button::before {
     content: "";
     position: absolute;
     left: 0;
@@ -478,18 +483,61 @@
     opacity: 0.2;
   }
 
-  .civil-button:hover, .cad-button:hover {
+  .civil-button:hover, 
+  .cad-button:hover,
+  .topografia-button:hover,
+  .strade-button:hover,
+  .idraulica-button:hover,
+  .altro-button:hover  {
     background: white;
     border: 2px solid;
     color: #67a237;
+  }
+
+  .civil-button:hover::before, 
+  .cad-button:hover::before,
+  .topografia-button:hover::before,
+  .strade-button:hover::before,
+  .idraulica-button:hover::before,
+  .altro-button:hover::before {
+    display: none;
+  }
+
+  .cad-button {
+    background: linear-gradient(74.59deg, #CD2127 0%, #FEC13B 100%);
+    border: 2px solid #cd212700;
   }
 
   .cad-button:hover {
     color: #CD2127;
   }
 
-  .civil-button:hover::before, .cad-button:hover::before {
-    display: none;
+  .topografia-button {
+    background: radial-gradient(65.67% 100% at 50% 100%, #D34316 0%, #6AA237 100%);
+  }
+  .topografia-button:hover {
+    color: #6AA237;
+  }
+
+  .strade-button {
+    background: radial-gradient(65.67% 100% at 50% 100%, #D34316 0%, #EA801E 100%);
+  }
+  .strade-button:hover {
+    color: #EA801E;
+  }
+
+  .idraulica-button {
+    background: radial-gradient(65.67% 100% at 50% 100%, #D34316 0%, #1B6BC9 100%);
+  }
+  .idraulica-button:hover {
+    color: #1B6BC9;
+  }
+
+  .altro-button {
+    background: radial-gradient(65.67% 100% at 50% 100%, #D34316 0%, #C81D98 100%);
+  }
+  .altro-button:hover {
+    color: #C81D98;
   }
 
   @media all and (max-width: 1200px) {
