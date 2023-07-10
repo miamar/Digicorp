@@ -55,7 +55,6 @@
 }
 
 /* hr lines */
-
 .purple-line {
   background: #962D79;
 }
@@ -142,6 +141,7 @@
 
 .secondari-cards svg {
   height: 3rem;
+  width: auto;
 }
 
 .gradient-civil-text {
