@@ -205,14 +205,14 @@
                               <div class="col-md-12 col-lg-3 mb-4 mb-lg-0">
                                 <ul>
                                   <li>
-                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon-proddoti" src="/static/img/topografia.png"/><span class="title">Topografia</span></a>
+                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon-proddoti" src="/static/img/loghi/topografia.png"/><span class="title">Topografia</span></a>
                                     <ul class="softwares">
                                       <li><a>Strade e ferrovie</a></li>
                                       <li><a>Strade e ferrovie</a></li>
                                     </ul>
                                   </li>
                                   <li>
-                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon-proddoti" src="/static/img/topografia.png"/><span class="title">Topografia</span></a>
+                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon-proddoti" src="/static/img/loghi/topografia.png"/><span class="title">Topografia</span></a>
                                     <ul class="softwares">
                                       <li><a>Strade e ferrovie</a></li>
                                       <li><a>Strade e ferrovie</a></li>
@@ -220,7 +220,7 @@
                                     </ul>
                                   </li>
                                   <li>
-                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon-proddoti" src="/static/img/topografia.png"/><span class="title">Topografia</span></a>
+                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon-proddoti" src="/static/img/loghi/topografia.png"/><span class="title">Topografia</span></a>
                                     <ul class="softwares">
                                       <li><a>Strade e ferrovie</a></li>
                                       <li><a>Strade e ferrovie</a></li>
@@ -233,7 +233,7 @@
                               <div class="col-md-12 col-lg-3 mb-4 mb-lg-0">
                                 <ul>
                                   <li>
-                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon-proddoti" src="/static/img/topografia.png"/><span class="title">Topografia</span></a>
+                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon-proddoti" src="/static/img/loghi/topografia.png"/><span class="title">Topografia</span></a>
                                     <ul class="softwares">
                                       <li><a>Strade e ferrovie</a></li>
                                       <li><a>Strade e ferrovie</a></li>
@@ -495,7 +495,7 @@
                   <div class="swiper-slide">
                     <div class="card h-100 p-4 justify-content-between">
                       <div class="d-flex align-items-center">
-                      <img class="card-img-top" src="/static/img/topografia.png" alt="Card image cap">
+                      <img class="card-img-top" src="/static/img/loghi/topografia.png" alt="Card image cap">
                       <h4>Transfer 5</h4>
                     </div>
                       <div class="card-body p-0 my-4">
@@ -507,7 +507,7 @@
                   <div class="swiper-slide">
                     <div class="card h-100 p-4 justify-content-between">
                       <div class="d-flex align-items-center">
-                      <img class="card-img-top" src="/static/img/topografia.png" alt="Card image cap">
+                      <img class="card-img-top" src="/static/img/loghi/topografia.png" alt="Card image cap">
                       <h4>Transfer 5</h4>
                     </div>
                       <div class="card-body p-0 my-4">
@@ -519,7 +519,7 @@
                   <div class="swiper-slide">
                     <div class="card h-100 p-4 justify-content-between">
                       <div class="d-flex align-items-center">
-                      <img class="card-img-top" src="/static/img/topografia.png" alt="Card image cap">
+                      <img class="card-img-top" src="/static/img/loghi/topografia.png" alt="Card image cap">
                       <h4>Transfer 4</h4>
                     </div>
                       <div class="card-body p-0 my-4">
@@ -570,7 +570,7 @@
         <div class="container d-flex flex-column align-items-center custom-container">
           <h2 class="text-center">Lorem ipsum dolorsit <span class="color-text">amet</span> consectetur vero dolorsit</h2>
           <p class="small my-4 text-center">Lorem ipsum dolor sit amet consectetur. Non magna est feugiat lacinia id enim et id molestie. </p>
-          <div class="row flex-column flex-lg-row align-items-lg-stretch mt-5">
+          <div class="row mt-5">
             <div class="col-12 col-lg-6">
               <div class="card h-100 justify-content-between">
                 <div class="card-body">
@@ -590,7 +590,7 @@
               </div>
             </div>
           </div>
-          <div class="row flex-column flex-lg-row align-items-lg-stretch mt-4">
+          <div class="row mt-4">
             <div class="col-12 col-lg-6">
               <div class="card h-100 justify-content-between">
                 <div class="card-body">
@@ -617,7 +617,7 @@
         <div class="container custom-container">
           <div class="row align-items-center">
             <div class="col-12 col-lg-4 order-2 order-lg-1">
-              <img class="img-full-width pt-5 pt-lg-0" src="/static/img/examples/highway.png">
+              <img class="img-full-width pt-5 pt-lg-0" src="/static/img/examples/ibimi.png">
             </div>
             <div class="col-12 col-lg-8 mt-3 mt-lg-0 order-1 order-lg-2">
               <h3>DIGICORP Ingegneria e IBIMI</h3>
@@ -869,7 +869,32 @@
     <script src="/static/js/header.js"></script>
     <script src="/static/js/main.js"></script>
 
+    <script>
+      // Get all the columns within the .soluzioni container
+const columns = document.querySelectorAll('.servizi-home .col-12, .servizi-home .col-lg-6');
     
+    // Function to calculate the height of the tallest column
+    const setEqualHeight = () => {
+      let maxHeight = 0;
+    
+      // Loop through each column and find the tallest one
+      columns.forEach((column) => {
+        const columnHeight = column.offsetHeight;
+        if (columnHeight > maxHeight) {
+          maxHeight = columnHeight;
+        }
+      });
+    
+      // Set the height of all columns to the height of the tallest column
+      columns.forEach((column) => {
+        column.style.height = `${maxHeight}px`;
+      });
+    };
+    
+    // Call the setEqualHeight function initially and on window resize
+    window.addEventListener('load', setEqualHeight);
+    window.addEventListener('resize', setEqualHeight);
+    </script>
      <!-- 
     <script>
       // Get the reference to the image element
