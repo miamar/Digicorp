@@ -438,7 +438,7 @@ h6 {
 /* Bullet list */
 .bullet-list {
   background-color: #F9F9F9;
-  border-radius: 0rem 15rem 0rem 0rem;
+  border-radius: 0rem 10rem 0rem 0rem;
 }
 
 .bullet-list svg {
