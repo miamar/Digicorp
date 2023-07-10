@@ -41,3 +41,21 @@ var swiper = new Swiper(".softwaresSwiper", {
       clickable: true,
     }
   });
+
+  // Get the Swiper container element
+var swiperContainer = document.querySelector('.softwaresSwiper');
+
+// Get the parent column element
+var column = swiperContainer.closest('.swiperColumn');
+
+// Calculate the width of the column
+var columnWidth = column.offsetWidth;
+
+var swiper = new Swiper('.softwaresSwiper', {
+  on: {
+    init: function () {
+      // Set the width of the Swiper container
+      swiperContainer.style.width = columnWidth + 'px';
+    },
+  },
+});
