@@ -1,4 +1,5 @@
-.hero-primari {
+.hero-primari,
+.hero-secondari  {
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -17,9 +18,26 @@
     width: auto;
 }
 
-.hero-primari .container p {
+.hero-secondari .container img {
+  height: 5rem;
+  width: auto;
+}
+
+.hero-primari .container p, 
+.hero-secondari .container p {
     color: #BFBFBF;
     font-weight: 400;
+}
+
+.hero-secondari .container h2 {
+  color: #BFBFBF;
+}
+
+.hero-secondari .container {
+  padding-top: 10%;
+   padding-right: 30%;
+  padding-bottom: 5%;
+  overflow: hidden;
 }
 
 .intro-title {
@@ -503,11 +521,16 @@
     .release iframe{
       padding-right: unset;
     }
+
+    .hero-secondari .container {
+      padding-top: 15%;
+    }
   }
 
   @media all and (max-width: 768px) {
-    .hero-primari .container {
-      padding-right: 0;
+    .hero-primari .container,
+    .hero-secondari .container {
+      padding-right: unset;
     }
     .release .container {
       padding-bottom: 4.5rem;
@@ -520,9 +543,11 @@
   }
   
   @media all and (max-width: 576px) {
-    .hero-primari .container {
+    .hero-primari .container,
+    .hero-secondari .container {
       padding-top: 25%;
     }
+
     .hero-primari .container img {
         height: 8rem;
         margin-top: 1rem;
