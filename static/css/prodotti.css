@@ -188,6 +188,13 @@
   background: radial-gradient(65.67% 100% at 50% 100%, #D34316 0%, #EA801E 100%);
 }
 
+.idraulica-gradient-background {
+  background: radial-gradient(65.67% 100% at 50% 100%, #D34316 0%, #1B6BC9 100%);
+}
+
+.altro-gradient-background {
+  background: radial-gradient(65.67% 100% at 50% 100%, #D34316 0%, #C81D98 100%);
+}
 
 .civil-gradient-background .big, 
 .civil-gradient-background .small,
@@ -198,7 +205,13 @@
 .topografia-gradient-background .xsmall,
 .strade-gradient-background h2,
 .strade-gradient-background .basic,
-.strade-gradient-background .xsmall {
+.strade-gradient-background .xsmall,
+.altro-gradient-background h2,
+.altro-gradient-background .basic,
+.altro-gradient-background .xsmall,
+.idraulica-gradient-background h2,
+.idraulica-gradient-background .basic,
+.idraulica-gradient-background .xsmall {
   color: white;
 }
 
