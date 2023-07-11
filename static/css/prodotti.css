@@ -180,10 +180,25 @@
   color: white;
 }
 
+.topografia-gradient-background {
+  background: radial-gradient(65.67% 100% at 50% 100%, #D34316 0%, #6AA237 100%);
+}
+
+.strade-gradient-background {
+  background: radial-gradient(65.67% 100% at 50% 100%, #D34316 0%, #EA801E 100%);
+}
+
+
 .civil-gradient-background .big, 
 .civil-gradient-background .small,
 .cad-gradient-background .big,
-.cad-gradient-background .small {
+.cad-gradient-background .small,
+.topografia-gradient-background h2,
+.topografia-gradient-background .basic,
+.topografia-gradient-background .xsmall,
+.strade-gradient-background h2,
+.strade-gradient-background .basic,
+.strade-gradient-background .xsmall {
   color: white;
 }
 
@@ -488,6 +503,11 @@
   vertical-align: middle;
 }
 */
+
+ /* Requesti di sistema - prodotti secondari */
+ .requesti-secondari .bullet-circle-icon path {
+  fill: white;
+ }
 
  /* FAQ - prodotti primari */
  .faq .nav-tabs .nav-item.show .nav-link, .faq .nav-tabs .nav-link.active {
