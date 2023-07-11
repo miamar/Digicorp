@@ -237,6 +237,13 @@
 }
 
 /* Softwares showcase - pagina di prodotti secondari */
+.softwares-secondari .card  {
+  border: none;
+  border-radius: 0.7rem;
+  background-color: white;
+  box-shadow: 4px 4px 30px 0px rgba(100, 99, 99, 0.10);
+}
+
 .softwares-secondari .card small {
   color: #646363;
 }
@@ -246,13 +253,22 @@
   height: auto;
 }
 
+.softwares-secondari .card.secondari img {
+  width: 3rem;
+  height: auto;
+}
+
 .softwares-secondari .card .arrow-right {
   width: 2rem;
   height: auto;
 }
 
-.softwares-secondari .card .arrow-right path {
+.softwares-secondari .card.primari .arrow-right path {
   fill: #E73C14;
+}
+
+.softwares-secondari .card.primari .arrow-right.topografia path {
+  fill: #6AA237;
 }
 
  /* Soluzionni CIVIL Design e moduli CAD&Pillar (nav style) */
