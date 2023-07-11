@@ -236,6 +236,25 @@
   padding-bottom: 7.5rem;
 }
 
+/* Softwares showcase - pagina di prodotti secondari */
+.softwares-secondari .card small {
+  color: #646363;
+}
+
+.softwares-secondari .card.primari img {
+  width: 5.5rem;
+  height: auto;
+}
+
+.softwares-secondari .card .arrow-right {
+  width: 2rem;
+  height: auto;
+}
+
+.softwares-secondari .card .arrow-right path {
+  fill: #E73C14;
+}
+
  /* Soluzionni CIVIL Design e moduli CAD&Pillar (nav style) */
 .soluzioni .nav-tabs .nav-item.show .nav-link, 
 .soluzioni .nav-tabs .nav-link.active,
