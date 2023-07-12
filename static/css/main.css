@@ -437,7 +437,7 @@ h6 {
 
 /* ALTRE PAGINE */
 /* Hero - altre pagine */
-.hero-altro {
+.hero-altro, .banner {
   height: 100%;
   background-size: cover;
   background-position: center;
@@ -458,6 +458,11 @@ h6 {
 
 .hero-altro h1 {
 color: #BFBFBF;
+}
+
+/* Banner */
+.banner h2, .banner .small {
+  color: #BFBFBF;
 }
 
 /* Bullet list */
@@ -539,6 +544,14 @@ color: #BFBFBF;
   .contact-blue .col-12 {
     padding: 6rem;
   }
+}
+
+@media all and (min-width: 1200px) {
+
+  .banner .container .small, .banner .container h2 {
+    width: 75%;
+  }
+  
 }
 
 @media all and (max-width: 1200px) {
