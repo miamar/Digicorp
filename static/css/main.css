@@ -514,7 +514,13 @@ color: #BFBFBF;
 }
 
 .secondari-cards.dark .card {
-  background: linear-gradient(253deg, rgba(77, 74, 74, 0.42) 0%, rgba(33, 33, 33, 0.22) 100%);
+  box-shadow: 4px 4px 30px 0px rgba(2, 2, 2, 0.1);
+}
+
+.secondari-cards.dark .card,
+.azienda-cards.dark .card {
+  background: linear-gradient(130deg, rgba(77, 74, 74, 0.42) 0%, rgba(33, 33, 33, 0.22) 100%);
+
 }
 
 .secondari-cards.dark .card .xsmall {
@@ -525,8 +531,42 @@ color: #BFBFBF;
   border-radius: 0rem;
 }
 
+/* Card di azienda */
+.azienda-cards {
+  background-color: #F9F9F9;
+}
+
+.azienda-cards .xsmall {
+  color: #646363;
+}
+
+.azienda-cards .card {
+  border: none;
+  border-radius: 0.625rem;
+  background-color: white;
+  box-shadow: 4px 4px 30px 0px rgba(2, 2, 2, 0.1);
+}
+
+.azienda-cards .card img {
+  height: 4.5rem;
+  width: auto;
+}
+
+.azienda-cards.dark {
+  background-color: #212121;
+}
+
+.azienda-cards.dark h5 {
+  color: #F9F9F9;
+}
+
+.azienda-cards.dark .xsmall {
+  color: #BFBFBF;
+}
+
+
 /* Titolo a sinistra width: 50%, Testo a destra width: 50% */
-/* Dark bacground */
+/* Dark background */
 .title-sm-text.dark {
   background-color: #212121;
 }
