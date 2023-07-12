@@ -4,7 +4,7 @@
     
   }
 
-  .swiper-slide {
+  .gallery .swiper-slide {
     height: 40rem;
   }
 
@@ -75,7 +75,7 @@
  visibility: visible;
 }
 
-.slide-overlay {
+.gallery .slide-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -91,11 +91,11 @@
   padding: 1rem;
 }
 
-.swiper-slide:hover .slide-overlay {
+.gallery  .swiper-slide:hover .slide-overlay {
   opacity: 1;
 }
 
-.slide-overlay h4, .slide-overlay p, .slide-overlay li {
+.gallery .slide-overlay h4, .gallery .slide-overlay p, .gallery  .slide-overlay li {
   color: white;
   text-align: center;
 }
@@ -155,7 +155,7 @@
      height: 30rem;
   }
   
-  .slide-overlay {
+  .gallery .slide-overlay {
     position: relative;
     margin-bottom: 1rem;
     width: 100%;
@@ -170,7 +170,7 @@
     padding: 1rem;
   }
 
-  .slide-overlay h4, .slide-overlay p, .slide-overlay li {
+  .gallery .slide-overlay h4, .gallery .slide-overlay p, .gallery  .slide-overlay li {
     color: black;
     text-align: left;
   }

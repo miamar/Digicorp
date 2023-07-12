@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
     <!-- styles CSS -->
     <link rel="stylesheet" href="/static/css/fonts.css"/>
@@ -33,7 +33,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     
     <style>
-      
+        swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1.7rem!important;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
     </style>
 
   </head>
@@ -616,6 +636,74 @@
             </div>
         </div>
 
+        <div class="partner-cards">
+            <div class="container custom-container">
+                <h3>Partners</h3>
+                <p class="small mb-4 mt-3 text-uppercase default-color-text">I nostri partner:</p>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="card d-flex flex-column align-items-start p-4 h-100">
+                            <img class="mb-4" src="/static/img/partner/digicrop-colore.png">
+                            <h6>DIGI CORP S.r.l.</h6>
+                            <p class="xsmall mt-3">Software dedicato al mondo dell'edilizia (Suite Mosaico).</p>
+                            <div class="partner-overlay">
+                                <p class="small mb-3"></p>
+                                <a class="mb-3" href="mailto:info@digicorpingegneria.com">info@digicorpingegneria.com </a>
+                                <a></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 mt-4 mt-lg-0">
+                        <div class="card d-flex flex-column align-items-start p-4 h-100">
+                            <img class="mb-4" src="/static/img/partner/digicrop-colore.png">
+                            <h6>DIGI CORP S.r.l.</h6>
+                            <p class="xsmall mt-3">Software dedicato al mondo dell'edilizia (Suite Mosaico).</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 mt-4 mt-xl-0">
+                        <div class="card d-flex flex-column align-items-start p-4 h-100">
+                            <img class="mb-4" src="/static/img/partner/digicrop-colore.png">
+                            <h6>DIGI CORP S.r.l.</h6>
+                            <p class="xsmall mt-3">Software dedicato al mondo dell'edilizia (Suite Mosaico).</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 mt-4 mt-xl-0">
+                        <div class="card d-flex flex-column align-items-start p-4 h-100">
+                            <img class="mb-4" src="/static/img/partner/digicrop-colore.png">
+                            <h6>DIGI CORP S.r.l.</h6>
+                            <p class="xsmall mt-3">Software dedicato al mondo dell'edilizia (Suite Mosaico).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container custom-container pt-0">
+                <p class="small mb-4 mt-3 text-uppercase default-color-text">I nostri partner:</p>
+                <swiper-container class="partnerSwiper" init="false">
+                    <swiper-slide class="p-4">
+                        <div class="card d-flex flex-column align-items-start p-4 h-100">
+                            <img class="mb-4" src="/static/img/partner/digicrop-colore.png">
+                            <h6>DIGI CORP S.r.l.</h6>
+                            <p class="xsmall mt-3">Software dedicato al mondo dell'edilizia (Suite Mosaico).</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="card d-flex flex-column align-items-start p-4 h-100">
+                            <img class="mb-4" src="/static/img/partner/digicrop-colore.png">
+                            <h6>DIGI CORP S.r.l.</h6>
+                            <p class="xsmall mt-3">Software dedicato al mondo dell'edilizia (Suite Mosaico).</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>Slide 3</swiper-slide>
+                    <swiper-slide>Slide 4</swiper-slide>
+                    <swiper-slide>Slide 5</swiper-slide>
+                    <swiper-slide>Slide 6</swiper-slide>
+                    <swiper-slide>Slide 7</swiper-slide>
+                    <swiper-slide>Slide 8</swiper-slide>
+                    <swiper-slide>Slide 9</swiper-slide>
+                  </swiper-container>
+            </div>
+        </div>
+
         <div class="secondari img-md-text">
             <div class="container custom-container">
               <div class="row align-items-center">
@@ -728,15 +816,15 @@
                 <div class="contact-info d-flex flex-column align-items-start">
                     <div class="d-flex flex-row align-items-center mb-2">
                         <p>tel:</p>
-                        <a tef="tel:0432511556">0432 511556</a>
+                        <a href="tel:0432511556">0432 511556</a>
                     </div>
                     <div class="d-flex flex-row align-items-center mb-2">
                         <p>fax:</p>
-                        <a tef="tel:0432511592">0432 511592</a>
+                        <a herf="tel:0432511592">0432 511592</a>
                     </div>
                     <div class="d-flex flex-row align-items-center mb-2">
                         <p>ttel:</p>
-                        <a tef="tel:3515684129">351 568 41296</a>
+                        <a href="tel:3515684129">351 568 41296</a>
                     </div> 
                 </div>
               </div>
@@ -745,11 +833,11 @@
                 <div class="contact-info d-flex flex-column align-items-start">
                     <div class="d-flex flex-row align-items-center mb-2">
                     <p>email:</p>
-                    <a tef="mailto:info@digicorpingegneria.com ">info@digicorpingegneria.com </a>
+                    <a href="mailto:info@digicorpingegneria.com ">info@digicorpingegneria.com </a>
                     </div>
                     <div class="d-flex flex-row align-items-center mb-2">
                         <p>PEC:</p>
-                        <a tef="mailto:digicorpingegneria@pec.it">digicorpingegneria@pec.it</a>
+                        <a href="mailto:digicorpingegneria@pec.it">digicorpingegneria@pec.it</a>
                     </div>
                 </div>
               </div>
@@ -792,11 +880,36 @@
       </div>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
   
     <script src="/static/js/header.js"></script>
     <script src="/static/js/main.js"></script>
 
     <script>
+        const swiperEl = document.querySelector('.partnerSwiper')
+    Object.assign(swiperEl, {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      },
+    });
+    swiperEl.initialize();
     </script>
     
   </body>
