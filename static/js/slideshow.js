@@ -42,6 +42,29 @@ var swiper = new Swiper(".softwaresSwiper", {
     }
   });
 
+
+  var swiper = new Swiper(".partnerSwiper", {
+    slidesPerView: 1,
+      spaceBetween: 25,
+      pagination: {
+        clickable: true,
+      },
+      breakpoints: {
+        992: {
+          slidesPerView: 2,
+          spaceBetween: 25,
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 25,
+        },
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      }
+  });
+
   // Get the Swiper container element
 var swiperContainer = document.querySelector('.softwaresSwiper');
 

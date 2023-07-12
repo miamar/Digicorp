@@ -569,11 +569,11 @@ color: #BFBFBF;
 .partner-cards .card {
   box-shadow: 4px 4px 30px 0px rgba(67, 67, 67, 0.15);
 }
-
 .partner-cards .card img {
   height: 3rem;
   width: auto;
 }
+
 
 .partner-cards .card.xsmall {
   color: #646363;
@@ -592,7 +592,8 @@ color: #BFBFBF;
   border-radius: 0.625rem;
 }
 
-.partner-cards .card:hover .partner-overlay {
+.partner-cards .card:hover .partner-overlay,
+.partner-cards .card:active .partner-overlay {
   opacity: 1;
 }
 
