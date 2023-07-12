@@ -452,6 +452,61 @@ h6 {
   box-shadow: 4px 4px 30px 0px rgba(100, 99, 99, 0.10);
 }
 
+/* Secondary cards */
+.primari-cards,
+.secondari-cards {
+  background-color: #F9F9F9;
+}
+
+.primari-cards .card,
+.secondari-cards .card  {
+  border: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  box-shadow: 4px 4px 30px 0px rgba(67, 67, 67, 0.15);
+}
+
+.primari-card-icon {
+  height: 4rem;
+}
+
+.secondari-cards svg {
+  height: 3rem;
+  width: auto;
+}
+
+.secondari-cards {
+  border-radius: 0rem 10rem;
+}
+
+.secondari-cards.dark {
+  background-color: #212121;
+}
+
+.secondari-cards.dark .card {
+  background: linear-gradient(253deg, rgba(77, 74, 74, 0.42) 0%, rgba(33, 33, 33, 0.22) 100%);
+}
+
+.secondari-cards.dark .card .xsmall {
+  color: #F2F2F2;
+}
+
+.secondari-cards.dark {
+  border-radius: 0rem;
+}
+
+/* Titolo a sinistra width: 50%, Testo a destra width: 50% */
+/* Dark bacground */
+.title-sm-text.dark {
+  background-color: #212121;
+}
+
+.title-sm-text.dark h3,
+.title-sm-text.dark .basic,
+.title-sm-text.dark .xsmall {
+  color: #F2F2F2
+}
+
 @media all and (max-width: 1400px) {
   .contact-red .col-lg-6, 
   .contact-red .col-12,
