@@ -100,13 +100,13 @@
   width: auto;
 }
 
-.hero-primari .container p, 
-.hero-secondari .container p {
+.hero-primari p, 
+.hero-secondari p {
     color: #BFBFBF;
     font-weight: 400;
 }
 
-.hero-secondari .container h2 {
+.hero-secondari h2 {
   color: #BFBFBF;
 }
 

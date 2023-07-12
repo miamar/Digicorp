@@ -435,6 +435,31 @@ h6 {
   opacity: 0.03;
 }
 
+/* ALTRE PAGINE */
+/* Hero - altre pagine */
+.hero-altro {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.hero-altro  .container {
+  padding-top: 10%;
+  padding-right: 30%;
+  padding-bottom: 5%;
+  overflow: hidden;
+}
+
+.hero-altro .small {
+  color: #BFBFBF;
+  font-weight: 400;
+}
+
+.hero-altro h1 {
+color: #BFBFBF;
+}
+
 /* Bullet list */
 .bullet-list {
   background-color: #F9F9F9;
@@ -528,8 +553,14 @@ h6 {
   .servizi-home h2, .servizi-home .small, .softwares-home h2, .softwares-home p {
     width: 100%;
   }
+
   .yt iframe {
     padding-left: unset;
+  }
+
+  .hero-altro .container {
+    padding-top: 15%;
+    padding-right: unset;
   }
   
 }
@@ -561,6 +592,10 @@ h6 {
   .contact-blue .col-lg-6, 
   .contact-blue .col-12 {
     padding: 3rem;
+  }
+
+  .hero-altro .container {
+    padding-top: 25%;
   }
 }
 
