@@ -541,7 +541,8 @@ color: #BFBFBF;
 }
 
 .azienda-cards .card, 
-.partner-cards .card  {
+.partner-cards .card,
+.normative-cards .card  {
   border: none;
   border-radius: 0.625rem;
   background-color: white;
@@ -604,6 +605,17 @@ color: #BFBFBF;
 .partner-cards .partner-overlay .link-arrow svg {
   width: 2rem;
   height: 2rem;
+}
+
+/* Normative cards */
+.normative-cards .arrow-down path {
+  fill: #E73C14;
+}
+
+.normative-cards .arrow-down {
+  width: 2.25rem;
+  height: auto;
+  rotate: 90deg;
 }
 
 /* Titolo a sinistra width: 50%, Testo a destra width: 50% */
