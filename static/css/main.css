@@ -7,6 +7,10 @@ a {
   text-decoration: none;
 }
 
+.grey {
+  background-color: #F9F9F9;
+}
+
 /* TESTO */
 h1{
   font-size: 4.3rem;
@@ -467,7 +471,6 @@ color: #BFBFBF;
 
 /* Bullet list */
 .bullet-list {
-  background-color: #F9F9F9;
   border-radius: 0rem 10rem 0rem 0rem;
 }
 
@@ -483,11 +486,6 @@ color: #BFBFBF;
 }
 
 /* Secondary cards */
-.primari-cards,
-.secondari-cards {
-  background-color: #F9F9F9;
-}
-
 .primari-cards .card,
 .secondari-cards .card  {
   border: none;
@@ -532,10 +530,6 @@ color: #BFBFBF;
 }
 
 /* Card di azienda */
-.azienda-cards {
-  background-color: #F9F9F9;
-}
-
 .azienda-cards .xsmall {
   color: #646363;
 }

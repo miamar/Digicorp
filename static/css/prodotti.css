@@ -119,7 +119,6 @@
 
 .intro-title {
   padding-top: 7.5rem;
-  background-color: #F9F9F9;
 }
 
 .gradient-civil-text {
@@ -189,21 +188,12 @@
   color: white;
 }
 
-
-.release {
-  background-color: #F9F9F9;
-}
-
 .release .container {
   padding-bottom: 7.5rem;
 }
 
 .release iframe{
   padding-right: 3rem;
-}
-
-.cad-benefits {
-  background-color: #F9F9F9;
 }
 
 .cad-benefits .container {
