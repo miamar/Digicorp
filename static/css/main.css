@@ -542,7 +542,8 @@ color: #BFBFBF;
 
 .azienda-cards .card, 
 .partner-cards .card,
-.normative-cards .card  {
+.normative-cards .card,
+.tesi-cards .card {
   border: none;
   border-radius: 0.625rem;
   background-color: white;
@@ -607,16 +608,28 @@ color: #BFBFBF;
   height: 2rem;
 }
 
-/* Normative cards */
-.normative-cards .arrow-down path {
+/* Normative e tesi - cards */
+.normative-cards .arrow-down path,
+.tesi-cards .arrow-down path {
   fill: #E73C14;
 }
 
-.normative-cards .arrow-down {
+.normative-cards .arrow-down,
+.tesi-cards .arrow-down {
   width: 2.25rem;
   height: auto;
   rotate: 90deg;
 }
+
+.tesi-cards .location-icon path {
+  fill: #212121;
+}
+
+.tesi-cards .location-icon {
+  height: 1rem;
+  width: auto;
+}
+
 
 /* Titolo a sinistra width: 50%, Testo a destra width: 50% */
 /* Dark background */
