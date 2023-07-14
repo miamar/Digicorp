@@ -176,7 +176,7 @@
   .swiper-slide {
     height: 100%;
  }
-  .swiper-slide img {
+  .gallery .swiper-slide img {
      height: 30rem;
   }
   
@@ -202,7 +202,7 @@
 }
 
 @media screen and (max-width: 576px) {
-  .swiper-slide img {
+  .gallery .swiper-slide img {
     height: 20rem;
  }
 }

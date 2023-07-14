@@ -539,21 +539,19 @@ color: #BFBFBF;
 }
 
 /* Card di azienda */
-.azienda-cards .xsmall {
-  color: #646363;
-}
-
 .azienda-cards .card, 
 .partner-cards .card,
 .normative-cards .card,
 .tesi-cards .card,
 .corsi-cards .card,
 .tips-cards .card,
-.contatti-cards .card {
+.contatti-cards .card,
+.esempi-cards .card {
   border: none;
   border-radius: 0.625rem;
   background-color: white;
   box-shadow: 4px 4px 30px 0px rgba(2, 2, 2, 0.1);
+  overflow: hidden;
 }
 
 .azienda-cards .card img {
@@ -576,11 +574,6 @@ color: #BFBFBF;
 .partner-cards .card img {
   height: 3rem;
   width: auto;
-}
-
-
-.partner-cards .card.xsmall {
-  color: #646363;
 }
 
 .partner-cards .partner-overlay {
@@ -681,16 +674,18 @@ color: #BFBFBF;
   opacity: 0.03;
 }
 
+/* Esempi applicativi - cards */
+.esempi-cards .card img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+
 /* Corsi cards */
 .corsi-cards .card .categoria {
   background: linear-gradient(133deg, rgba(217, 217, 217, 0.83) 0%, rgba(242, 242, 242, 0.81) 100%);
   border-radius: 0.3rem;
-  color: #646363;
-}
-
-.corsi-cards .card a .small,
-.corsi-cards .card .xsmall {
-  color: #646363;
 }
 
 .corsi-cards .card a .arrow-right path{
@@ -765,17 +760,9 @@ color: #BFBFBF;
   width: auto;
 }
 
-.contatti-cards .card .orario .xsmall {
-  color: #646363;
-}
-
 .contatti-cards .card .orario .small {
   color: #212121;
   font-weight: 400;
-}
-
-.contatti-cards .card .contatto p.small {
-  color: #646363;
 }
 
 .contatti-cards .card .contatto a.small {
