@@ -70,3 +70,4 @@ const setEqualHeight = () => {
 // Call the setEqualHeight function initially and on window resize
 window.addEventListener('load', setEqualHeight);
 window.addEventListener('resize', setEqualHeight);
+

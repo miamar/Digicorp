@@ -237,6 +237,15 @@ label::after {
   display: none!important;
 }
 
+.contact-map .col-12.contact-right,
+.contact-map .col-lg-6.contact-right {
+  padding: 0;
+}
+
+.contact-map form {
+  display: none;
+}
+
 .img-full {
   width: 100%;
   height: 100%;
@@ -539,7 +548,8 @@ color: #BFBFBF;
 .normative-cards .card,
 .tesi-cards .card,
 .corsi-cards .card,
-.tips-cards .card {
+.tips-cards .card,
+.contatti-cards .card {
   border: none;
   border-radius: 0.625rem;
   background-color: white;
@@ -745,6 +755,34 @@ color: #BFBFBF;
   margin-bottom: 0.5rem;
 }
 
+/* Pagina di contatti */
+.contatti-cards .card svg path {
+  stroke: #E73C14;
+}
+
+.contatti-cards .card svg {
+  height: 2.5rem;
+  width: auto;
+}
+
+.contatti-cards .card .orario .xsmall {
+  color: #646363;
+}
+
+.contatti-cards .card .orario .small {
+  color: #212121;
+  font-weight: 400;
+}
+
+.contatti-cards .card .contatto p.small {
+  color: #646363;
+}
+
+.contatti-cards .card .contatto a.small {
+  color: #E73C14;
+}
+
+
 /* Titolo a sinistra width: 50%, Testo a destra width: 50% */
 /* Dark background */
 .title-sm-text.dark h3,
@@ -759,6 +797,11 @@ color: #BFBFBF;
   .contact-blue .col-lg-6, 
   .contact-blue .col-12 {
     padding: 6rem;
+  }
+
+  .contact-map .col-12.contact-right,
+  .contact-map .col-lg-6.contact-right {
+    padding: 0;
   }
 }
 
@@ -827,6 +870,11 @@ color: #BFBFBF;
   .contact-blue .col-12 {
     padding: 3rem;
   }
+
+  .contact-map .col-12.contact-right,
+  .contact-map .col-lg-6.contact-right {
+    padding: 0;
+}
 
   .hero-altro .container {
     padding-top: 25%;
