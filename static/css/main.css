@@ -538,7 +538,8 @@ color: #BFBFBF;
 .partner-cards .card,
 .normative-cards .card,
 .tesi-cards .card,
-.corsi-cards .card {
+.corsi-cards .card,
+.tips-cards .card {
   border: none;
   border-radius: 0.625rem;
   background-color: white;
@@ -603,26 +604,30 @@ color: #BFBFBF;
   height: 2rem;
 }
 
-/* Normative e tesi - cards */
+/* Normative, tesi e tips - cards */
 .normative-cards .arrow-down path,
-.tesi-cards .arrow-down path {
+.tesi-cards .arrow-down path,
+.tips-cards .arrow-down path {
   fill: #E73C14;
 }
 
 .normative-cards .arrow-down,
-.tesi-cards .arrow-down {
+.tesi-cards .arrow-down,
+.tips-cards .arrow-down  {
   width: 2.25rem;
   height: auto;
   rotate: 90deg;
 }
 
 .normative-cards .card a:hover .small,
-.tesi-cards .card a:hover .small {
+.tesi-cards .card a:hover .small,
+.tips-cards .card a:hover .small {
   color: #BFBFBF;
 }
 
 .normative-cards .card a:hover .arrow-down path,
-.tesi-cards .card a:hover .arrow-down path {
+.tesi-cards .card a:hover .arrow-down path,
+.tips-cards .card a:hover .arrow-down path {
   fill: #BFBFBF;
 }
 
@@ -633,6 +638,11 @@ color: #BFBFBF;
 .tesi-cards .location-icon {
   height: 1rem;
   width: auto;
+}
+
+.tips-cards h2,
+.tips-cards .small {
+  width: 70%;
 }
 
 /* Corsi cards */
@@ -758,6 +768,11 @@ color: #BFBFBF;
   .hero-altro .container {
     padding-top: 15%;
     padding-right: unset;
+  }
+
+  .tips-cards h2,
+  .tips-cards .small {
+    width: 100%;
   }
   
 }
