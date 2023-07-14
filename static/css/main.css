@@ -537,7 +537,8 @@ color: #BFBFBF;
 .azienda-cards .card, 
 .partner-cards .card,
 .normative-cards .card,
-.tesi-cards .card {
+.tesi-cards .card,
+.corsi-cards .card {
   border: none;
   border-radius: 0.625rem;
   background-color: white;
@@ -615,6 +616,16 @@ color: #BFBFBF;
   rotate: 90deg;
 }
 
+.normative-cards .card a:hover .small,
+.tesi-cards .card a:hover .small {
+  color: #BFBFBF;
+}
+
+.normative-cards .card a:hover .arrow-down path,
+.tesi-cards .card a:hover .arrow-down path {
+  fill: #BFBFBF;
+}
+
 .tesi-cards .location-icon path {
   fill: #212121;
 }
@@ -624,6 +635,79 @@ color: #BFBFBF;
   width: auto;
 }
 
+/* Corsi cards */
+.corsi-cards .card .categoria {
+  background: linear-gradient(133deg, rgba(217, 217, 217, 0.83) 0%, rgba(242, 242, 242, 0.81) 100%);
+  border-radius: 0.3rem;
+  color: #646363;
+}
+
+.corsi-cards .card a .small,
+.corsi-cards .card .xsmall {
+  color: #646363;
+}
+
+.corsi-cards .card a .arrow-right path{
+  fill: #646363;
+}
+
+.corsi-cards .card a:hover .small{
+  color: #BFBFBF;
+}
+
+.corsi-cards .card a:hover .arrow-right path{
+  fill: #BFBFBF;
+}
+
+.corsi-cards .card .durata {
+  color: white;
+  width: 4.4rem;
+  height: 4.4rem;
+  background: url(/static/img/corsi-drop.png) no-repeat center 
+}
+
+.corsi-cards .dots-icons {
+  cursor: pointer;
+}
+
+.corsi-cards .dots-icons path {
+  fill: #646363;
+}
+
+.corsi-cards .dots-icons:hover path {
+  fill: #BFBFBF;
+}
+
+.corsi-cards .card .modal .modal-content{
+  background-color: #212121;
+  border-radius: 0.625rem;
+}
+
+.corsi-cards .card .modal .close {
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+}
+
+.corsi-cards .card .modal h6,
+.corsi-cards .card .modal .xsmall {
+  color: #F9F9F9;
+}
+
+.corsi-cards .card .modal ul li {
+  list-style-type: circle;
+  margin-bottom: 0.5rem;
+}
 
 /* Titolo a sinistra width: 50%, Testo a destra width: 50% */
 /* Dark background */
