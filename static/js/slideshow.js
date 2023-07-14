@@ -62,7 +62,11 @@ var swiper = new Swiper(".softwaresSwiper", {
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
-      }
+      },
+      navigation: {
+        nextEl: "#nav-right",
+        prevEl: "#nav-left"
+    },
   });
 
   // Get the Swiper container element
