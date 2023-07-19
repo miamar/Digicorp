@@ -688,6 +688,14 @@ color: #BFBFBF;
 
 
 /* Corsi cards */
+.corsi-cards .card .modal .modal-body a .small {
+  color: #E73C14;
+}
+
+.corsi-cards .card .modal .modal-body a .arrow-right path{
+  fill: #E73C14;
+} 
+
 .corsi-cards .card .categoria {
   background: linear-gradient(133deg, rgba(217, 217, 217, 0.83) 0%, rgba(242, 242, 242, 0.81) 100%);
   border-radius: 0.3rem;
@@ -697,11 +705,13 @@ color: #BFBFBF;
   fill: #646363;
 }
 
-.corsi-cards .card a:hover .small{
+.corsi-cards .card a:hover .small,
+.corsi-cards .card .modal .modal-body a:hover .small {
   color: #BFBFBF;
 }
 
-.corsi-cards .card a:hover .arrow-right path{
+.corsi-cards .card a:hover .arrow-right path,
+.corsi-cards .card .modal .modal-body a:hover .arrow-right path{
   fill: #BFBFBF;
 }
 
@@ -729,13 +739,13 @@ color: #BFBFBF;
   border-radius: 0.625rem;
 }
 
-.corsi-cards .card .modal .close {
+.corsi-cards .card .modal .btn-close {
   width: 2rem;
   height: 2rem;
   background-color: white;
   color: black;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1;
   padding: 0;
   display: flex;
@@ -743,6 +753,7 @@ color: #BFBFBF;
   justify-content: center;
   border-radius: 50%;
   border: none;
+  opacity: 1;
 }
 
 .corsi-cards .card .modal h6,
