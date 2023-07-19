@@ -358,6 +358,11 @@ label::after {
   margin-top: 15%;
 }
 
+.partners img {
+  height: 2.8rem;
+  width: auto;
+}
+
   @keyframes logo-slide {
     0% {
       transform: translateX(-100%); 
