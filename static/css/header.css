@@ -220,14 +220,22 @@ label[data-state="open"] {
     margin-top: 1rem;
   }
 
-  .dropdown-menu .features, .dropdown-menu .softwares  {
-    margin-left: 3rem;
+  .dropdown-menu .features {
+    margin-left: 2rem;
+  }
+
+  .dropdown-menu .description {
+    margin-left: 2rem;
+  }
+
+  .dropdown-menu .softwares {
+    margin-left: 3.5rem;
   }
 
   .dropdown-menu .title {
     font-size: 1.4rem;
     line-height: 1.7rem;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     color: #646363;
   }
 
@@ -248,8 +256,9 @@ label[data-state="open"] {
   }
 
   .dropdown-menu .recommendations.prodotti img {
-    width: 100%;
+    width: auto;
     margin-bottom: 1rem;
+    height: 5rem;
   }
 
 
@@ -281,6 +290,11 @@ label[data-state="open"] {
   }
   .dropdown-menu .recommendations a:hover .arrow-right path{
     fill: #BFBFBF;
+  }
+
+  .dropdown-menu .description {
+    line-height: 1.5rem;
+    letter-spacing: 0.03rem;
   }
 
   .vertical-hr {
