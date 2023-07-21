@@ -206,6 +206,7 @@
   border-radius: 0.7rem;
   background-color: white;
   box-shadow: 4px 4px 30px 0px rgba(100, 99, 99, 0.10);
+  flex: 1;
 }
 
 .softwares-secondari .card small {
@@ -231,8 +232,24 @@
   fill: #E73C14;
 }
 
-.softwares-secondari .card.primari .arrow-right.topografia path {
+.softwares-secondari .card.secondari .arrow-right.topografia path {
   fill: #6AA237;
+}
+
+.softwares-secondari .card.primari a:hover .arrow-right path,
+.softwares-secondari .card.secondari a:hover .arrow-right.topografia path,
+.softwares-secondari .card.secondari a:hover .arrow-right.strade path,
+.softwares-secondari .card.secondari a:hover .arrow-right.idraulica path,
+.softwares-secondari .card.secondari a:hover .arrow-right.altro path {
+  fill: #BFBFBF;
+}
+
+.softwares-secondari .card.secondari a:hover .topografia-color-text,
+.softwares-secondari .card.secondari a:hover .strade-color-text,
+.softwares-secondari .card.secondari a:hover .idraulica-color-text,
+.softwares-secondari .card.secondari a:hover .altro-color-text,
+.softwares-secondari .card.primari a:hover .default-color-text {
+  color: #BFBFBF;
 }
 
  /* Soluzionni CIVIL Design e moduli CAD&Pillar (nav style) */
