@@ -40,14 +40,32 @@ function myFunction() {
   }
 }
 
-$(document).ready(function() {
-$(".navbar .nav-link").focus(function() {
-  $(".navbar").addClass("navbar-focused");
+document.addEventListener('click', function(event) {
+  var container = document.getElementById("myTopnav");
+  if (!container.contains(event.target)) {
+    container.classList.remove("responsive");
+  }
 });
 
-$(".navbar .nav-link").blur(function() {
-  $(".navbar").removeClass("navbar-focused");
-});
+
+
+$(document).ready(function() {
+  $(".nav-link").click(function() {
+    $(".nav-link").removeClass("selected"); // Remove selected class from all .nav-link elements
+    $(this).addClass("selected"); // Add selected class to the clicked .nav-link
+
+    // Check if any .nav-link has the class "selected"
+    if ($(".nav-link").hasClass("selected")) {
+      $(".navbar").addClass("navbar-focused"); // Add the class "navbar-focused" to the navbar
+    } else {
+      $(".navbar").removeClass("navbar-focused"); // Remove the class "navbar-focused" from the navbar
+    }
+
+    // Remove the .selected class from all .nav-link elements when dropdonw-meny has no class .show
+    if (!$(".dropdown-menu").hasClass("show")) {
+      $(".nav-link").removeClass("selected");
+    }
+  });
 });
 
 // Add scroll event handler
@@ -58,4 +76,5 @@ $(window).scroll(function() {
     $(".navbar").removeClass("navbar-scrolled");
   }
 });
+
 
