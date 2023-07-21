@@ -71,3 +71,28 @@ const setEqualHeight = () => {
 window.addEventListener('load', setEqualHeight);
 window.addEventListener('resize', setEqualHeight);
 
+
+// Get all the columns within the .servizi-home container
+const columns2 = document.querySelectorAll('.servizi-home .col-12, .servizi-home .col-lg-6');
+    
+    // Function to calculate the height of the tallest column
+    const setEqualHeight2 = () => {
+      let maxHeight = 0;
+    
+      // Loop through each column and find the tallest one
+      columns2.forEach((column) => {
+        const columnHeight = column.offsetHeight;
+        if (columnHeight > maxHeight) {
+          maxHeight = columnHeight;
+        }
+      });
+    
+      // Set the height of all columns to the height of the tallest column
+      columns2.forEach((column) => {
+        column.style.height = `${maxHeight}px`;
+      });
+    };
+    
+    // Call the setEqualHeight function initially and on window resize
+    window.addEventListener('load', setEqualHeight2);
+    window.addEventListener('resize', setEqualHeight2);

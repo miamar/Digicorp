@@ -107,10 +107,12 @@ a.hamburger-icon {
   color: white;
 }
 
-a.hamburger-icon:hover, .navbar:hover a.hamburger-icon {
+a.hamburger-icon:hover, 
+.navbar:hover a.hamburger-icon,
+.navbar.navbar-focused a.hamburger-icon,
+.navbar.navbar-scrolled a.hamburger-icon {
   color: black;
 }
-
 
 .hamburger-icon {
   display: none;
@@ -186,7 +188,6 @@ label[data-state="open"] {
 
 
 /*Dropdown*/
-
 .dropdown-icon path {
     fill: #646363;
   }
@@ -391,8 +392,8 @@ label[data-state="open"] {
   }
 
   .dropdown-menu .container {
-    padding: 0 3rem;
-    margin-top: 1rem;
+    padding: 1rem 3rem;
+    
   }
 
   header .nav-link {
@@ -401,7 +402,7 @@ label[data-state="open"] {
 
   .dropdown-menu .recommendations.prodotti img {
     height: 4rem;
-}
+  }
 
 }
 
