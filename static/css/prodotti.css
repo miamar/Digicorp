@@ -362,6 +362,10 @@
   padding: 0;
 }
 
+.soluzioni .modal .container {
+  padding-right: 0rem!important;
+}
+
 .soluzioni .modal-header {
   background-image: url(/static/img/bg-covers/hero-modal.png);
   background-size: cover;
@@ -393,13 +397,13 @@
   height: 1.5rem;
 }
 
-.soluzioni .modal .close {
+.soluzioni .modal .btn-close {
   width: 2rem;
   height: 2rem;
   background-color: white;
   color: black;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1;
   padding: 0;
   display: flex;
@@ -407,6 +411,8 @@
   justify-content: center;
   border-radius: 50%;
   border: none;
+  opacity: 1;
+  margin: 0.5rem;
 }
 
 /* CAD&Pillar moduli */
@@ -733,6 +739,14 @@
     .soluzioni .modal-link {
       margin-left: unset;
     }
+
+    .soluzioni .modal .btn-close {
+      margin-left: 0rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 0.7rem;
+    }
+    
 
   }
   

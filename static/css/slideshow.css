@@ -12,6 +12,9 @@
     height: 40rem;
 }
 
+.partner-cards .swiper-slide {
+  height: unset;
+}
 
   .gallery .swiper-slide img {
     display: block;
@@ -173,7 +176,7 @@
   .swiper {
     height: 100%;
   }
-  .swiper-slide {
+  .gallery .swiper-slide {
     height: 100%;
  }
   .gallery .swiper-slide img {
