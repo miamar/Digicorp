@@ -29,18 +29,7 @@ new Swiper("#swiper-2", {
     }
 });
 
-var swiper = new Swiper(".softwaresSwiper", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    }
-  });
+
 
 
   var swiper = new Swiper(".partnerSwiper", {
@@ -73,12 +62,22 @@ var swiper = new Swiper(".softwaresSwiper", {
 var swiperContainer = document.querySelector('.softwaresSwiper');
 
 // Get the parent column element
-var column = swiperContainer.closest('.swiperColumn');
+var column = swiperContainer.closest('.col-12');
 
 // Calculate the width of the column
 var columnWidth = column.offsetWidth;
 
-var swiper = new Swiper('.softwaresSwiper', {
+var swiper = new Swiper(".softwaresSwiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 400000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
   on: {
     init: function () {
       // Set the width of the Swiper container
@@ -86,6 +85,5 @@ var swiper = new Swiper('.softwaresSwiper', {
     },
   },
 });
-
 
 

@@ -135,7 +135,7 @@
 
 .swiper.softwaresSwiper .swiper-pagination {
   visibility: hidden;
-  bottom: 0.5rem;
+  bottom: 1rem;
 }
 
 .swiper.softwaresSwiper:hover .swiper-pagination {
@@ -169,6 +169,10 @@
 @media screen and (max-width: 1200px) {
   .swiper.softwaresSwiper {
     width: 300px;
+  }
+  
+  .swiper.softwaresSwiper .swiper-pagination {
+    visibility: visible;
   }
 }
 
