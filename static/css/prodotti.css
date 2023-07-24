@@ -746,8 +746,31 @@
         height: 1.5rem;
         font-size: 0.7rem;
     }
-    
 
+    .moduli .nav-container {
+      overflow-x: auto;
+    }
+
+    .moduli .nav-scrollable {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    
+    .moduli .nav {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    
+    .moduli .nav-tabs .nav-item {
+      flex: 0 0 auto;
+      white-space: nowrap;
+    }
+
+    .moduli .specifiche .nav.nav-tabs .nav-item {
+      border: none;
+      border-radius: unset;
+      width: unset;
+    }
   }
   
   @media all and (max-width: 576px) {

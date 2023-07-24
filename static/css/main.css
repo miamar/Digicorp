@@ -489,7 +489,7 @@ color: #BFBFBF;
 
 /* Bullet list */
 .bullet-list {
-  border-radius: 0rem 10rem 0rem 0rem;
+  border-radius: 0rem 8rem 0rem 0rem;
 }
 
 .bullet-list svg {
@@ -522,7 +522,7 @@ color: #BFBFBF;
 }
 
 .secondari-cards {
-  border-radius: 0rem 10rem;
+  border-radius: 0rem 8rem;
 }
 
 .secondari-cards.dark .card {
