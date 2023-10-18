@@ -8,7 +8,7 @@
     <title>Search</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
     <!-- Link Swiper's CSS -->
@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="/static/css/main.css"/>
     <link rel="stylesheet" href="/static/css/header.css"/>
     <link rel="stylesheet" href="/static/css/footer.css"/>
-    <link rel="stylesheet" href="/static/css/slideshow.css"/>
 
     
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
@@ -28,7 +27,55 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     
     <style>
+      .search .row {
+        height: 100vh;
+        background-color:#F5F5F5;
+        padding: 10rem 0;
+      }
+
+      .search-container {
+        background-color: white;
+        box-shadow: 2px 2px 20px 0px rgba(100, 99, 99, 0.10);
+        border-radius: 1rem;
+      }
+
+      .search .form-control {
+        color: #212121;
+        border-radius: .6rem;
+        border: none;
+        height: 3.75rem;
+        font-size: 1.7rem;
+        font-weight: 400;
+      }
+
+      .search .form-control::placeholder {
+        color: #BFBFBF;
+        font-size: 1.4rem;
+      }
+
+      .search i {
+        color: #212121;
+      }
+
+      .search .btn:hover i{
+        color: #E73C14;
+      }
+
+      .search .small {
+        font-weight: 300;
+      }
       
+      .search .small:hover {
+        font-weight: 500;
+        cursor: pointer;
+      }
+
+      @media all and (max-width: 768px) {
+        .search .row {
+          padding: 5rem 1rem;
+        }
+      }
+
     </style>
 
   </head>
@@ -38,403 +85,7 @@
       <nav class="navbar navbar-expand-xl">
           
           <div class="container" id="myTopnav">
-            <a class="navbar-brand my-2" href="home.html"></a>
-        
-
-                  <ul class="nav">
-                      <li class="nav-item dropdown position-static">
-                          <a class="nav-link" id="dropdownCivilDesign" role="button" @click="toggleDropdown('dropdownCivilDesign')" @mouseleave="closeDropdown">
-                            <div class="nav-content">CIVIL Design<img class="svg item-icon" src="/static/svg/arrows/arrow-down.svg"></div>
-                          </a>
-                          <div class="dropdown-menu w-100" :class="{ show: isDropdownOpen('dropdownCivilDesign') }" aria-labelledby="dropdownCivilDesign" @mouseleave="closeDropdown">
-                            <div class="container">
-                              <div class="row my-xl-4">
-                                <div class="col-md-12 col-lg-3">
-                                  <ul>
-                                    <li>
-                                      <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Strade e ferrovie</span></a>
-                                      <ul class="features">
-                                        <li>Opere Civili</li>
-                                        <li>QUICK Strade</li>
-                                        <li>Segnali Stradali</li>
-                                        <li>Rail Control</li>
-                                        <li>Strade e Ferrovie</li>
-                                      </ul>
-                                    </li>
-                                    <li>
-                                      <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Cartografia e raster</span></a>
-                                      <ul class="features">
-                                        <li>Raster</li>
-                                      </ul>
-                                    </li>
-                                    <li>
-                                      <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Cave e discariche</span></a>
-                                      <ul class="features">
-                                        <li>QUICK Cave</li>
-                                        <li>Opere Civili</li>
-                                        <li>Cave e Discariche</li>
-                                      </ul>
-                                    </li>
-                                  </ul>
-                                </div>
-                                <div class="col-md-12 col-lg-3">
-                                  <ul>
-                                    <li>
-                                      <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Topografia e castato</span></a>
-                                      <ul class="features">
-                                        <li>Topografia</li>
-                                        <li>Castato</li>
-                                      </ul>
-                                    </li>
-                                    <li>
-                                      <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Progettare opere idrauliche</span></a>
-                                      <ul class="features">
-                                        <li>Bacini Idrografici</li>
-                                        <li>Fognature e Reti di drenaggio</li>
-                                        <li>Acquedotti e Reti in pressione</li>
-                                      </ul>
-                                    </li>
-                                    <li>
-                                      <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Altro</span></a>
-                                      <ul class="features">
-                                        <li>Tunnel</li>
-                                        <li>Profili</li>
-                                        <li>Nuvole punti</li>
-                                        <li>Sezioni Contabili</li>
-                                      </ul>
-                                    </li>
-                                  </ul>
-                                </div>
-                                <div class="col-md-12 col-lg-1">
-                                  <div class="vertical-hr"></div>
-                                </div>
-                                <div class="col-md-12 col-lg-5 recommendations">
-                                  <a href="civil-design.html"><img src="/static/img/loghi/CD-full-color.png"></a>
-                                  <div class="row mt-3 mt-lg-5">
-                                    <div class="col-12 col-lg-6"><p>Un applicativo di Autodesk AutoCAD e Bricsys BricsCAD per la progettazione e contabilizzazione di opere civili sul territorio: indispensabile per i tecnici.</p></div>
-                                    <div class="col-md-12 col-lg-6"><h3>La nuova release 14</h3><p>Progettare disegnando, ora anche BIM, oltre ogni ostacolo.</p></div>
-                                  </div>
-                                  <div class="row mt-lg-3">
-                                    <div class="col-12 col-lg-6">
-                                      <a href="civil-design.html" class="d-flex align-items-center"><img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/><span>Scopri di più</span></a>
-                                    </div>
-                                    <div class="col-12 col-lg-6">
-                                      <a href="" class="d-flex align-items-center"><img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/><span>Prova subito</span></a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                      <li class="nav-item dropdown position-static">
-                        <a class="nav-link" id="dropdownCAD&Pillar" role="button" @click="toggleDropdown('dropdownCAD&Pillar')" aria-expanded="false">
-                          <div class="nav-content">CAD&Pillar<img class="svg item-icon" src="/static/svg/arrows/arrow-down.svg"></div>
-                        </a>
-                        <div class="dropdown-menu w-100" :class="{ show: isDropdownOpen('dropdownCAD&Pillar') }" aria-labelledby="dropdownCAD&Pillar">
-                          <div class="container">
-                            <div class="row my-xl-4">
-                              <div class="col-md-12 col-lg-3">
-                                <ul class="mb-0">
-                                  <li>
-                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Modulo T - Topografia</span></a>
-                                    <ul class="description">
-                                      <li>E' il modulo dedicato all'elaborazione, restituzione e vestizione di qualsiasi tipologia di rilievi.</li>
-                                    </ul>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Modulo M - Modelli</span></a>
-                                    <ul class="description">
-                                      <li>E' il modulo per creare il modello digitale del terreno, a triangoli, a curve di livello oppure a maglia regolare, che è necessario per calcolare profili e sezioni, finalizzati ai computi di movimenti di materia.</li>
-                                    </ul>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Modulo S - Strade</span></a>
-                                    <ul class="description">
-                                      <li>Questo modulo offre tutto ciò che serve per progettare e calcolare una strada, verificando in tempo reale i requisiti del DM 5/11/2001. Consente un notevole risparmio e vantaggio all'utente grazie al ricalcolo automatico di profili, sezioni e controlli normativi dopo eventuali modifiche al trOiato.</li>
-                                    </ul>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="col-md-12 col-lg-3">
-                                <ul>
-                                  <li>
-                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Modulo C - Cave</span></a>
-                                    <ul class="description">
-                                      <li>Questo modulo consente di progettare e gestire modelli digitali 3D, tipicamente  cave e discariche. Computa i volumi con il metodo dei prismoidi e consente di definire spianamenti.</li>
-                                    </ul>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Modulo R - Raster</span></a>
-                                    <ul class="description">
-                                      <li>E' il modulo per gestire immagini raster, utile per progetti territoriali con cartografie e rilievo architettonico con raddrizzamento prospettico di fotografie.</li>
-                                    </ul>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="col-md-12 col-lg-1">
-                                <div class="vertical-hr"></div>
-                              </div>
-                              <div class="col-md-12 col-lg-5 mb-4 mb-lg-0 recommendations">
-                                <a href="cad-pillar.html"><img src="/static/img/loghi/CP-full-color.png"></a>
-                                <div class="row mt-3 mt-lg-5">
-                                  <div class="col-md-12 col-lg-6"><p>Un applicativo di Autodesk AutoCAD e Bricsys BricsCAD per la progettazione e contabilizzazione di opere civili sul territorio: indispensabile per i tecnici.</p></div>
-                                  <div class="col-md-12 col-lg-6"><h3>La nuova release 14</h3><p>Progettare disegnando, ora anche BIM, oltre ogni ostacolo.</p></div>
-                                </div>
-                                <div class="row mt-3 mt-lg-3 cp">
-                                  <div class="col-md-12 col-lg-6">
-                                    <a href="cad-pillar.html" class="d-flex align-items-center"><img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/><span>Scopri di più</span></a>
-                                  </div>
-                                  <div class="col-md-12 col-lg-6">
-                                    <a href="" class="d-flex align-items-center"><img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/><span>Prova subito</span></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="nav-item dropdown position-static">
-                        <a class="nav-link" id="dropdownProdotti" role="button" @click="toggleDropdown('dropdownProdotti')" aria-expanded="false">
-                          <div class="nav-content">Prodotti<img class="svg item-icon" src="/static/svg/arrows/arrow-down.svg"></div>
-                        </a>
-                        <div class="dropdown-menu w-100" :class="{ show: isDropdownOpen('dropdownProdotti') }" aria-labelledby="dropdownProdotti">
-                          <div class="container">
-                            <div class="row my-xl-4">
-                              <div class="col-12">
-                                <p class="small mb-3 mb-lg-1">Softwares:</p>
-                              </div>
-                              <div class="col-md-12 col-lg-3">
-                                <ul>
-                                  <li>
-                                    <div class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon-proddoti" src="/static/img/loghi/strade.png"/><span class="title">Strade</span></div>
-                                    <ul class="softwares">
-                                      <li><a>CA.R.</a></li>
-                                      <li><a>Pavimentazioni stradali</a></li>
-                                    </ul>
-                                  </li>
-                                  <li>
-                                    <div class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon-proddoti" src="/static/img/loghi/topografia.png"/><span class="title">Topografia</span></div>
-                                    <ul class="softwares">
-                                      <li><a>Transfer</a></li>
-                                      <li><a>Monitor</a></li>
-                                      <li><a>Pixy SFM</a></li>
-                                    </ul>
-                                  </li>
-                                  <li>
-                                    <div class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon-proddoti" src="/static/img/loghi/altro.png"/><span class="title">Topografia</span></div>
-                                    <ul class="softwares">
-                                      <li><a>MapTiles</a></li>
-                                      <li><a>Dtm2Revit_topography - Superficie topografica</a></li>
-                                    </ul>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="col-md-12 col-lg-3">
-                                <ul class="mb-0">
-                                  <li>
-                                    <div class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon-proddoti" src="/static/img/loghi/idraulica.png"/><span class="title">Idraulica-Idrologia</span></div>
-                                    <ul class="softwares">
-                                      <li><a>TR.A.D</a></li>
-                                      <li><a>Lamina</a></li>
-                                      <li><a>Uniflow</a></li>
-                                      <li><a>PTDrain</a></li>
-                                      <li><a>SWMM Analyzer</a></li>
-                                      <li><a>Epa GIS</a></li>
-                                      <li><a>Syphon</a></li>
-                                      <li><a>Invar FVG</a></li>
-                                    </ul>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="col-md-12 col-lg-1">
-                                <div class="vertical-hr"></div>
-                              </div>
-                              <div class="col-md-12 col-lg-5 recommendations prodotti">
-                                <div class="row">
-                                  <div class="col-md-12 col-lg-6">
-                                    <a href="civil-design.html"><img src="/static/img/loghi/CD-full-color.png"></a>
-                                    <p>Un applicativo di Autodesk AutoCAD e Bricsys BricsCAD per la progettazione e contabilizzazione di opere civili sul territorio: indispensabile per i tecnici.</p></div>
-                                  <div class="col-md-12 col-lg-6">
-                                    <a href="cad-pillar.html"><img src="/static/img/loghi/CP-full-color.png"></a>
-                                    <p>Un applicativo di Autodesk AutoCAD e Bricsys BricsCAD per la progettazione e contabilizzazione di opere civili sul territorio: indispensabile per i tecnici.</p></div>
-                                </div>
-                                <div class="row mt-3">
-                                  <div class="col-md-12 col-lg-6">
-                                    <a href="" class="d-flex align-items-center"><img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/><span>Prova subito</span></a>
-                                  </div>
-                                  <div class="col-md-12 col-lg-6 cp">
-                                    <a href="" class="d-flex align-items-center"><img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/><span>Prova subito</span></a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-12">
-                                <p class="small mb-3">Hardwares:</p>
-                                <a>Ri.C.Co.</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="nav-item dropdown position-static">
-                        <a class="nav-link" id="dropdownServizi" role="button" @click="toggleDropdown('dropdownServizi')" aria-expanded="false">
-                          <div class="nav-content">Servizi<img class="svg item-icon" src="/static/svg/arrows/arrow-down.svg"></div>
-                        </a>
-                        <div class="dropdown-menu w-100" :class="{ show: isDropdownOpen('dropdownServizi') }" aria-labelledby="dropdownServizi">
-                          <div class="container">
-                            <div class="row my-xl-4">
-                              <div class="col-md-12 col-lg-3">
-                                <ul class="mb-0">
-                                  <li>
-                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Corsi</span></a>
-                                    <ul class="description">
-                                      <li>Abbiamo concepito i nostri corsi per rendere subito produttivi i nostri clienti, con durata personalizzabile e opzioni sia in aula che via web; attualmente, i corsi si svolgono esclusivamente online.</li>
-                                    </ul>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Education</span></a>
-                                    <ul class="description">
-                                      <li>DIGICORP Ingegneria offre una versione completa del software CIVIL Design per 6 mesi per aiutarti a migliorare la tua formazione e conoscenza di software durante lo sviluppo di tesi o esercitazioni accademiche.</li>
-                                    </ul>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="col-md-12 col-lg-3">
-                                <ul>
-                                  <li>
-                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Di accademia</span></a>
-                                    <ul class="description">
-                                      <li>Lorem ipsum ect.</li>
-                                    </ul>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Consulting</span></a>
-                                    <ul class="description">
-                                      <li>DIGICORP Ingegneria fornisce servizi di consulenza tecnica garantendo la massima professionalità legata alla formazione di alto profilo del proprio personale e all'interdisciplinarietà della propria attività.</li>
-                                    </ul>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="col-md-12 col-lg-1">
-                                <div class="vertical-hr"></div>
-                              </div>
-                              <div class="col-md-12 col-lg-5 recommendations prodotti">
-                                <div class="row">
-                                  <div class="col-md-12 col-lg-6">
-                                    <a href="civil-design.html"><img src="/static/img/loghi/CD-full-color.png"></a>
-                                    <p>Un applicativo di Autodesk AutoCAD e Bricsys BricsCAD per la progettazione e contabilizzazione di opere civili sul territorio: indispensabile per i tecnici.</p></div>
-                                  <div class="col-md-12 col-lg-6">
-                                    <a href="cad-pillar.html"><img src="/static/img/loghi/CP-full-color.png"></a>
-                                    <p>Un applicativo di Autodesk AutoCAD e Bricsys BricsCAD per la progettazione e contabilizzazione di opere civili sul territorio: indispensabile per i tecnici.</p></div>
-                                </div>
-                                <div class="row mt-3">
-                                  <div class="col-md-12 col-lg-6">
-                                    <a href="" class="d-flex align-items-center"><img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/><span>Prova subito</span></a>
-                                  </div>
-                                  <div class="col-md-12 col-lg-6 cp">
-                                    <a href="" class="d-flex align-items-center"><img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/><span>Prova subito</span></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="nav-item dropdown position-static">
-                        <a class="nav-link" id="dropdownAzienda" role="button" @click="toggleDropdown('dropdownAzienda')" aria-expanded="false">
-                          <div class="nav-content">Di azienda<img class="svg item-icon" src="/static/svg/arrows/arrow-down.svg"></div>
-                        </a>
-                        <div class="dropdown-menu w-100" :class="{ show: isDropdownOpen('dropdownAzienda') }" aria-labelledby="dropdownAzienda">
-                          <div class="container">
-                            <div class="row my-xl-4">
-                              <div class="col-md-12 col-lg-3">
-                                <ul class="mb-0">
-                                  <li>
-                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Di azienda</span></a>
-                                    <ul class="description">
-                                      <li></li>
-                                    </ul>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Normative</span></a>
-                                    <ul class="description">
-                                      <li></li>
-                                    </ul>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="col-md-12 col-lg-3">
-                                <ul>
-                                  <li>
-                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Contatti</span></a>
-                                    <ul class="description">
-                                      <li></li>
-                                    </ul>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-link d-flex align-items-center"><img class="svg dropdown-icon" src="/static/svg/Vector.svg"/><span class="title">Esempi Applicativi</span></a>
-                                    <ul class="description">
-                                      <li></li>
-                                    </ul>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="col-md-12 col-lg-1">
-                                <div class="vertical-hr"></div>
-                              </div>
-                              <div class="col-md-12 col-lg-5 recommendations prodotti">
-                                <div class="row mt-5">
-                                  <div class="col-md-12 col-lg-6">
-                                    <a href="civil-design.html"><img src="/static/img/loghi/CD-full-color.png"></a>
-                                    <p>Un applicativo di Autodesk AutoCAD e Bricsys BricsCAD per la progettazione e contabilizzazione di opere civili sul territorio: indispensabile per i tecnici.</p></div>
-                                  <div class="col-md-12 col-lg-6">
-                                    <img src="/static/img/loghi/CP-full-color.png">
-                                    <p>Un applicativo di Autodesk AutoCAD e Bricsys BricsCAD per la progettazione e contabilizzazione di opere civili sul territorio: indispensabile per i tecnici.</p></div>
-                                </div>
-                                <div class="row mt-3">
-                                  <div class="col-md-12 col-lg-6">
-                                    <a href="" class="d-flex align-items-center"><img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/><span>Prova subito</span></a>
-                                  </div>
-                                  <div class="col-md-12 col-lg-6 cp">
-                                    <a href="" class="d-flex align-items-center"><img class="svg arrow-right" src="/static/svg/arrows/arrow-right.svg"/><span>Prova subito</span></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-
-              
-        
-              <div class="d-flex align-items-center right-items">
-                <!-- Search bar -->
-                <form id="app" action="#">
-                  <label :data-state="state" for="search">
-                    <input type="text" placeholder="Search" @click="state = 'opan'" @blur="state='close'" />
-                    <i class="fa fa-search" @click="" aria-hidden="true"></i>
-                    <i class=""></i>
-                  </label>
-                </form>
-        
-                <!-- Language dropdown -->
-                <div class="language dropdown">
-                  <button class="btn dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    EN
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                    <li><a class="dropdown-item" href="#">Language 1</a></li>
-                    <li><a class="dropdown-item" href="#">Language 2</a></li>
-                    <li><a class="dropdown-item" href="#">Language 3</a></li>
-                  </ul>
-                </div>
-                <!-- Hamburger menu button -->
-                <a href="javascript:void(0);" class="hamburger-icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-                </a>
-              </div>
-
+            
           </div>
         </nav>
         
@@ -442,204 +93,35 @@
 
     <main>
 
-      <div class="hero-home">
-        <div class="container d-flex flex-column align-items-start">
-          <h1 class="mb-3 drop-in">La tua e la nostra <span class="gradient-red-text">esperienza</span> per un risultato ottimale</h1>
-          <hr class="red-line hr-animation-hero">
-          <p class="my-3 drop-in2">DIGICORP Ingegneria S.r.l. produce e vende software tecnici per il mondo della progettazione e contabilizzazione di opere civili sul territorio.</p>
-          <button class="btn primary-button mt-3 mb-5">Scopri di più</button>
-          <div class="partners d-flex align-items-center">
-            <img class="mx-5" src="/static/svg/partner/digicorp.svg">
-            <img class="mx-5" src="/static/svg/partner/amv.svg">
-            <img class="mx-5" src="/static/svg/partner/campania-sistemi.svg">
-            <img class="mx-5" src="/static/svg/partner/crisel.svg">
-            <img class="mx-5" src="/static/svg/partner/digitecno.svg">
-            <img class="mx-5" src="/static/svg/partner/eurotec.svg">
-            <img class="mx-5" src="/static/svg/partner/geodeisa.svg">
-            <img class="mx-5" src="/static/svg/partner/prisma.svg">
-            <img class="mx-5" src="/static/svg/partner/tde.svg">
-            <img class="mx-5" src="/static/svg/partner/teorema.svg">
+      <div class="search">
+
+        <div class="row  d-flex justify-content-center align-items-center">
+
+          <div class="col-md-6">
+
+            <div class="small mb-3"><span>< </span>Home</div>
+            <div class="search-container p-2">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Cerca">
+                <button class="btn" type="submit"><i class="fa fa-search"></i><a href=""></a></button>
+              </form>
+            </div>
+            
+            
           </div>
+          
         </div>
-      </div>
-      
-      <div class="softwares-home">
-        <div class="container d-flex flex-column align-items-center custom-container">
-
-          <h2 class="text-center">Lorem ipsum dolorsit <span class="default-color-text">amet</span> consectetur vero dolorsit</h2>
-          <p class="small mt-4 text-center">Lorem ipsum dolor sit amet consectetur. Non magna est feugiat lacinia id enim et id molestie. </p>
-
-          <div class="row d-flex align-items-stretch">
-
-            <div class="col-12 col-xl-4 col-md-6">
-              <div class="card h-100 p-5 d-flex justify-content-between">
-                <img class="card-img-top pb-4" src="/static/img/loghi/CD-full-color.png" alt="Card image">
-                <div class="card-body p-0">
-                  <h3>CIVIL Design</h3>
-                  <p class="card-text small mt-3">È per topografia e contabilità con AutoCAD OEM integrato. Il Modelo S (Strade) è progettazione stradale mono-asse con AutoCAD OEM integrato</p>
-                </div>
-                <a href="" class="link-arrow d-flex align-items-center "><span class="xsmall">Scopri di più</span><img class="svg" src="/static/svg/arrows/arrow-right-default.svg"></a>
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-4 col-md-6 mt-4 mt-md-0">
-              <div class="card h-100 p-5 mb-3 justify-content-between">
-                <img class="card-img-top pb-4" src="/static/img/loghi/CP-full-color.png" alt="Card image">
-                <div class="card-body p-0">
-                  <h3>CAD&Pillar</h3>
-                  <p class="card-text small mt-3 mb-4">È per topografia e contabilità con AutoCAD OEM integrato. Il Modelo S (Strade) è progettazione stradale mono-asse con AutoCAD OEM integrato</p>
-                </div>
-                <a href="" class="link-arrow d-flex align-items-center"><span class="xsmall">Scopri di più</span><img class="svg" src="/static/svg/arrows/arrow-right-default.svg"></a>
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-4 mt-4 mt-lg-0 d-flex flex-column align-items-lg-stretch swiperColumn">
-              <h5 class="mt-5 mt-xl-0">Altri prodotti:</h5>
-              <div class="swiper softwaresSwiper mt-3 d-flex flex-column align-items-center">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="card h-100 p-5 justify-content-between">
-                      <div class="d-flex align-items-center">
-                      <img class="card-img-top" src="/static/img/loghi/topografia.png" alt="Card image cap">
-                      <h4>Monitor</h4>
-                    </div>
-                      <div class="card-body p-0 my-4">
-                        <p class="card-text small">Consente il confronto tra più rilievi topografici dello stesso oggetto avvenuti in tempi diversi al fine di monitorare l’evoluzione temporale dei punti rilevati nel tempo.</p>
-                      </div>
-                      <a href="" class="link-arrow d-flex align-items-center"><span class="xsmall">Scopri di più</span><img class="svg" src="/static/svg/arrows/arrow-right-default.svg"></a>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="card h-100 p-5 justify-content-between">
-                      <div class="d-flex align-items-center">
-                      <img class="card-img-top" src="/static/img/loghi/topografia.png" alt="Card image cap">
-                      <h4>Transfer 4</h4>
-                    </div>
-                      <div class="card-body p-0 my-4">
-                        <p class="card-text small">Transfer 4 è la nuova versione del software freeware per lo scarico e trasferimento dei dati con strumenti topografici. Possono essere collegati tramite porta seriale o porta USB.</p>
-                      </div>
-                      <a href="" class="link-arrow d-flex align-items-center"><span class="xsmall">Scopri di più</span><img class="svg" src="/static/svg/arrows/arrow-right-default.svg"></a>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="card h-100 p-5 justify-content-between">
-                      <div class="d-flex align-items-center">
-                      <img class="card-img-top" src="/static/img/loghi/topografia.png" alt="Card image cap">
-                      <h4>Pixy SFM</h4>
-                    </div>
-                      <div class="card-body p-0 my-4">
-                        <p class="card-text small">Puoi applicarlo ai Tuoi lavori di Topografia, Geodesia, Architettura e Archeologia.</p>
-                      </div>
-                      <a href="" class="link-arrow d-flex align-items-center"><span class="xsmall">Scopri di più</span><img class="svg" src="/static/svg/arrows/arrow-right-default.svg"></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <h3 class="light-text text-left w-100">Ora è possibile ordinare online!</h3>
-          <p class="small mt-4 light-text text-left w-100">Ordina i nostri prodotti direttamente online, è sufficiente collegarsi al nostro sito di e-commece: <a href="www.civilmarketplace.eu" class="link-text">www.civilmarketplace.eu</a></p>
-
-        </div>
+        
       </div>
 
     </main>
       
     <footer>
       <div class="container">
-        <div class="row pt-5 pb-1">
-          <div class="col-12 col-md-10">
-
-            <div class="row py-4">
-              <div class="col-12"><img src="/static/img/loghi/logo-rosso-bianco.png"></div>
-            </div>
-
-            <div class="row contact">
-              <div class="col-12 col-xl-3 col-md-6 p-3 p-xl-4 d-flex align-items-start">
-                <img src="/static/svg/location-icon.svg">
-                <div class="contact-info d-flex flex-column align-items-start">
-                    <p class="mb-3">Via Duino 1/1, 33100 Udine (UD) - Italy</p>
-                </div>
-              </div>
-              <div class="col-12 col-xl-3 col-md-6 p-3 p-xl-4 d-flex align-items-start">
-                <img src="/static/svg/tel-icon.svg">
-                <div class="contact-info d-flex flex-column align-items-start">
-                    <div class="d-flex align-items-center mb-2">
-                        <p>tel:</p>
-                        <a href="tel:0432511556">0432 511556</a>
-                    </div>
-                    <div class="d-flex align-items-center mb-2">
-                        <p>fax:</p>
-                        <a href="tel:0432511592">0432 511592</a>
-                    </div>
-                    <div class="d-flex align-items-center mb-2">
-                        <p>ttel:</p>
-                        <a href="tel:3515684129">351 568 41296</a>
-                    </div> 
-                </div>
-              </div>
-              <div class="col-12 col-xl-4 p-3 p-xl-4 d-flex align-items-start">
-                <img src="/static/svg/email-icon.svg">
-                <div class="contact-info d-flex flex-column align-items-start">
-                    <div class="d-flex align-items-center mb-2">
-                    <p>email:</p>
-                    <a href="mailto:info@digicorpingegneria.com ">info@digicorpingegneria.com </a>
-                    </div>
-                    <div class="d-flex align-items-center mb-2">
-                        <p>PEC:</p>
-                        <a href="mailto:digicorpingegneria@pec.it">digicorpingegneria@pec.it</a>
-                    </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row py-4">
-                <div class="policy">
-                        <a href="">Cookie policy</a>
-                </div>
-              </div>
-
-          </div>
-          <div class="col-12 col-md-2 d-flex flex-column align-items-start">
-            <div class="d-flex flex-column align-items-start pt-4">
-                <h5>Menu</h5>
-                <ul class="nav mt-3 flex-column list">
-                    <li class="nav nav-item mb-3 flex-row align-items-center"><a href="" class="nav-link">CIVIL Design</li></a>
-                    <li class="nav nav-item mb-3 flex-row align-items-center"><a href="" class="nav-link">CAD&Pillar</li></a>
-                    <li class="nav nav-item mb-3 flex-row align-items-center"><a href="" class="nav-link">Prodotti</li></a>
-                    <li class="nav nav-item mb-3 flex-row align-items-center"><a href="" class="nav-link">Servizi</li></a>
-                    <li class="nav nav-item mb-3 flex-row align-items-center"><a href="" class="nav-link">Di azienda</li></a>
-                </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="bottom pt-4 pb-5 custom-border-top">
-          <div class="row mx-5">
-            <div class="col-12 col-lg-6 d-flex flex-column align-items-center text-center">
-              <p class="my-2">Capitale Sociale € 10.400,00 i.v.</p>
-              <p class="my-xl-0 my-2 mx-xl-1 mx-0">Iscrizione al Registro delle Imprese di Udine N. 01735590307</p>
-            </div>
-            <div class="col-12 col-lg-6 d-flex flex-column align-items-center text-center">
-              <p class="my-2">Codice Fiscale e Partita IVA: 01735590307</p>
-              <p class="my-xl-0 my-2 mx-xl-1 mx-0">Azienda certificata UNI EN ISO 9001:2015</p>
-            </div>
-          </div>
-        </div>
-
       </div>
 
     </footer>
 
-    
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <!-- Initialize Swipers -->
-    <script src="/static/js/slideshow.js"></script>
-  
     <script src="/static/js/header.js"></script>
     <script src="/static/js/main.js"></script>
 
