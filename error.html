@@ -25,29 +25,81 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     
     <style>
-      .error {
-        width: 100vw;
+
+      #error {
+        position: relative;
         height: 100vh;
+      }
+
+      .error {
+        /*width: 100vw;
+        height: 100vh;*/
+        position: absolute;
+        left: 55%;
+        top: 50%;
+         -webkit-transform: translate(-50%, -50%);
+         -ms-transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%);
+      }
+
+      .error-number {
+        position: absolute;
+        left: 20%;
+        top: 20%;
+        z-index: -1;
       }
 
       .error span {
         color: rgba(217, 217, 217, 0.83);
         font-size: 25rem;
         font-weight: 600;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50% , -50%);
+        -ms-transform: translate(-50% , -50%);
+        transform: translate(-50% , -50%);
       }
 
       .error .testo {
         color: #212121;
         font-size: 3rem;
         font-weight: 400;
-        line-height: 5rem;
+        line-height: 3.5rem;
       }
 
-      .error .titolo{
+      .error .titolo {
         color: #212121;
         font-size: 3.5rem;
         font-weight: 700;
-        line-height: 5.3rem;
+        line-height: 4rem;
+      }
+
+      @media all and (max-width: 768px) {
+        .error span {
+        font-size: 15rem;
+        
+      }
+
+      .error {
+        left: 30%;
+        top: 30%;
+         -webkit-transform: unset;
+         -ms-transform: unset;
+         transform: unset;
+         margin-right: 1rem;
+      }
+
+      .error .testo {
+        font-size: 2.5rem;
+        line-height: 3rem;
+      }
+
+      .error .titolo {
+        font-size: 3rem;
+        line-height: 3.5rem;
+      }
+         
       }
       
     </style>
@@ -55,18 +107,23 @@
   </head>
   <body>
 
-    <div class="error d-flex align-items-center justify-content-center">
+    <div id="error">
 
-      <span>400</span>
-      <div class="d-flex flex-column mt-5">
-        <div class="titolo">Oops!</div>
-        <div class="testo">The page you are looking for can’t be found!</div>
-        <div>bottone</div>
+      <div class="error d-flex align-items-center justify-content-center">
+
+        <div class="error-number">
+          <span>400</span>
+        </div>
+        
+        <div class="mt-5">
+          <div class="titolo mb-3">Oops!</div>
+          <div class="testo">The page you are looking for can’t be found!</div>
+          <button class="btn primary-button mt-4">Try again</button>
+        </div>
+  
       </div>
 
     </div>
-
-    
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     
